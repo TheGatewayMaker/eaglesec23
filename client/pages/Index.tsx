@@ -380,6 +380,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Location Section with Google Maps */}
+      <section className="py-28 md:py-40 bg-slate-50">
+        <div className="container mx-auto px-6">
+          <div className="mb-20">
+            <div className="inline-flex items-center gap-4 mb-6">
+              <div className="w-2 h-12 bg-accent rounded-full"></div>
+              <h2 className="text-5xl md:text-6xl font-black text-primary">
+                Our Head Office
+              </h2>
+            </div>
+            <p className="text-xl font-bold text-foreground ml-6 max-w-2xl">
+              Visit us at our Islamabad headquarters for consultations and inquiries
+            </p>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden shadow-2xl hover:shadow-2xl transition-all duration-300">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13282.195486583572!2d72.99590472612844!3d33.66884932093898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95ff25ed8b53%3A0x7e482ec7e99bebe0!2sG-11%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1766783293705!5m2!1sen!2s"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-20">
         <div className="container mx-auto px-6">
