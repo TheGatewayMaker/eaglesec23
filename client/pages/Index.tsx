@@ -9,6 +9,7 @@ import {
   Award,
   Target,
 } from "lucide-react";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 export default function Home() {
   return (
