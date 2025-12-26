@@ -399,7 +399,7 @@ export default function Home() {
                   ].map((city) => (
                     <div
                       key={city}
-                      className="bg-blue-600 text-white px-4 md:px-6 py-3 md:py-4 text-center hover:bg-blue-700 transition-colors duration-200"
+                      className="bg-blue-600 text-white px-4 md:px-6 py-3 md:py-4 text-center hover:bg-gradient-to-br hover:from-accent hover:to-yellow-500 hover:text-accent-foreground transition-all duration-300"
                     >
                       <p className="font-black text-base md:text-lg leading-tight">
                         {city}
