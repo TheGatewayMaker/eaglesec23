@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="bg-background text-foreground relative overflow-hidden py-24 md:py-40 transition-colors duration-300">
+      <section className="bg-background text-foreground relative overflow-hidden py-24 md:py-40 transition-colors duration-300 animate-fade-in">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-80 h-80 bg-accent rounded-full blur-3xl"></div>
         </div>
