@@ -345,9 +345,9 @@ export default function Home() {
             ].map((client) => (
               <div
                 key={client}
-                className="aspect-square border-2 border-primary-foreground p-6 flex items-center justify-center text-center hover:bg-primary-foreground hover:text-primary hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="aspect-square border-2 border-primary-foreground p-4 md:p-6 flex items-center justify-center text-center hover:bg-primary-foreground hover:text-primary hover:shadow-xl transition-all duration-300 cursor-pointer rounded"
               >
-                <p className="font-black text-sm md:text-base leading-tight">{client}</p>
+                <p className="font-black text-xs md:text-base leading-tight">{client}</p>
               </div>
             ))}
           </div>
