@@ -1,348 +1,279 @@
 import { Link } from "react-router-dom";
-import { Shield, Users, Truck, Lock } from "lucide-react";
+import { Shield, Users, Truck, Lock, CheckCircle2, Zap, Award, Target } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="bg-background">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary to-primary relative py-24 md:py-40 overflow-hidden">
-        <div className="absolute inset-0 opacity-15">
-          <div className="absolute -top-32 -right-20 w-72 h-72 bg-accent rounded-full blur-3xl animation-pulse"></div>
-          <div className="absolute -bottom-32 -left-20 w-72 h-72 bg-accent rounded-full blur-3xl animation-pulse"></div>
-        </div>
+    <div className="bg-white">
+      {/* Hero Section - Image Right, Text Left */}
+      <section className="bg-white">
+        <div className="container mx-auto px-6 py-20 md:py-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+            {/* Left Content */}
+            <div className="order-2 md:order-1">
+              <p className="text-sm font-semibold text-primary mb-6 uppercase tracking-wider">
+                Professional Security Since 1992
+              </p>
+              <h1 className="text-5xl md:text-6xl font-black text-primary mb-8 leading-tight">
+                Elite Security Services
+              </h1>
+              <p className="text-xl text-foreground font-semibold mb-12 leading-relaxed">
+                Drawn from the armed forces of Pakistan, our personnel deliver world-class security with precision, discipline, and unwavering commitment to your safety.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/services"
+                  className="bg-primary text-primary-foreground px-8 py-4 font-black text-center rounded-lg hover:shadow-lg transition-all duration-300 inline-block"
+                >
+                  Explore Services
+                </Link>
+                <Link
+                  to="/contact"
+                  className="border-2 border-primary text-primary px-8 py-4 font-black text-center rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 inline-block"
+                >
+                  Request Consultation
+                </Link>
+              </div>
+            </div>
 
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-h1 text-primary-foreground mb-6 font-black leading-tight">
-              Professional Security Services You Can Trust
-            </h1>
-            <p className="text-2xl text-primary-foreground mb-10 opacity-95 leading-relaxed font-semibold">
-              Eagle Security Guards (Pvt) Ltd draws its manpower from armed
-              forces of Pakistan and imparts training to meet critical security
-              requirements reliably and efficiently.
+            {/* Right Image */}
+            <div className="order-1 md:order-2 relative">
+              <div className="bg-slate-200 rounded-2xl overflow-hidden aspect-square flex items-center justify-center">
+                <Shield className="w-32 h-32 text-primary opacity-20" />
+              </div>
+              <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-xl">
+                <p className="font-black text-lg">30+</p>
+                <p className="text-sm font-semibold">Years Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition Section */}
+      <section className="bg-primary text-primary-foreground py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl">
+            <p className="text-xl md:text-3xl font-black leading-relaxed mb-8">
+              We believe that in a world where security has become critical, a personalized approach is key to ensuring you get the protection you deserve.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/services"
-                className="bg-accent text-accent-foreground px-10 py-5 font-black text-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block text-center"
-              >
-                Our Services
-              </Link>
-              <Link
-                to="/contact"
-                className="border-2 border-primary-foreground text-primary-foreground px-10 py-5 font-black text-lg rounded-lg hover:bg-primary-foreground hover:text-primary transition-all duration-300 inline-block text-center"
-              >
-                Get in Touch
-              </Link>
-            </div>
+            <p className="text-lg font-semibold opacity-90">
+              From static guards and elite bodyguards to mobile escorts and advanced security equipment, we provide comprehensive solutions tailored to your unique needs.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Vision & Mission Section */}
-      <section className="py-24 md:py-40 bg-gradient-to-b from-slate-50 to-white">
+      {/* Services Overview - Color Blocked */}
+      <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-h2 text-primary text-center mb-16 font-black">
-              Established Since 1992
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white p-10 rounded-xl border border-border shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-h3 font-black text-primary mb-5">
-                  Our Vision
-                </h3>
-                <p className="text-lg text-foreground leading-relaxed font-semibold">
-                  Vigilance by the dedicated and quality conscious guards is the
-                  ultimate answer to security.
-                </p>
-              </div>
-
-              <div className="bg-white p-10 rounded-xl border border-border shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-h3 font-black text-primary mb-5">
-                  Our Mission
-                </h3>
-                <p className="text-lg text-foreground leading-relaxed font-semibold">
-                  Being managed by competent ex-army officers with wide
-                  experience in designing and implementing effective security
-                  systems to combat prevailing threats, we aim to select and
-                  deploy experienced, well-trained personnel.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white p-10 rounded-xl border border-border shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-h3 font-black text-primary mb-6">
-                Our Background
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold mb-5">
-                Eagle Security Guards was established in 1992. The company has
-                the NOC to operate all over Pakistan including AJK. Today the
-                company is one of the leading private security companies in
-                Pakistan upholding its credible name to provide most reliable,
-                efficient and cost effective guarding services.
-              </p>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                Our head office is located in Islamabad with regional/branch
-                offices in almost all major cities of Pakistan.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Services Overview */}
-      <section className="py-24 md:py-40 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-h2 text-primary text-center mb-5 font-black">
+          <h2 className="text-4xl md:text-5xl font-black text-primary mb-16">
             Our Security Services
           </h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-xl font-semibold">
-            Comprehensive security solutions tailored to your specific needs
-          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {/* Static Guards */}
-            <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-10 rounded-xl border border-border shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-105">
-              <Shield className="w-14 h-14 text-accent mb-6" />
-              <h3 className="text-h3 font-black text-primary mb-4">
-                Static Security Guards
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                Comprehensive personal data screening ensures only vetted,
-                trained guards join our ranks.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {/* Static Guards - Large Featured Card */}
+            <div className="md:col-span-2 lg:col-span-1 bg-gradient-to-br from-slate-900 to-slate-800 text-white p-12 rounded-2xl overflow-hidden relative group">
+              <div className="relative z-10">
+                <Shield className="w-12 h-12 mb-6 text-accent" />
+                <h3 className="text-3xl font-black mb-4">Static Security Guards</h3>
+                <p className="text-lg font-semibold opacity-90 mb-6">
+                  Vetted, trained professionals providing reliable on-site protection
+                </p>
+                <Link to="/services" className="inline-block text-accent font-black hover:opacity-70">
+                  Learn More →
+                </Link>
+              </div>
+              <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-accent opacity-10 rounded-full"></div>
             </div>
 
-            {/* Bodyguards */}
-            <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-10 rounded-xl border border-border shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-105">
-              <Users className="w-14 h-14 text-accent mb-6" />
-              <h3 className="text-h3 font-black text-primary mb-4">
-                Bodyguards
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                Drawn from Special Service Group (SSG) of Pakistan Army. Cream
-                of handpicked men dedicated to difficult missions.
-              </p>
+            {/* Bodyguards Card */}
+            <div className="bg-sky-500 text-white p-12 rounded-2xl overflow-hidden relative group">
+              <div className="relative z-10">
+                <Users className="w-12 h-12 mb-6 text-accent" />
+                <h3 className="text-2xl font-black mb-4">Elite Bodyguards</h3>
+                <p className="text-base font-semibold opacity-90 mb-6">
+                  SSG trained specialists
+                </p>
+                <Link to="/services" className="inline-block text-accent font-black hover:opacity-70">
+                  Learn More →
+                </Link>
+              </div>
             </div>
 
-            {/* Mobile Escorts */}
-            <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-10 rounded-xl border border-border shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-105">
-              <Truck className="w-14 h-14 text-accent mb-6" />
-              <h3 className="text-h3 font-black text-primary mb-4">
-                Mobile Escorts
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                Fully trained teams to protect personnel during movement with
-                defensive measures for any eventuality.
-              </p>
+            {/* Mobile Escorts Card */}
+            <div className="bg-amber-600 text-white p-12 rounded-2xl overflow-hidden relative group">
+              <div className="relative z-10">
+                <Truck className="w-12 h-12 mb-6 text-white" />
+                <h3 className="text-2xl font-black mb-4">Mobile Escorts</h3>
+                <p className="text-base font-semibold opacity-90 mb-6">
+                  Professional movement protection
+                </p>
+                <Link to="/services" className="inline-block text-white font-black hover:opacity-70">
+                  Learn More →
+                </Link>
+              </div>
             </div>
 
-            {/* Security Equipment */}
-            <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-10 rounded-xl border border-border shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-105">
-              <Lock className="w-14 h-14 text-accent mb-6" />
-              <h3 className="text-h3 font-black text-primary mb-4">
-                Security Equipment
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                CCTV cameras, walkthrough gates, wireless comm devices, and
-                barbed wire protection solutions.
-              </p>
+            {/* Security Equipment Card */}
+            <div className="bg-slate-600 text-white p-12 rounded-2xl overflow-hidden relative group">
+              <div className="relative z-10">
+                <Lock className="w-12 h-12 mb-6 text-accent" />
+                <h3 className="text-2xl font-black mb-4">Security Equipment</h3>
+                <p className="text-base font-semibold opacity-90 mb-6">
+                  Advanced surveillance systems
+                </p>
+                <Link to="/services" className="inline-block text-accent font-black hover:opacity-70">
+                  Learn More →
+                </Link>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="text-center">
-            <Link
-              to="/services"
-              className="bg-primary text-primary-foreground px-10 py-5 font-black text-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
-            >
-              View All Services
-            </Link>
+      {/* Why Choose Us - Feature Grid */}
+      <section className="py-24 md:py-32 bg-slate-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-black text-primary mb-6">
+            Why Choose Eagle
+          </h2>
+          <p className="text-xl font-semibold text-foreground mb-16 max-w-2xl">
+            Established excellence since 1992
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: Award, title: "Military Excellence", desc: "Armed forces trained personnel" },
+              { icon: CheckCircle2, title: "Thorough Vetting", desc: "Comprehensive screening process" },
+              { icon: Zap, title: "24/7 Availability", desc: "Round-the-clock support" },
+              { icon: Target, title: "Customized Solutions", desc: "Tailored to your needs" }
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-8 rounded-xl border border-border hover:shadow-lg transition-shadow">
+                <item.icon className="w-10 h-10 text-accent mb-4" />
+                <h3 className="text-xl font-black text-primary mb-3">{item.title}</h3>
+                <p className="text-foreground font-semibold">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Presence Section */}
-      <section className="py-24 md:py-40 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-h2 text-primary text-center mb-5 font-black">
-            Presence Across Pakistan
+          <h2 className="text-4xl md:text-5xl font-black text-primary mb-4">
+            National Presence
           </h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-xl font-semibold">
-            Multiple offices nationwide ensuring reliable coverage and local
-            expertise
+          <p className="text-lg font-semibold text-foreground mb-16 max-w-2xl">
+            Offices across Pakistan ensuring local expertise and reliable coverage
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Head Office */}
-            <div className="bg-white p-10 rounded-xl border border-border shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-h3 font-black text-primary mb-5">
-                Head Office
-              </h3>
-              <p className="text-xl font-black text-accent mb-3">
-                Islamabad
-              </p>
-              <p className="text-lg text-muted-foreground font-semibold">
-                Our central hub providing comprehensive coordination and
-                management
-              </p>
+            <div className="p-8 bg-slate-50 rounded-xl border border-border">
+              <p className="text-accent font-black text-sm mb-2">HEAD OFFICE</p>
+              <h3 className="text-3xl font-black text-primary mb-2">Islamabad</h3>
+              <p className="text-foreground font-semibold">Central coordination hub</p>
             </div>
 
-            {/* Regional Offices */}
-            <div className="bg-white p-10 rounded-xl border border-border shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-h3 font-black text-primary mb-5">
-                Regional Offices
-              </h3>
-              <ul className="space-y-3 text-foreground font-semibold">
-                <li className="text-lg">• South (Multan)</li>
-                <li className="text-lg">• Lahore</li>
-                <li className="text-lg">• Karachi</li>
-                <li className="text-lg">• Jhelum</li>
-                <li className="text-lg">• Gujranwala</li>
-              </ul>
+            <div className="p-8 bg-slate-50 rounded-xl border border-border">
+              <p className="text-accent font-black text-sm mb-2">REGIONAL</p>
+              <h3 className="text-2xl font-black text-primary mb-3">5+ Offices</h3>
+              <div className="text-sm font-semibold text-foreground space-y-1">
+                <p>Lahore • Karachi</p>
+                <p>Multan • Peshawar</p>
+              </div>
             </div>
 
-            {/* Area & Sub Offices */}
-            <div className="bg-white p-10 rounded-xl border border-border shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h3 className="text-h3 font-black text-primary mb-5">
-                Area & Sub Offices
-              </h3>
-              <ul className="space-y-3 text-foreground font-semibold">
-                <li className="text-lg">• Sargodha • Peshawar</li>
-                <li className="text-lg">• Mirpur • Sialkot</li>
-                <li className="text-lg">• Sheikhupura • Chakwal</li>
-                <li className="text-lg">• Muzafarabad • Rawalakot</li>
-                <li className="text-lg">• Gharo • Karachi</li>
-              </ul>
+            <div className="p-8 bg-slate-50 rounded-xl border border-border">
+              <p className="text-accent font-black text-sm mb-2">COVERAGE</p>
+              <h3 className="text-2xl font-black text-primary mb-3">Nationwide</h3>
+              <div className="text-sm font-semibold text-foreground space-y-1">
+                <p>Including AJK</p>
+                <p>Sub-offices countrywide</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-24 md:py-40 bg-white">
+      {/* Trusted By Section */}
+      <section className="py-20 md:py-28 bg-primary text-primary-foreground">
         <div className="container mx-auto px-6">
-          <h2 className="text-h2 text-primary text-center mb-20 font-black">
-            Why Choose Eagle Security Guards
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-            <div className="p-8">
-              <h3 className="text-h3 font-black text-primary mb-6">
-                Military Excellence
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                Our personnel are drawn from armed forces of Pakistan, ensuring
-                top-tier training and discipline in security operations.
-              </p>
-            </div>
-
-            <div className="p-8">
-              <h3 className="text-h3 font-black text-primary mb-6">
-                Thorough Vetting Process
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                Comprehensive personal data screening and database verification
-                ensures no compromised individuals join our team.
-              </p>
-            </div>
-
-            <div className="p-8">
-              <h3 className="text-h3 font-black text-primary mb-6">
-                Elite Specialized Units
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                Bodyguards from Special Service Group (SSG) represent the cream
-                of our handpicked men trained for critical missions.
-              </p>
-            </div>
-
-            <div className="p-8">
-              <h3 className="text-h3 font-black text-primary mb-6">
-                Comprehensive Solutions
-              </h3>
-              <p className="text-lg text-foreground leading-relaxed font-semibold">
-                From personnel protection to equipment solutions, we provide
-                complete security coverage for every scenario.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Link
-              to="/why-choose-us"
-              className="bg-primary text-primary-foreground px-10 py-5 font-black text-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
-      <section className="py-24 md:py-40 bg-gradient-to-b from-slate-50 to-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-h2 text-primary text-center mb-16 font-black">
-            Trusted by Leading Organizations
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-12">
+          <h3 className="text-2xl font-black mb-12">Trusted by Leading Organizations</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {[
               "ARY News",
-              "Rousch Pakistan",
               "Meezan Bank",
               "DESCON",
-              "National Bank of Pakistan",
+              "National Bank",
               "PARCO",
               "UNDP",
               "Imtiaz",
-              "Government of Pakistan",
               "State Life",
-              "The Educators",
               "Allied Schools",
-              "Shifa International Hospitals",
-              "Dawood Hercules",
+              "Shifa Hospitals"
             ].map((client) => (
-              <div
-                key={client}
-                className="bg-white p-6 rounded-xl border border-border flex items-center justify-center text-center hover:shadow-lg transition-shadow duration-300"
-              >
-                <p className="font-black text-foreground text-sm">
-                  {client}
-                </p>
+              <div key={client} className="p-4 border border-primary-foreground rounded-lg text-center">
+                <p className="font-semibold text-sm">{client}</p>
               </div>
             ))}
           </div>
-
-          <p className="text-center text-muted-foreground text-xl font-semibold">
-            Join our growing list of satisfied clients across government,
-            banking, media, and corporate sectors
-          </p>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-primary to-primary py-24 md:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 right-10 w-40 h-40 bg-accent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-32 h-32 bg-accent rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="text-h2 text-primary-foreground mb-7 font-black">
-            Ready to Secure Your Premises?
+      <section className="py-24 md:py-32 bg-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-5xl md:text-6xl font-black text-primary mb-8">
+            Ready to Protect What Matters?
           </h2>
-          <p className="text-2xl text-primary-foreground mb-10 opacity-95 max-w-2xl mx-auto font-semibold">
-            Contact us today for a consultation with our security experts
+          <p className="text-xl font-semibold text-foreground mb-12 max-w-2xl mx-auto">
+            Contact our security experts today for a personalized consultation
           </p>
           <Link
             to="/contact"
-            className="bg-accent text-accent-foreground px-10 py-5 font-black text-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
+            className="bg-primary text-primary-foreground px-10 py-5 font-black text-lg rounded-lg hover:shadow-lg transition-all duration-300 inline-block"
           >
-            Get in Touch Now
+            Start Your Consultation
           </Link>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div>
+              <h4 className="font-black text-lg mb-4">Eagle Security</h4>
+              <p className="text-sm font-semibold opacity-80">Professional security services since 1992</p>
+            </div>
+            <div>
+              <h5 className="font-black mb-4">Services</h5>
+              <ul className="space-y-2 text-sm font-semibold opacity-80">
+                <li><Link to="/services" className="hover:text-accent">Static Guards</Link></li>
+                <li><Link to="/services" className="hover:text-accent">Bodyguards</Link></li>
+                <li><Link to="/services" className="hover:text-accent">Mobile Escorts</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-black mb-4">Company</h5>
+              <ul className="space-y-2 text-sm font-semibold opacity-80">
+                <li><Link to="/about" className="hover:text-accent">About Us</Link></li>
+                <li><Link to="/why-choose-us" className="hover:text-accent">Why Choose Us</Link></li>
+                <li><Link to="/contact" className="hover:text-accent">Contact</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-black mb-4">Contact</h5>
+              <p className="text-sm font-semibold opacity-80">Islamabad, Pakistan</p>
+              <p className="text-sm font-semibold opacity-80 mt-2">Available 24/7</p>
+            </div>
+          </div>
+          <div className="border-t border-slate-700 pt-8">
+            <p className="text-center text-sm font-semibold opacity-60">© 2024 Eagle Security Guards. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
