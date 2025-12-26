@@ -12,10 +12,10 @@ import {
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
       {/* Hero Section - Dark Background with Bold Typography */}
-      <section className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden py-24 md:py-40">
-        <div className="absolute inset-0 opacity-20">
+      <section className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white relative overflow-hidden py-24 md:py-40">
+        <div className="absolute inset-0 opacity-15">
           <div className="absolute top-20 right-20 w-80 h-80 bg-accent rounded-full blur-3xl"></div>
         </div>
 
@@ -26,10 +26,10 @@ export default function Home() {
               <p className="text-sm font-black text-accent mb-6 uppercase tracking-widest">
                 Professional Security Since 1992
               </p>
-              <h1 className="text-5xl md:text-7xl font-black text-white mb-8 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-8 leading-tight">
                 Elite Security Services For Your Peace of Mind
               </h1>
-              <p className="text-lg md:text-xl text-gray-200 font-bold mb-12 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 font-bold mb-12 leading-relaxed">
                 Drawn from the armed forces of Pakistan, our personnel deliver
                 world-class security with precision, discipline, and unwavering
                 commitment to your safety.
@@ -37,13 +37,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-6">
                 <Link
                   to="/services"
-                  className="bg-accent text-accent-foreground px-10 py-5 font-black text-lg text-center rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
+                  className="bg-accent text-accent-foreground px-8 sm:px-10 py-4 sm:py-5 font-black text-base sm:text-lg text-center rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
                 >
                   Explore Services
                 </Link>
                 <Link
                   to="/contact"
-                  className="border-3 border-accent text-accent px-10 py-5 font-black text-lg text-center rounded-xl hover:bg-accent hover:text-accent-foreground transition-all duration-300 inline-block"
+                  className="border-3 border-accent text-accent px-8 sm:px-10 py-4 sm:py-5 font-black text-base sm:text-lg text-center rounded-xl hover:bg-accent hover:text-accent-foreground transition-all duration-300 inline-block"
                 >
                   Request Consultation
                 </Link>
@@ -53,8 +53,8 @@ export default function Home() {
             {/* Right Visual - Hero Image */}
             <div className="relative hidden md:block overflow-hidden rounded-xl shadow-2xl h-96">
               <img
-                src="https://images.pexels.com/photos/3706640/pexels-photo-3706640.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Professional security personnel in uniform"
+                src="https://images.pexels.com/photos/3880225/pexels-photo-3880225.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Professional security personnel in uniform - Military training"
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
