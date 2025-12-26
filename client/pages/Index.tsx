@@ -82,27 +82,27 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Static Guards - Large Featured Card */}
-            <div className="md:col-span-2 lg:col-span-1 bg-gradient-to-br from-slate-800 to-slate-700 text-white p-0 rounded-3xl overflow-hidden relative group hover:shadow-2xl transition-all duration-300">
+            <div className="md:col-span-2 lg:col-span-1 bg-card text-foreground p-0 rounded-3xl overflow-hidden relative group hover:shadow-2xl transition-all duration-300 border border-border">
               <div className="relative overflow-hidden h-64 md:h-80">
                 <img
                   src="https://images.pexels.com/photos/29656069/pexels-photo-29656069.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Professional security guards with tactical gear"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
               </div>
               <div className="relative z-10 p-8 md:p-10">
                 <Shield className="w-12 h-12 mb-4 text-accent" />
-                <h3 className="text-3xl font-black mb-4 leading-tight">
+                <h3 className="text-3xl font-black mb-4 leading-tight text-foreground">
                   Static Security Guards
                 </h3>
-                <p className="text-base md:text-lg font-bold opacity-90 mb-6 leading-relaxed">
+                <p className="text-base md:text-lg font-bold opacity-90 mb-6 leading-relaxed text-muted-foreground">
                   Vetted, trained professionals providing reliable, disciplined
                   on-site protection for your premises
                 </p>
                 <Link
                   to="/services"
-                  className="inline-block text-accent font-black text-lg hover:text-white transition-colors duration-300"
+                  className="inline-block text-accent font-black text-lg hover:text-primary transition-colors duration-300"
                 >
                   Learn More →
                 </Link>
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
 
             {/* Bodyguards Card */}
-            <div className="bg-gradient-to-br from-blue-700 to-blue-600 text-white p-8 md:p-12 rounded-2xl md:rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-blue-600 text-white p-8 md:p-12 rounded-2xl md:rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
               <div className="relative z-10">
                 <Users className="w-10 md:w-14 h-10 md:h-14 mb-6 md:mb-8 text-white" />
                 <h3 className="text-2xl md:text-3xl font-black mb-4 md:mb-6">
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
 
             {/* Mobile Escorts Card */}
-            <div className="bg-gradient-to-br from-orange-700 to-orange-600 text-white p-8 md:p-12 rounded-2xl md:rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-orange-600 text-white p-8 md:p-12 rounded-2xl md:rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
               <div className="relative z-10">
                 <Truck className="w-10 md:w-14 h-10 md:h-14 mb-6 md:mb-8 text-white" />
                 <h3 className="text-2xl md:text-3xl font-black mb-4 md:mb-6">
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
 
             {/* Security Equipment Card */}
-            <div className="bg-gradient-to-br from-slate-700 to-slate-600 text-white p-8 md:p-12 rounded-2xl md:rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-slate-700 text-white p-8 md:p-12 rounded-2xl md:rounded-3xl overflow-hidden relative group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
               <div className="relative z-10">
                 <Lock className="w-10 md:w-14 h-10 md:h-14 mb-6 md:mb-8 text-accent" />
                 <h3 className="text-2xl md:text-3xl font-black mb-4 md:mb-6">
