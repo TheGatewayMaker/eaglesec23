@@ -411,80 +411,80 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-20">
+      <footer className="bg-slate-900 text-white py-24 md:py-32">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
             <div>
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-8">
                 <img
                   src="https://i.ibb.co/s954vR34/eaglesecurityoriginallogo-1-copy.png"
                   alt="Eagle Security Guards Logo"
-                  className="h-12 w-12"
+                  className="h-14 w-14"
                 />
                 <h4 className="font-black text-2xl">Eagle Security</h4>
               </div>
-              <p className="text-base font-bold opacity-80 leading-relaxed">
+              <p className="text-base font-bold opacity-75 leading-relaxed">
                 Professional security services since 1992, protecting businesses
                 and individuals across Pakistan.
               </p>
             </div>
             <div>
-              <h5 className="font-black text-lg mb-6">Services</h5>
-              <ul className="space-y-3 text-base font-bold opacity-80">
+              <h5 className="font-black text-lg mb-8 uppercase tracking-wider">Services</h5>
+              <ul className="space-y-4 text-base font-bold opacity-75">
                 <li>
-                  <Link to="/services" className="hover:text-accent transition">
+                  <Link to="/services" className="hover:text-accent transition-colors duration-300">
                     Static Guards
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className="hover:text-accent transition">
+                  <Link to="/services" className="hover:text-accent transition-colors duration-300">
                     Bodyguards
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className="hover:text-accent transition">
+                  <Link to="/services" className="hover:text-accent transition-colors duration-300">
                     Mobile Escorts
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className="hover:text-accent transition">
+                  <Link to="/services" className="hover:text-accent transition-colors duration-300">
                     Equipment
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h5 className="font-black text-lg mb-6">Company</h5>
-              <ul className="space-y-3 text-base font-bold opacity-80">
+              <h5 className="font-black text-lg mb-8 uppercase tracking-wider">Company</h5>
+              <ul className="space-y-4 text-base font-bold opacity-75">
                 <li>
-                  <Link to="/about" className="hover:text-accent transition">
+                  <Link to="/about" className="hover:text-accent transition-colors duration-300">
                     About Us
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/why-choose-us"
-                    className="hover:text-accent transition"
+                    className="hover:text-accent transition-colors duration-300"
                   >
                     Why Choose Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="hover:text-accent transition">
+                  <Link to="/contact" className="hover:text-accent transition-colors duration-300">
                     Contact
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h5 className="font-black text-lg mb-6">Contact</h5>
-              <p className="text-base font-bold opacity-80 mb-2">
+              <h5 className="font-black text-lg mb-8 uppercase tracking-wider">Contact</h5>
+              <p className="text-base font-bold opacity-75 mb-3">
                 Islamabad, Pakistan
               </p>
-              <p className="text-base font-bold opacity-80 mb-6">
+              <p className="text-base font-bold opacity-75 mb-8">
                 Available 24/7
               </p>
-              <p className="text-base font-bold text-accent">
+              <p className="text-base font-black text-accent">
                 security@eagleguards.pk
               </p>
             </div>
