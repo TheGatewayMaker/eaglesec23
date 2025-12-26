@@ -237,17 +237,17 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us - Feature Grid */}
-      <section className="py-20 md:py-40 bg-white">
+      <section className="py-20 md:py-40 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="container mx-auto px-6">
           {/* Section Title with Visual Styling */}
           <div className="mb-16 md:mb-20">
             <div className="flex items-start gap-3 md:gap-4 mb-6 md:mb-8">
               <div className="w-1.5 md:w-2 h-10 md:h-12 bg-accent rounded-full flex-shrink-0 mt-1"></div>
-              <h2 className="text-3xl md:text-6xl font-black text-primary leading-tight">
+              <h2 className="text-3xl md:text-6xl font-black text-white leading-tight">
                 Why Choose Eagle
               </h2>
             </div>
-            <p className="text-sm md:text-xl font-bold text-foreground ml-6 md:ml-8 max-w-2xl leading-relaxed">
+            <p className="text-sm md:text-xl font-bold text-gray-300 ml-6 md:ml-8 max-w-2xl leading-relaxed">
               Three decades of trusted security excellence
             </p>
           </div>
@@ -277,13 +277,13 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-slate-50 border-2 border-slate-200 p-6 md:p-10 rounded-xl md:rounded-2xl hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300"
+                className="bg-gradient-to-br from-slate-800 to-slate-700 border-2 border-slate-600 p-6 md:p-10 rounded-xl md:rounded-2xl hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300"
               >
                 <item.icon className="w-10 md:w-12 h-10 md:h-12 text-accent mb-4 md:mb-6 transition-transform duration-300" />
-                <h3 className="text-lg md:text-2xl font-black text-primary mb-3 md:mb-4 leading-tight">
+                <h3 className="text-lg md:text-2xl font-black text-white mb-3 md:mb-4 leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-sm md:text-lg font-bold text-slate-700 leading-relaxed">
+                <p className="text-sm md:text-lg font-bold text-gray-300 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
