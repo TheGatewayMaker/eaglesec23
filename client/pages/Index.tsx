@@ -320,7 +320,7 @@ export default function Home() {
             </div>
 
             {/* Clients Card */}
-            <div className="group relative bg-card border-2 border-slate-600 text-foreground p-5 sm:p-8 md:p-10 text-center hover:shadow-2xl hover:border-slate-500 transition-all duration-300">
+            <div className="group relative bg-card border border-slate-600/60 text-foreground p-5 sm:p-8 md:p-10 text-center hover:shadow-2xl hover:border-slate-600 transition-all duration-300">
               <div className="relative z-10">
                 <div className="inline-flex items-center justify-center w-32 h-24 sm:w-40 sm:h-32 md:w-56 md:h-40 bg-gradient-to-br from-slate-700 to-slate-600 mb-4 sm:mb-6 md:mb-8 shadow-md">
                   <AnimatedCounter
