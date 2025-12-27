@@ -109,7 +109,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <Link
                   to="/services"
-                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 >
                   <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg hover:bg-white hover:text-accent transition-all duration-300">
                     Learn More
@@ -145,7 +145,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <Link
                   to="/services"
-                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 >
                   <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg hover:bg-white hover:text-accent transition-all duration-300">
                     Learn More
@@ -181,7 +181,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <Link
                   to="/services"
-                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 >
                   <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg hover:bg-white hover:text-accent transition-all duration-300">
                     Learn More
@@ -217,7 +217,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <Link
                   to="/services"
-                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 >
                   <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg hover:bg-white hover:text-accent transition-all duration-300">
                     Learn More
