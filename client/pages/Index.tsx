@@ -339,7 +339,7 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-card border border-border p-6 md:p-8 transition-shadow duration-300 hover:shadow-lg"
+                className="bg-card border border-border p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:border-accent/50 hover:bg-accent/5"
               >
                 <item.icon className="w-12 md:w-14 h-12 md:h-14 text-accent mb-4 md:mb-6" />
                 <h3 className="text-lg md:text-2xl font-black mb-3 md:mb-4 leading-tight">
