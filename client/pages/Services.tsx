@@ -70,20 +70,20 @@ export default function Services() {
                   </li>
                 </ul>
               </div>
-              <div className="overflow-hidden rounded-xl shadow-lg h-64 md:h-96 group relative">
+              <div className="overflow-hidden rounded-xl shadow-lg h-48 sm:h-56 md:h-96 group relative">
                 <img
                   src="https://images.pexels.com/photos/29656069/pexels-photo-29656069.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Professional security guards with tactical gear"
                   className="w-full h-full object-cover transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-6">
+                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-4 sm:gap-6">
                   <img
                     src="https://i.ibb.co/8gTBwZC9/eaglesecurityoriginallogomonochrome.png"
                     alt="Eagle Security Logo"
-                    className="w-32 md:w-44 h-32 md:h-44 object-contain opacity-100"
+                    className="w-20 sm:w-32 md:w-44 h-20 sm:h-32 md:h-44 object-contain opacity-100"
                   />
-                  <span className="bg-accent text-accent-foreground px-8 py-3 font-black text-lg rounded-none hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
+                  <span className="bg-accent text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg rounded-none hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
                     Get a Quote Now
                   </span>
                 </div>
