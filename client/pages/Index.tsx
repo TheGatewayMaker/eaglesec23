@@ -345,7 +345,7 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="relative aspect-square overflow-hidden border border-border transition-all duration-300 hover:shadow-lg hover:border-accent/50 group"
+                className="relative aspect-square overflow-hidden border border-border transition-all duration-300 hover:shadow-lg hover:border-pk-green-main/60 group"
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center"
