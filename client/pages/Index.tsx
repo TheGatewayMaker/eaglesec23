@@ -424,20 +424,20 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="relative aspect-square overflow-hidden border border-border transition-all duration-300 hover:shadow-lg hover:border-pk-green-main/60 group"
+                className="relative aspect-square overflow-hidden border border-border transition-border duration-300 hover:border-pk-green-main/60 group"
               >
                 <div
-                  className="absolute inset-0 bg-cover bg-center"
+                  className="absolute inset-0 bg-cover bg-center transition-filter duration-300 group-hover:grayscale"
                   style={{
                     backgroundImage: `url('${item.image}')`,
                   }}
                 />
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/55 transition-colors duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
-                  <h3 className="text-xl md:text-2xl font-black mb-3 text-white leading-tight">
+                  <h3 className="text-xl md:text-2xl font-black mb-3 text-white leading-tight transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-pk-green-main group-hover:to-[#2d6b3d] group-hover:bg-clip-text group-hover:text-transparent">
                     {item.title}
                   </h3>
-                  <p className="text-sm md:text-base font-bold text-white/95 leading-relaxed">
+                  <p className="text-sm md:text-base font-bold text-white/95 leading-relaxed transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-pk-green-main group-hover:to-[#2d6b3d] group-hover:bg-clip-text group-hover:text-transparent">
                     {item.desc}
                   </p>
                 </div>
