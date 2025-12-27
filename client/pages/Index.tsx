@@ -354,46 +354,42 @@ export default function Home() {
       </section>
 
       {/* Presence Section */}
-      <section className="py-14 sm:py-20 md:py-48 bg-gradient-to-b from-background to-background/95 transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section className="py-16 sm:py-20 md:py-40 bg-gradient-to-b from-background to-background/95 transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           {/* Section Title with Visual Styling */}
-          <div className="mb-10 sm:mb-16 md:mb-24">
-            <div className="flex items-start gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-8">
-              <div className="w-1 sm:w-1.5 md:w-2 h-8 sm:h-10 md:h-12 bg-accent rounded-full flex-shrink-0 mt-1"></div>
-              <h2 className="text-2xl sm:text-3xl md:text-6xl font-black leading-tight">
+          <div className="mb-12 sm:mb-16 md:mb-24">
+            <div className="flex items-center gap-3 md:gap-4 mb-4 sm:mb-6">
+              <div className="w-1 md:w-1.5 h-10 md:h-12 bg-accent rounded-full flex-shrink-0"></div>
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight">
                 National Presence
               </h2>
             </div>
-            <p className="text-xs sm:text-sm md:text-xl font-bold text-muted-foreground ml-4 sm:ml-6 md:ml-8 max-w-2xl leading-relaxed">
-              Offices across Pakistan ensuring reliable coverage and local
-              expertise
+            <p className="text-sm md:text-lg font-bold text-muted-foreground ml-0 max-w-3xl leading-relaxed">
+              Offices across Pakistan ensuring reliable coverage and local expertise
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Head Office */}
-            <div className="bg-gradient-to-br from-accent to-blue-900 text-white p-6 sm:p-8 md:p-12 group hover:shadow-2xl hover:from-blue-700 hover:to-blue-950 transition-all duration-300">
-              <p className="text-white font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6 opacity-90">
+            <div className="bg-accent text-white p-8 md:p-12 transition-shadow duration-300 hover:shadow-lg">
+              <p className="text-white font-black text-xs uppercase tracking-widest mb-4 md:mb-6 opacity-90">
                 Head Office
               </p>
-              <h3
-                className="text-3xl sm:text-4xl md:text-7xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight text-white"
-                style={{ color: "white" }}
-              >
+              <h3 className="text-4xl md:text-6xl font-black mb-6 md:mb-8 leading-tight">
                 Islamabad
               </h3>
-              <p className="text-sm sm:text-base md:text-lg font-bold opacity-95 leading-relaxed text-white">
+              <p className="text-base md:text-lg font-bold opacity-95 leading-relaxed">
                 Central coordination and management hub
               </p>
             </div>
 
             {/* Regional Offices with City Buttons */}
             <div className="flex flex-col">
-              <div className="mb-6 sm:mb-8 md:mb-10">
-                <p className="text-blue-600 font-black text-xs uppercase tracking-widest mb-4 sm:mb-6 md:mb-8">
+              <div className="mb-8 md:mb-10">
+                <p className="text-accent font-black text-xs uppercase tracking-widest mb-4 md:mb-6">
                   Regional Offices
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
                   {[
                     "Lahore",
                     "Karachi",
@@ -404,7 +400,7 @@ export default function Home() {
                   ].map((city) => (
                     <div
                       key={city}
-                      className="bg-blue-600 text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 text-center hover:bg-white hover:text-blue-600 font-black text-xs sm:text-sm md:text-lg leading-tight transition-all duration-300 hover:shadow-lg"
+                      className="bg-accent text-white px-4 md:px-6 py-3 md:py-4 text-center font-black text-sm md:text-base leading-tight transition-shadow duration-300 hover:shadow-lg"
                     >
                       {city}
                     </div>
@@ -412,14 +408,14 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="border border-border/60 p-5 sm:p-8 md:p-10 group hover:border-accent/50 hover:shadow-2xl transition-all duration-300">
-                <p className="text-muted-foreground font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6">
+              <div className="border border-border bg-card p-6 md:p-8 transition-shadow duration-300 hover:shadow-lg">
+                <p className="text-muted-foreground font-black text-xs uppercase tracking-widest mb-4 md:mb-6">
                   National Coverage
                 </p>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3 sm:mb-4 md:mb-6">
+                <h3 className="text-2xl md:text-3xl font-black mb-4 md:mb-6">
                   Nationwide
                 </h3>
-                <div className="text-xs sm:text-sm md:text-base font-bold text-muted-foreground space-y-1 sm:space-y-2 md:space-y-3 leading-relaxed">
+                <div className="text-sm md:text-base font-bold text-muted-foreground space-y-2 md:space-y-3 leading-relaxed">
                   <p>✓ Including AJK</p>
                   <p>✓ Sub-offices in major cities</p>
                   <p>✓ 24/7 availability everywhere</p>
