@@ -97,7 +97,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
             {/* Bodyguards Card - First */}
             <div
-              className="bg-card text-foreground p-0 overflow-hidden relative group border border-border animate-slide-in-from-bottom transition-all duration-300"
+              className="bg-card text-foreground p-0 overflow-hidden relative group border border-border animate-slide-in-from-bottom transition-all duration-300 hover:shadow-2xl hover:border-accent/50"
               style={{ animationDelay: "100ms" }}
             >
               <div className="relative overflow-hidden h-48 sm:h-56 md:h-80">
