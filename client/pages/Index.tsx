@@ -174,38 +174,29 @@ export default function Home() {
             </div>
 
             {/* Security Equipment Card */}
-            <div
-              className="bg-card text-foreground p-0 overflow-hidden relative group border border-border/60 animate-slide-in-from-bottom transition-all duration-300 hover:shadow-2xl hover:border-accent/40"
-              style={{ animationDelay: "400ms" }}
-            >
-              <div className="relative overflow-hidden h-48 sm:h-56 md:h-80">
+            <div className="bg-card text-foreground border border-border overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+              <div className="relative overflow-hidden h-48 sm:h-56 md:h-72">
                 <img
                   src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Advanced security equipment and surveillance systems"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <Link
-                  to="/services"
-                  className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                >
-                  <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg hover:bg-white hover:text-accent transition-all duration-300">
-                    Learn More
-                  </span>
-                </Link>
               </div>
-              <div className="relative z-10 p-5 sm:p-8 md:p-10">
-                <Lock className="w-10 sm:w-12 h-10 sm:h-12 mb-3 sm:mb-4 text-accent" />
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-black mb-3 sm:mb-4 leading-tight">
+              <div className="p-6 sm:p-8 md:p-10">
+                <Lock className="w-12 md:w-14 h-12 md:h-14 mb-4 md:mb-6 text-accent" />
+                <h3 className="text-2xl md:text-3xl font-black mb-4 md:mb-6 leading-tight">
                   Security Equipment
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg font-bold opacity-90 leading-relaxed text-muted-foreground">
-                  We deploy state-of-the-art surveillance, access control, and
-                  security monitoring systems tailored to your facility. From
-                  CCTV networks to integrated security platforms, our technology
-                  solutions provide 24/7 monitoring and real-time threat
-                  detection for comprehensive protection.
+                <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground mb-6">
+                  We deploy state-of-the-art surveillance, access control, and security monitoring systems tailored to your facility. From CCTV networks to integrated platforms.
                 </p>
+                <Link
+                  to="/services"
+                  className="inline-flex items-center gap-2 text-accent font-black text-sm md:text-base hover:text-accent-foreground transition-colors duration-300"
+                >
+                  Learn More
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </div>
