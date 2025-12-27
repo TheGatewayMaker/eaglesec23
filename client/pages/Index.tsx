@@ -89,7 +89,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 px-4 sm:px-0">
             {/* Service 1 - Bodyguards */}
             <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-all duration-300 h-full flex flex-col hover:border-accent/30">
+              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
                   <img
                     src="https://i.ibb.co/1fF8J0kc/Screenshot-2025-12-27-at-10-18-51-PM.png"
