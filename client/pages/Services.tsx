@@ -175,28 +175,28 @@ export default function Services() {
                   personnel during movement. Our escort teams are fully trained
                   in defensive measures to meet any eventuality.
                 </p>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground font-black text-base md:text-lg">
+                <ul className="space-y-5">
+                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
                       Protection during personnel movement and transit
                     </span>
                   </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground font-black text-base md:text-lg">
+                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
                       Fully trained teams in defensive measures
                     </span>
                   </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground font-black text-base md:text-lg">
+                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
                       Emergency response protocols for any situation
                     </span>
                   </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                    <span className="text-muted-foreground font-black text-base md:text-lg">
+                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
                       Discrete and professional protection services
                     </span>
                   </li>
