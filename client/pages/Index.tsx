@@ -352,7 +352,7 @@ export default function Home() {
                 title: "Military Excellence",
                 desc: "Personnel from Pakistan's armed forces with proven expertise",
                 image:
-                  "https://i.ibb.co/Dfm7BDgy/Screenshot-2025-12-27-at-10-20-35-PM.png",
+                  "https://i.ibb.co/bM3xPJ6k/Screenshot-2025-12-27-at-10-22-08-PM.png",
               },
               {
                 title: "Thorough Vetting",
@@ -370,7 +370,7 @@ export default function Home() {
                 title: "Customized Solutions",
                 desc: "Tailored security plans for your specific requirements",
                 image:
-                  "https://i.ibb.co/bM3xPJ6k/Screenshot-2025-12-27-at-10-22-08-PM.png",
+                  "https://i.ibb.co/Dfm7BDgy/Screenshot-2025-12-27-at-10-20-35-PM.png",
               },
             ].map((item, i) => (
               <div
