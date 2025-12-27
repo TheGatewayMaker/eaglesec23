@@ -21,7 +21,8 @@ export default function Services() {
             Our Security Services
           </h1>
           <p className="text-sm md:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
-            Comprehensive security solutions designed to protect what matters most to you
+            Comprehensive security solutions designed to protect what matters
+            most to you
           </p>
         </div>
       </section>

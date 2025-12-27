@@ -88,7 +88,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-sm md:text-lg font-bold text-muted-foreground ml-0 sm:ml-0 md:ml-0 max-w-3xl leading-relaxed">
-              Comprehensive solutions designed to protect what matters most to you
+              Comprehensive solutions designed to protect what matters most to
+              you
             </p>
           </div>
 
@@ -108,7 +109,10 @@ export default function Home() {
                   Elite Bodyguards
                 </h3>
                 <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground mb-6">
-                  Our SSG-trained specialists deliver executive-level protection with tactical expertise and discretion. Every bodyguard undergoes rigorous military training and psychological evaluation.
+                  Our SSG-trained specialists deliver executive-level protection
+                  with tactical expertise and discretion. Every bodyguard
+                  undergoes rigorous military training and psychological
+                  evaluation.
                 </p>
                 <Link
                   to="/services"
@@ -135,7 +139,9 @@ export default function Home() {
                   Static Security Guards
                 </h3>
                 <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground mb-6">
-                  Our vetted security professionals provide round-the-clock on-site protection with military discipline and precision. Each guard undergoes comprehensive background screening.
+                  Our vetted security professionals provide round-the-clock
+                  on-site protection with military discipline and precision.
+                  Each guard undergoes comprehensive background screening.
                 </p>
                 <Link
                   to="/services"
@@ -162,7 +168,9 @@ export default function Home() {
                   Mobile Escorts
                 </h3>
                 <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground mb-6">
-                  Our mobile escort teams provide seamless protection during transit and travel. We offer route planning, threat assessment, and coordinated security response.
+                  Our mobile escort teams provide seamless protection during
+                  transit and travel. We offer route planning, threat
+                  assessment, and coordinated security response.
                 </p>
                 <Link
                   to="/services"
@@ -189,7 +197,9 @@ export default function Home() {
                   Security Equipment
                 </h3>
                 <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground mb-6">
-                  We deploy state-of-the-art surveillance, access control, and security monitoring systems tailored to your facility. From CCTV networks to integrated platforms.
+                  We deploy state-of-the-art surveillance, access control, and
+                  security monitoring systems tailored to your facility. From
+                  CCTV networks to integrated platforms.
                 </p>
                 <Link
                   to="/services"
@@ -366,7 +376,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-sm md:text-lg font-bold text-muted-foreground ml-0 max-w-3xl leading-relaxed">
-              Offices across Pakistan ensuring reliable coverage and local expertise
+              Offices across Pakistan ensuring reliable coverage and local
+              expertise
             </p>
           </div>
 
@@ -471,7 +482,8 @@ export default function Home() {
             Ready to Protect What Matters?
           </h2>
           <p className="text-base md:text-xl font-bold text-muted-foreground mb-10 md:mb-14 leading-relaxed">
-            Contact our security experts today for a personalized consultation and secure your peace of mind
+            Contact our security experts today for a personalized consultation
+            and secure your peace of mind
           </p>
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
             <Link
@@ -501,7 +513,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-sm md:text-lg font-bold text-muted-foreground ml-0 max-w-3xl leading-relaxed">
-              Visit us at our Islamabad headquarters for consultations and inquiries
+              Visit us at our Islamabad headquarters for consultations and
+              inquiries
             </p>
           </div>
 
