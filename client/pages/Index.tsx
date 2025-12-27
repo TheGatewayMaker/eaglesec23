@@ -259,7 +259,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-black leading-tight mb-4 sm:mb-6 md:mb-8 text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-black leading-tight mb-4 sm:mb-6 md:mb-8">
               Why Professional Security Matters
             </h2>
             <p className="text-sm sm:text-base md:text-xl font-bold opacity-95 leading-relaxed mb-4 sm:mb-6 text-foreground">
