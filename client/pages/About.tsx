@@ -102,18 +102,18 @@ export default function About() {
       </section>
 
       {/* Vision, Mission, Values Section - Enhanced */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-background via-accent/5 to-background transition-colors duration-300">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4">
+      <section className="py-14 sm:py-20 md:py-28 bg-gradient-to-b from-background via-accent/5 to-background transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-3 sm:mb-4">
               The Eagle Foundation
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground font-bold max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-xl text-muted-foreground font-bold max-w-2xl mx-auto">
               Our vision, mission, and values are the pillars upon which every decision, every action, and every commitment is built.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
             {/* Vision */}
             <div className="bg-card p-10 md:p-12 rounded-2xl border-2 border-border shadow-lg hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300 animate-slide-in-from-bottom">
               <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-accent/20 mb-8">
