@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Linkedin, Facebook, Twitter } from "lucide-react";
 
 export default function Footer() {
@@ -35,40 +34,40 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/"
+                <a
+                  href="/"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/services"
+                <a
+                  href="/services"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   Services
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/about"
+                <a
+                  href="/about"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   About Us
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/contact"
+                <a
+                  href="/contact"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -80,40 +79,40 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/services"
+                <a
+                  href="/services"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   Elite Bodyguards
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/services"
+                <a
+                  href="/services"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   Mobile Escorts
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/services"
+                <a
+                  href="/services"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   Static Guards
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/services"
+                <a
+                  href="/services"
                   className="font-bold text-white hover:text-green-300 transition-colors duration-300 inline-flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 bg-green-300 rounded-full"></span>
                   Security Equipment
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
