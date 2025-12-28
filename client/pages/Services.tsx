@@ -516,48 +516,54 @@ export default function Services() {
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title */}
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
-            <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
-              <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
-                Why Choose Eagle Security
-              </h2>
-            </div>
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
-              Three decades of trusted expertise and professional excellence
-            </p>
+            <AnimatedFadeInDown delay={0} threshold={0.2}>
+              <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
+                <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
+                  Why Choose Eagle Security
+                </h2>
+              </div>
+            </AnimatedFadeInDown>
+            <AnimatedFadeInDown delay={100} threshold={0.2}>
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
+                Three decades of trusted expertise and professional excellence
+              </p>
+            </AnimatedFadeInDown>
           </div>
 
-          <div className="relative overflow-hidden bg-gradient-to-r from-accent/10 to-accent/5 border border-accent/30 rounded-xl p-6 sm:p-8 md:p-10 lg:p-14">
-            <div className="absolute -right-20 -top-20 w-52 h-52 bg-accent/5 rounded-full"></div>
-            <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-accent/5 rounded-full"></div>
-            <div className="relative z-10">
-              <p className="text-xs font-black text-accent uppercase tracking-widest mb-3 sm:mb-4">
-                Professional Advantage
-              </p>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4 sm:mb-6 text-foreground max-w-3xl">
-                Military-Trained Personnel & Advanced Solutions
-              </h3>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed mb-6 sm:mb-8">
-                From comprehensive threat assessment to rapid response
-                protocols, our personnel deliver world-class security backed by
-                military expertise, rigorous training standards, and proven
-                track record spanning over 30 years of trusted service to
-                Pakistan's leading organizations.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
-                <Link
-                  to="/contact"
-                  className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
-                >
-                  Request Consultation
-                </Link>
-                <WhatsAppButton
-                  size="md"
-                  message="I'm interested in learning more about Eagle Security's professional security services."
-                />
+          <AnimatedFadeInUp delay={200} threshold={0.2}>
+            <div className="relative overflow-hidden bg-gradient-to-r from-accent/10 to-accent/5 border border-accent/30 rounded-xl p-6 sm:p-8 md:p-10 lg:p-14">
+              <div className="absolute -right-20 -top-20 w-52 h-52 bg-accent/5 rounded-full"></div>
+              <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-accent/5 rounded-full"></div>
+              <div className="relative z-10">
+                <p className="text-xs font-black text-accent uppercase tracking-widest mb-3 sm:mb-4">
+                  Professional Advantage
+                </p>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4 sm:mb-6 text-foreground max-w-3xl">
+                  Military-Trained Personnel & Advanced Solutions
+                </h3>
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed mb-6 sm:mb-8">
+                  From comprehensive threat assessment to rapid response
+                  protocols, our personnel deliver world-class security backed by
+                  military expertise, rigorous training standards, and proven
+                  track record spanning over 30 years of trusted service to
+                  Pakistan's leading organizations.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
+                  <Link
+                    to="/contact"
+                    className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+                  >
+                    Request Consultation
+                  </Link>
+                  <WhatsAppButton
+                    size="md"
+                    message="I'm interested in learning more about Eagle Security's professional security services."
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </AnimatedFadeInUp>
         </div>
       </section>
 
