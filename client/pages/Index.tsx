@@ -90,9 +90,24 @@ export default function Home() {
 
       {/* Services Overview */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -right-48 w-[550px] h-[550px] bg-accent/24 rounded-full blur-3xl opacity-95"></div>
-        <div className="absolute bottom-0 -left-32 w-[480px] h-[480px] bg-accent/20 rounded-full blur-2xl opacity-85"></div>
+        {/* Decorative Background Elements - Services Section */}
+        <svg className="absolute top-0 right-0 w-1/2 h-full opacity-35" viewBox="0 0 600 800" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="servicesGradient" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.5}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.1}} />
+            </linearGradient>
+          </defs>
+          <path d="M600,100 Q500,150 400,100 Q300,50 200,100 Q100,150 0,100 L0,300 Q150,250 300,300 Q450,350 600,300 Z" fill="url(#servicesGradient)"/>
+          <circle cx="500" cy="200" r="60" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.25"/>
+          <circle cx="100" cy="400" r="40" fill="var(--accent)" opacity="0.08"/>
+          <circle cx="400" cy="600" r="50" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2"/>
+          <path d="M50,500 L200,450 M150,550 L350,500 M200,650 L450,600" stroke="var(--accent)" strokeWidth="1.5" opacity="0.25" fill="none"/>
+        </svg>
+        <svg className="absolute bottom-0 -left-32 w-1/3 h-1/2 opacity-30" viewBox="0 0 400 400" preserveAspectRatio="xMinYMax slice" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,200 Q100,100 200,150 Q300,200 400,100 L400,400 L0,400 Z" fill="var(--accent)" opacity="0.06"/>
+          <circle cx="50" cy="300" r="70" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.2" strokeDasharray="5,5"/>
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
