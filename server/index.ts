@@ -21,28 +21,9 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
-  // Serve static assets
-  const isDev = process.env.NODE_ENV !== "production";
-
-  if (isDev) {
-    // In development, Vite dev server handles static files
-    // Just define routes for each page
-    const pages = [
-      { route: "/", file: "index.html" },
-      { route: "/services", file: "pages/services.html" },
-      { route: "/about", file: "pages/about.html" },
-      { route: "/why-choose-us", file: "pages/why-choose-us.html" },
-      { route: "/contact", file: "pages/contact.html" },
-    ];
-
-    // Define routes - they will be handled by Vite dev server
-    pages.forEach(({ route }) => {
-      app.get(route, (_req: Request, res: Response) => {
-        res.redirect(route);
-      });
-    });
-  } else {
-    // In production, serve the built files
+  // Serve static assets in production
+  // In development, Vite dev server handles everything
+  if (process.env.NODE_ENV === "production") {
     const distPath = path.resolve(__dirname, "../pages");
 
     // Serve static assets
