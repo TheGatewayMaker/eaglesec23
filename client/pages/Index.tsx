@@ -469,14 +469,14 @@ export default function Home() {
             {/* Left Side - Cities and Offices */}
             <div className="flex flex-col space-y-8 md:space-y-10">
               {/* Head Office */}
-              <div className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white p-8 md:p-12 transition-all duration-300 hover:shadow-lg hover:bg-white hover:text-foreground group cursor-pointer border border-pk-green-main/20">
-                <p className="font-black text-xs uppercase tracking-widest mb-4 md:mb-6 group-hover:text-foreground transition-colors duration-300">
+              <div className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white p-8 md:p-12 border border-pk-green-main/20">
+                <p className="font-black text-xs uppercase tracking-widest mb-4 md:mb-6 text-white">
                   Head Office
                 </p>
-                <h3 className="text-4xl md:text-6xl font-black mb-6 md:mb-8 leading-tight group-hover:text-foreground transition-colors duration-300">
+                <h3 className="text-4xl md:text-6xl font-black mb-6 md:mb-8 leading-tight text-white">
                   Islamabad
                 </h3>
-                <p className="text-base md:text-lg font-black group-hover:text-foreground transition-colors duration-300 leading-relaxed">
+                <p className="text-base md:text-lg font-black text-white leading-relaxed">
                   Central coordination and management hub
                 </p>
               </div>
