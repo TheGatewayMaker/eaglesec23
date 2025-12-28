@@ -474,9 +474,23 @@ export default function Home() {
 
       {/* Statistics Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-36 w-[480px] h-[480px] bg-accent/24 rounded-full blur-3xl opacity-90"></div>
-        <div className="absolute bottom-1/4 right-0 w-[520px] h-[520px] bg-accent/26 rounded-full blur-2xl opacity-95"></div>
+        {/* Decorative Background Elements - Stats Section */}
+        <svg className="absolute top-0 left-0 w-1/3 h-1/2 opacity-35" viewBox="0 0 300 300" preserveAspectRatio="xMinYMin slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="statsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.4}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.08}} />
+            </linearGradient>
+          </defs>
+          <path d="M0,50 Q75,0 150,50 Q225,100 300,50 L300,0 L0,0 Z" fill="url(#statsGradient)"/>
+          <circle cx="150" cy="150" r="80" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2" strokeDasharray="5,3"/>
+          <line x1="30" y1="100" x2="270" y2="100" stroke="var(--accent)" strokeWidth="1" opacity="0.15"/>
+        </svg>
+        <svg className="absolute bottom-0 right-0 w-2/5 h-3/5 opacity-30" viewBox="0 0 500 400" preserveAspectRatio="xMaxYMax slice" xmlns="http://www.w3.org/2000/svg">
+          <path d="M500,100 Q400,50 300,100 Q200,150 100,100 Q0,50 0,200 L500,200 Z" fill="var(--accent)" opacity="0.06"/>
+          <path d="M0,250 Q125,200 250,250 Q375,300 500,250 L500,400 L0,400 Z" fill="var(--accent)" opacity="0.04"/>
+          <circle cx="400" cy="300" r="60" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.2"/>
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
