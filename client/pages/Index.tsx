@@ -663,7 +663,7 @@ export default function Home() {
           </div>
 
           {/* Summary Banner */}
-          <div>
+          <AnimatedSlideInFromBottom threshold={0.2}>
             <div className="relative overflow-hidden bg-gradient-to-r from-pk-green-main/10 to-accent/10 border border-pk-green-main/30 rounded-xl p-6 sm:p-8 md:p-10 lg:p-14">
               <div className="absolute -right-20 -top-20 w-52 h-52 bg-accent/5 rounded-full"></div>
               <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-pk-green-main/5 rounded-full"></div>
@@ -685,7 +685,7 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </AnimatedSlideInFromBottom>
         </div>
       </section>
 
