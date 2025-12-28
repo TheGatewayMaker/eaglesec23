@@ -112,37 +112,45 @@ export default function Services() {
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="md:col-span-7">
-              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 lg:mb-8">
-                <div className="w-1 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
-                <p className="text-xs font-black text-accent uppercase tracking-widest">
-                  Comprehensive Security Solutions
+            <AnimatedFadeInLeft className="md:col-span-7" threshold={0.2}>
+              <AnimatedFadeInDown delay={0} duration="normal">
+                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 lg:mb-8">
+                  <div className="w-1 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
+                  <p className="text-xs font-black text-accent uppercase tracking-widest">
+                    Comprehensive Security Solutions
+                  </p>
+                </div>
+              </AnimatedFadeInDown>
+              <AnimatedFadeInDown delay={100} duration="normal">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 lg:mb-8 leading-tight text-foreground">
+                  Elite Security Services Tailored For You
+                </h1>
+              </AnimatedFadeInDown>
+              <AnimatedFadeInDown delay={200} duration="normal">
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground font-bold mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-2xl">
+                  From static guards to mobile escorts, our comprehensive security
+                  portfolio delivers world-class protection with military
+                  precision and professional excellence.
                 </p>
-              </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 lg:mb-8 leading-tight text-foreground">
-                Elite Security Services Tailored For You
-              </h1>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground font-bold mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-2xl">
-                From static guards to mobile escorts, our comprehensive security
-                portfolio delivers world-class protection with military
-                precision and professional excellence.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
-                <Link
-                  to="/contact"
-                  className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
-                >
-                  Get a Quote Now
-                </Link>
-                <Link
-                  to="/#services"
-                  className="border-2 border-accent text-accent px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
-                >
-                  Explore Services
-                </Link>
-                <WhatsAppButton size="md" />
-              </div>
-            </div>
+              </AnimatedFadeInDown>
+              <AnimatedFadeInUp delay={300} duration="normal">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
+                  <Link
+                    to="/contact"
+                    className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+                  >
+                    Get a Quote Now
+                  </Link>
+                  <Link
+                    to="/#services"
+                    className="border-2 border-accent text-accent px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+                  >
+                    Explore Services
+                  </Link>
+                  <WhatsAppButton size="md" />
+                </div>
+              </AnimatedFadeInUp>
+            </AnimatedFadeInLeft>
 
             {/* Right Visual - Empty for background image */}
             <div className="hidden md:block md:col-span-5"></div>
