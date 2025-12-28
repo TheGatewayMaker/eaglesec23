@@ -46,36 +46,33 @@ function expressPlugin(): Plugin {
       server.middlewares.use(app);
 
       // Add middleware to serve appropriate HTML for each route
-      return () => {
-        server.middlewares.use((req, res, next) => {
-          const routes: Record<string, string> = {
-            "/": "/index.html",
-            "/services": "/pages/services.html",
-            "/about": "/pages/about.html",
-            "/why-choose-us": "/pages/why-choose-us.html",
-            "/contact": "/pages/contact.html",
-          };
+      server.middlewares.use((req, res, next) => {
+        const routes: Record<string, string> = {
+          "/": "/index.html",
+          "/services": "/pages/services.html",
+          "/about": "/pages/about.html",
+          "/why-choose-us": "/pages/why-choose-us.html",
+          "/contact": "/pages/contact.html",
+        };
 
-          const pathName = req.url.split("?")[0];
-          const htmlFile = routes[pathName];
+        const pathName = req.url.split("?")[0];
+        const htmlFile = routes[pathName];
 
-          if (htmlFile) {
-            // Read and transform the HTML file through Vite
-            const fs = require("fs");
-            const htmlPath = path.resolve(__dirname, htmlFile);
-            if (fs.existsSync(htmlPath)) {
-              res.setHeader("Content-Type", "text/html");
-              const html = fs.readFileSync(htmlPath, "utf-8");
-              // Let Vite handle the transformation of the HTML
-              return server.transformIndexHtml(req.url, html).then((html) => {
-                res.end(html);
-              });
-            }
+        if (htmlFile) {
+          const htmlPath = path.resolve(__dirname, htmlFile);
+          if (fs.existsSync(htmlPath)) {
+            res.setHeader("Content-Type", "text/html");
+            const html = fs.readFileSync(htmlPath, "utf-8");
+            // Let Vite handle the transformation of the HTML
+            server.transformIndexHtml(req.url, html).then((transformedHtml) => {
+              res.end(transformedHtml);
+            });
+            return;
           }
+        }
 
-          next();
-        });
-      };
+        next();
+      });
     },
   };
 }
