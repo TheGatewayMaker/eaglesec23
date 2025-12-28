@@ -437,8 +437,8 @@ export default function Home() {
       {/* Statistics Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
         {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-36 w-[480px] h-[480px] bg-accent/12 rounded-full blur-3xl opacity-55"></div>
-        <div className="absolute bottom-1/4 right-0 w-[520px] h-[520px] bg-accent/14 rounded-full blur-2xl opacity-60"></div>
+        <div className="absolute top-0 -left-36 w-[480px] h-[480px] bg-accent/24 rounded-full blur-3xl opacity-90"></div>
+        <div className="absolute bottom-1/4 right-0 w-[520px] h-[520px] bg-accent/26 rounded-full blur-2xl opacity-95"></div>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
