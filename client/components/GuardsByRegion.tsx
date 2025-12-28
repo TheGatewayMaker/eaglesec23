@@ -91,7 +91,7 @@ export default function GuardsByRegion() {
               <Bar
                 dataKey="guards"
                 radius={[0, 0, 0, 0]}
-                barSize={65}
+                barSize={80}
                 isAnimationActive={true}
               >
                 {data.map((entry, index) => (
@@ -116,7 +116,7 @@ export default function GuardsByRegion() {
                     className="w-4 h-4 rounded-full mx-auto mb-4"
                     style={{ backgroundColor: colors[index] }}
                   ></div>
-                  <p className="text-sm md:text-lg font-black text-foreground mb-3 leading-tight">
+                  <p className="text-base md:text-xl font-black text-foreground mb-3 leading-tight">
                     {item.name}
                   </p>
                   <p
