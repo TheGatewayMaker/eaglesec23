@@ -928,9 +928,21 @@ export default function Home() {
         id="head-office-location"
         className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/98 to-background transition-colors duration-300 relative overflow-hidden"
       >
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-32 w-[480px] h-[480px] bg-accent/26 rounded-full blur-3xl opacity-95"></div>
-        <div className="absolute bottom-0 -right-40 w-[520px] h-[520px] bg-accent/24 rounded-full blur-2xl opacity-90"></div>
+        {/* Decorative Background Elements - Location Section */}
+        <svg className="absolute top-0 left-0 w-2/5 h-1/2 opacity-35" viewBox="0 0 400 300" preserveAspectRatio="xMinYMin slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="locationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.4}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.08}} />
+            </linearGradient>
+          </defs>
+          <path d="M0,80 Q100,40 200,80 Q300,120 400,80 L400,0 L0,0 Z" fill="url(#locationGradient)"/>
+          <circle cx="200" cy="150" r="50" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.25"/>
+        </svg>
+        <svg className="absolute bottom-0 right-0 w-1/3 h-2/5 opacity-30" viewBox="0 0 400 300" preserveAspectRatio="xMaxYMax slice" xmlns="http://www.w3.org/2000/svg">
+          <path d="M400,100 Q300,50 200,100 Q100,150 0,100 L0,300 L400,300 Z" fill="var(--accent)" opacity="0.05"/>
+          <circle cx="300" cy="200" r="60" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2" strokeDasharray="6,4"/>
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="mb-8 sm:mb-12 md:mb-16">
