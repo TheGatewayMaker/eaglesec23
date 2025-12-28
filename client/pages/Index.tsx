@@ -583,9 +583,22 @@ export default function Home() {
 
       {/* Why Choose Us - Feature Grid */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/95 via-background to-background transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-accent/25 rounded-full blur-3xl opacity-90"></div>
-        <div className="absolute bottom-0 -left-40 w-[450px] h-[450px] bg-accent/22 rounded-full blur-2xl opacity-85"></div>
+        {/* Decorative Background Elements - Why Choose Section */}
+        <svg className="absolute top-1/3 -right-40 w-1/2 h-2/3 opacity-35" viewBox="0 0 500 600" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="whyGradient" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.5}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.08}} />
+            </linearGradient>
+          </defs>
+          <path d="M500,100 Q400,150 300,100 Q200,50 100,100 Q0,150 0,250 L500,250 Z" fill="url(#whyGradient)"/>
+          <path d="M0,400 Q125,350 250,400 Q375,450 500,400 L500,600 L0,600 Z" fill="var(--accent)" opacity="0.05"/>
+          <circle cx="400" cy="200" r="70" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.25"/>
+        </svg>
+        <svg className="absolute bottom-0 -left-32 w-2/5 h-1/2 opacity-25" viewBox="0 0 400 300" preserveAspectRatio="xMinYMax slice" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,100 Q100,50 200,100 Q300,150 400,100 L400,300 L0,300 Z" fill="var(--accent)" opacity="0.07"/>
+          <circle cx="100" cy="200" r="50" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2" strokeDasharray="4,4"/>
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
