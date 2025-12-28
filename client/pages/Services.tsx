@@ -3,7 +3,6 @@ import {
   Users,
   Truck,
   Lock,
-  CheckCircle2,
   ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -11,7 +10,10 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Services() {
   return (
-    <div className="bg-background transition-colors duration-300">
+    <div className="text-foreground" style={{
+      background:
+        "linear-gradient(to bottom, #f9f9f9 0%, #f3f3f3 40%, #efefef 100%)",
+    }}>
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-background via-background to-background/95 text-foreground relative overflow-hidden py-10 sm:py-14 md:py-20 lg:py-32 transition-colors duration-300">
         {/* Decorative Background Elements - Hero Section */}
@@ -23,7 +25,7 @@ export default function Services() {
         >
           <defs>
             <linearGradient
-              id="servicesHeroGradient"
+              id="heroWaveGradient"
               x1="0%"
               y1="0%"
               x2="100%"
@@ -41,7 +43,7 @@ export default function Services() {
           </defs>
           <path
             d="M0,200 Q300,100 600,200 T1200,200 L1200,0 L0,0 Z"
-            fill="url(#servicesHeroGradient)"
+            fill="url(#heroWaveGradient)"
             opacity="0.6"
           />
           <path
@@ -87,21 +89,60 @@ export default function Services() {
           />
         </svg>
 
+        {/* Hero Background Image - Right Half Only */}
+        <div
+          className="hidden md:block absolute right-8 lg:right-12 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
+          style={{
+            backgroundImage:
+              "url('https://i.ibb.co/Dg43BJC0/Screenshot-2025-12-27-at-10-23-30-PM.png')",
+            backgroundSize: "contain",
+            backgroundPosition: "right center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-background/10 to-transparent"></div>
+        </div>
+
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 md:mb-6">
-            <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 lg:gap-12 items-center">
+            {/* Left Content */}
+            <div className="md:col-span-7">
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 lg:mb-8">
+                <div className="w-1 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
+                <p className="text-xs font-black text-accent uppercase tracking-widest">
+                  Comprehensive Security Solutions
+                </p>
+              </div>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 lg:mb-8 leading-tight text-foreground">
+                Elite Security Services Tailored For You
+              </h1>
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground font-bold mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-2xl">
+                From static guards to mobile escorts, our comprehensive security portfolio delivers world-class protection with military precision and professional excellence.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
+                <Link
+                  to="/contact"
+                  className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+                >
+                  Get a Quote Now
+                </Link>
+                <Link
+                  to="/#services"
+                  className="border-2 border-accent text-accent px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+                >
+                  Explore Services
+                </Link>
+                <WhatsAppButton size="md" />
+              </div>
+            </div>
+
+            {/* Right Visual - Empty for background image */}
+            <div className="hidden md:block md:col-span-5"></div>
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-4 md:mb-6 text-foreground leading-tight">
-            Our Security Services
-          </h1>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
-            Comprehensive security solutions designed to protect what matters
-            most to you
-          </p>
         </div>
       </section>
 
-      {/* Services Overview - Professional Grid Layout */}
+      {/* Services Grid Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300 relative overflow-hidden">
         {/* Decorative Background Elements - Services Section */}
         <svg
@@ -112,7 +153,7 @@ export default function Services() {
         >
           <defs>
             <linearGradient
-              id="servicesGridGradient"
+              id="servicesGradient"
               x1="100%"
               y1="0%"
               x2="0%"
@@ -130,7 +171,7 @@ export default function Services() {
           </defs>
           <path
             d="M600,100 Q500,150 400,100 Q300,50 200,100 Q100,150 0,100 L0,300 Q150,250 300,300 Q450,350 600,300 Z"
-            fill="url(#servicesGridGradient)"
+            fill="url(#servicesGradient)"
           />
           <circle
             cx="500"
@@ -188,11 +229,24 @@ export default function Services() {
           />
         </svg>
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
-            {/* Static Security Guards - Card Style */}
-            <div className="group overflow-hidden transition-all duration-300 animate-fade-in">
-              <div className="bg-card border border-border/50 overflow-hidden transition-all duration-300 h-full flex flex-col hover:border-accent/30 hover:shadow-lg">
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
+          {/* Section Title */}
+          <div id="services" className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
+            <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
+              <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
+                Our Security Services
+              </h2>
+            </div>
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
+              Comprehensive solutions designed to protect what matters most to you
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+            {/* Service 1 - Static Security Guards */}
+            <div className="group overflow-hidden transition-all duration-300">
+              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
                   <img
                     src="https://i.ibb.co/Dg43BJC0/Screenshot-2025-12-27-at-10-23-30-PM.png"
@@ -200,65 +254,38 @@ export default function Services() {
                     className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                    <button className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg">
+                    <Link
+                      to="/contact"
+                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                    >
                       Get a Quote
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 md:mb-6">
-                    <Shield className="w-7 sm:w-9 md:w-10 lg:w-12 h-7 sm:h-9 md:h-10 lg:h-12 text-accent flex-shrink-0" />
-                    <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground">
-                      Static Security Guards
-                    </h2>
+                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                    <Shield className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base lg:text-lg font-bold">
-                    Eagle Security Guards draws its main pool of manpower from
-                    armed forces of Pakistan and imparts training to meet critical
-                    security requirements reliably and efficiently.
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                    Static Security Guards
+                  </h3>
+                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                    Our vetted security professionals drawn from armed forces provide round-the-clock on-site protection with military discipline and precision. Each guard undergoes comprehensive background screening and professional training.
                   </p>
-                  <ul className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Comprehensive personal data screening and vetting process
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Database verification to ensure no blacklisted guards join
-                        ranks
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Professional training in security protocols and procedures
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Reliable and efficient protection for premises
-                      </span>
-                    </li>
-                  </ul>
-                  <div className="mt-auto pt-4 sm:pt-6 md:pt-8">
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-lg"
-                    >
-                      Get a Quote Now
-                    </Link>
-                  </div>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
+                  >
+                    Learn More
+                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
+                  </Link>
                 </div>
               </div>
             </div>
 
-            {/* Bodyguards - Card Style */}
-            <div className="group overflow-hidden transition-all duration-300 animate-fade-in" style={{ animationDelay: "100ms" }}>
-              <div className="bg-card border border-border/50 overflow-hidden transition-all duration-300 h-full flex flex-col hover:border-accent/30 hover:shadow-lg">
+            {/* Service 2 - Bodyguards */}
+            <div className="group overflow-hidden transition-all duration-300">
+              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
                   <img
                     src="https://i.ibb.co/MxQRyL7x/Screenshot-2025-12-27-at-10-19-22-PM.png"
@@ -266,64 +293,38 @@ export default function Services() {
                     className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                    <button className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg">
+                    <Link
+                      to="/contact"
+                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                    >
                       Get a Quote
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 md:mb-6">
-                    <Users className="w-7 sm:w-9 md:w-10 lg:w-12 h-7 sm:h-9 md:h-10 lg:h-12 text-accent flex-shrink-0" />
-                    <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground">
-                      Bodyguards
-                    </h2>
+                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                    <Users className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base lg:text-lg font-bold">
-                    Our bodyguards are mainly drawn from Special Service Group
-                    (SSG) of Pakistan Army, an elite force trained to use all
-                    available means to survive the worst security hazards.
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                    Elite Bodyguards
+                  </h3>
+                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                    Our SSG-trained specialists deliver executive-level protection with tactical expertise and discretion. Every bodyguard undergoes rigorous military training and psychological evaluation for high-risk scenarios.
                   </p>
-                  <ul className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Elite personnel from Special Service Group (SSG)
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Cream of handpicked men dedicated to difficult missions
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Advanced threat assessment and response training
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Protection in high-risk security scenarios
-                      </span>
-                    </li>
-                  </ul>
-                  <div className="mt-auto pt-4 sm:pt-6 md:pt-8">
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-lg"
-                    >
-                      Get a Quote Now
-                    </Link>
-                  </div>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
+                  >
+                    Learn More
+                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
+                  </Link>
                 </div>
               </div>
             </div>
 
-            {/* Mobile Escorts - Card Style */}
-            <div className="group overflow-hidden transition-all duration-300 animate-fade-in" style={{ animationDelay: "200ms" }}>
-              <div className="bg-card border border-border/50 overflow-hidden transition-all duration-300 h-full flex flex-col hover:border-accent/30 hover:shadow-lg">
+            {/* Service 3 - Mobile Escorts */}
+            <div className="group overflow-hidden transition-all duration-300">
+              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
                   <img
                     src="https://i.ibb.co/zhQrVk6Q/Screenshot-2025-12-27-at-10-24-55-PM.png"
@@ -331,64 +332,38 @@ export default function Services() {
                     className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                    <button className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg">
+                    <Link
+                      to="/contact"
+                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                    >
                       Get a Quote
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 md:mb-6">
-                    <Truck className="w-7 sm:w-9 md:w-10 lg:w-12 h-7 sm:h-9 md:h-10 lg:h-12 text-accent flex-shrink-0" />
-                    <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground">
-                      Mobile Escort Services
-                    </h2>
+                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                    <Truck className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base lg:text-lg font-bold">
-                    Mobile escort services are provided by ESG to protect
-                    personnel during movement. Our escort teams are fully trained
-                    in defensive measures to meet any eventuality.
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                    Mobile Escorts
+                  </h3>
+                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                    Our mobile escort teams provide seamless protection during transit and travel. We offer route planning, threat assessment, and coordinated security response with fully trained defensive personnel.
                   </p>
-                  <ul className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Protection during personnel movement and transit
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Fully trained teams in defensive measures
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Emergency response protocols for any situation
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Discrete and professional protection services
-                      </span>
-                    </li>
-                  </ul>
-                  <div className="mt-auto pt-4 sm:pt-6 md:pt-8">
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-lg"
-                    >
-                      Get a Quote Now
-                    </Link>
-                  </div>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
+                  >
+                    Learn More
+                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
+                  </Link>
                 </div>
               </div>
             </div>
 
-            {/* Security Equipment - Card Style */}
-            <div className="group overflow-hidden transition-all duration-300 animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <div className="bg-card border border-border/50 overflow-hidden transition-all duration-300 h-full flex flex-col hover:border-accent/30 hover:shadow-lg">
+            {/* Service 4 - Security Equipment */}
+            <div className="group overflow-hidden transition-all duration-300">
+              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
                   <img
                     src="https://i.ibb.co/1JG05cV5/Screenshot-2025-12-27-at-10-24-10-PM.png"
@@ -396,57 +371,31 @@ export default function Services() {
                     className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                    <button className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg">
+                    <Link
+                      to="/contact"
+                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                    >
                       Get a Quote
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 md:mb-6">
-                    <Lock className="w-7 sm:w-9 md:w-10 lg:w-12 h-7 sm:h-9 md:h-10 lg:h-12 text-accent flex-shrink-0" />
-                    <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground">
-                      Security Equipment
-                    </h2>
+                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                    <Lock className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base lg:text-lg font-bold">
-                    ESG specialises in providing all security equipment needed to
-                    safeguard your premises with cutting-edge technology and
-                    proven solutions.
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                    Security Equipment
+                  </h3>
+                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                    We deploy state-of-the-art surveillance, access control, and security monitoring systems. From CCTV networks to integrated platforms, every solution is tailored to your facility's unique requirements.
                   </p>
-                  <ul className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        CCTV Cameras
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Walkthrough Gates
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Wireless Communication Devices
-                      </span>
-                    </li>
-                    <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                      <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
-                      <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
-                        Barbed Wire Protection
-                      </span>
-                    </li>
-                  </ul>
-                  <div className="mt-auto pt-4 sm:pt-6 md:pt-8">
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-lg"
-                    >
-                      Get a Quote Now
-                    </Link>
-                  </div>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
+                  >
+                    Learn More
+                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -454,91 +403,86 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Value Proposition Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements - Value Section */}
+      {/* Why Choose Us - Professional Section */}
+      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/95 via-background to-background transition-colors duration-300 relative overflow-hidden">
+        {/* Decorative Background Elements */}
         <svg
-          className="absolute top-1/4 left-1/2 w-2/3 h-3/4 -translate-x-1/2 opacity-40"
-          viewBox="0 0 800 600"
-          preserveAspectRatio="xMidYMid slice"
+          className="absolute top-1/3 -right-40 w-1/2 h-2/3 opacity-35"
+          viewBox="0 0 500 600"
+          preserveAspectRatio="xMaxYMid slice"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
             <linearGradient
-              id="servicesValueGradient"
-              x1="0%"
+              id="whyGradient"
+              x1="100%"
               y1="0%"
-              x2="100%"
+              x2="0%"
               y2="100%"
             >
               <stop
                 offset="0%"
-                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.5 }}
               />
               <stop
                 offset="100%"
-                style={{ stopColor: "var(--accent)", stopOpacity: 0.05 }}
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.08 }}
               />
             </linearGradient>
           </defs>
           <path
-            d="M0,150 Q200,50 400,150 Q600,250 800,150 L800,0 L0,0 Z"
-            fill="url(#servicesValueGradient)"
+            d="M500,100 Q400,150 300,100 Q200,50 100,100 Q0,150 0,250 L500,250 Z"
+            fill="url(#whyGradient)"
           />
           <path
-            d="M0,350 Q150,300 300,350 Q450,400 600,350 Q700,330 800,350 L800,600 L0,600 Z"
+            d="M0,400 Q125,350 250,400 Q375,450 500,400 L500,600 L0,600 Z"
             fill="var(--accent)"
             opacity="0.05"
           />
           <circle
             cx="400"
-            cy="300"
-            r="100"
+            cy="200"
+            r="70"
             fill="none"
             stroke="var(--accent)"
             strokeWidth="2"
-            opacity="0.3"
+            opacity="0.25"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 -left-32 w-2/5 h-1/2 opacity-25"
+          viewBox="0 0 400 300"
+          preserveAspectRatio="xMinYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,100 Q100,50 200,100 Q300,150 400,100 L400,300 L0,300 Z"
+            fill="var(--accent)"
+            opacity="0.07"
           />
           <circle
-            cx="400"
-            cy="300"
-            r="150"
+            cx="100"
+            cy="200"
+            r="50"
             fill="none"
             stroke="var(--accent)"
-            strokeWidth="1"
-            opacity="0.15"
-            strokeDasharray="10,5"
-          />
-          <line
-            x1="200"
-            y1="200"
-            x2="200"
-            y2="400"
-            stroke="var(--accent)"
             strokeWidth="1.5"
             opacity="0.2"
-          />
-          <line
-            x1="600"
-            y1="200"
-            x2="600"
-            y2="400"
-            stroke="var(--accent)"
-            strokeWidth="1.5"
-            opacity="0.2"
+            strokeDasharray="4,4"
           />
         </svg>
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
+          {/* Section Title */}
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
               <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
-                Why Our Services Excel
+                Why Choose Eagle Security
               </h2>
             </div>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
-              Comprehensive security solutions designed with precision and professionalism
+              Three decades of trusted expertise and professional excellence
             </p>
           </div>
 
@@ -547,26 +491,34 @@ export default function Services() {
             <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-accent/5 rounded-full"></div>
             <div className="relative z-10">
               <p className="text-xs font-black text-accent uppercase tracking-widest mb-3 sm:mb-4">
-                Professional Security
+                Professional Advantage
               </p>
               <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4 sm:mb-6 text-foreground max-w-3xl">
-                Complete Protection Backed by Military Expertise
+                Military-Trained Personnel & Advanced Solutions
               </h3>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed mb-6 sm:mb-8">
-                From comprehensive threat assessment to rapid response protocols, we provide world-class security solutions backed by over 30 years of proven success and military-trained personnel.
+                From comprehensive threat assessment to rapid response protocols, our personnel deliver world-class security backed by military expertise, rigorous training standards, and proven track record spanning over 30 years of trusted service to Pakistan's leading organizations.
               </p>
-              <WhatsAppButton
-                size="md"
-                message="I'm interested in learning more about Eagle Security's professional security services."
-              />
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
+                <Link
+                  to="/contact"
+                  className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+                >
+                  Request Consultation
+                </Link>
+                <WhatsAppButton
+                  size="md"
+                  message="I'm interested in learning more about Eagle Security's professional security services."
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section - Final Call to Action */}
+      {/* Final CTA Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements - CTA Section */}
+        {/* Decorative Background Elements */}
         <svg
           className="absolute top-1/4 left-1/2 w-2/3 h-3/4 -translate-x-1/2 opacity-40"
           viewBox="0 0 800 600"
@@ -575,7 +527,7 @@ export default function Services() {
         >
           <defs>
             <linearGradient
-              id="servicesCTAGradient"
+              id="ctaGradient"
               x1="0%"
               y1="0%"
               x2="100%"
@@ -593,7 +545,7 @@ export default function Services() {
           </defs>
           <path
             d="M0,200 Q200,100 400,200 Q600,300 800,200 L800,0 L0,0 Z"
-            fill="url(#servicesCTAGradient)"
+            fill="url(#ctaGradient)"
           />
           <path
             d="M0,400 Q150,350 300,400 Q450,450 600,400 Q700,380 800,400 L800,600 L0,600 Z"
@@ -610,29 +562,11 @@ export default function Services() {
             opacity="0.2"
             strokeDasharray="10,8"
           />
-          <line
-            x1="150"
-            y1="250"
-            x2="150"
-            y2="450"
-            stroke="var(--accent)"
-            strokeWidth="1"
-            opacity="0.15"
-          />
-          <line
-            x1="650"
-            y1="250"
-            x2="650"
-            y2="450"
-            stroke="var(--accent)"
-            strokeWidth="1"
-            opacity="0.15"
-          />
         </svg>
 
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl relative z-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
-            Ready to Secure Your Future?
+            Ready to Secure Your Organization?
           </h2>
           <p className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-muted-foreground mb-6 sm:mb-8 md:mb-10 lg:mb-14 leading-relaxed">
             Contact our security experts today for a personalized consultation and discover how Eagle Security can protect what matters most to you.
