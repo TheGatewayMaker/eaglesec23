@@ -1258,14 +1258,14 @@ export default function Home() {
         </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
-          <div className="mb-8 sm:mb-12 md:mb-16 text-center">
+          <AnimatedFadeInDown className="mb-8 sm:mb-12 md:mb-16 text-center" threshold={0.2}>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-3 sm:mb-4 md:mb-6">
               Our Trusted Clients
             </h2>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground">
               Trusted by Leading Organizations
             </p>
-          </div>
+          </AnimatedFadeInDown>
           <LogoCarousel
             logos={[
               {
