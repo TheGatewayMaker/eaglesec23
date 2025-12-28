@@ -568,7 +568,7 @@ export default function Services() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden">
+      <section id="services-cta" className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden">
         {/* Decorative Background Elements */}
         <svg
           className="absolute top-1/4 left-1/2 w-2/3 h-3/4 -translate-x-1/2 opacity-40"
