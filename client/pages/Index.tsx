@@ -92,10 +92,10 @@ export default function Home() {
 
         {/* Hero Background Image - Right Half Only */}
         <div
-          className="hidden md:block absolute right-8 lg:right-12 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
+          className="hidden md:block absolute right-0 lg:right-2 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
           style={{
             backgroundImage:
-              "url('https://cdn.builder.io/api/v1/image/assets%2F151c661f676241159dc387d4f0557eb8%2Fc6fb9be958f544c6a63756ea3bde1005?format=webp&width=800')",
+              "url('https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2Fbde89591a5894a43a7003a9d6c471bea?format=webp&width=800')",
             backgroundSize: "contain",
             backgroundPosition: "right center",
             backgroundRepeat: "no-repeat",
@@ -1120,7 +1120,7 @@ export default function Home() {
             {/* Right Side - Pakistan Map */}
             <div className="flex items-center justify-end md:ml-20">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Facfe06c5cde64b46837eb142f7cf7313%2F2569c5f933e445229e02928b632df203?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2F60eb292d774d4532a0bd29f0a158fe2f?format=webp&width=800"
                 alt="Pakistan map showing Eagle Security locations"
                 className="w-full h-auto md:scale-110"
               />
