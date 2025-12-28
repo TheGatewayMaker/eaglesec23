@@ -133,8 +133,8 @@ export default function Home() {
               <AnimatedFadeInDown delay={200} duration="normal">
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground font-bold mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-2xl">
                   Drawn from the armed forces of Pakistan, our personnel deliver
-                  world-class security with precision, discipline, and unwavering
-                  commitment to your safety.
+                  world-class security with precision, discipline, and
+                  unwavering commitment to your safety.
                 </p>
               </AnimatedFadeInDown>
               <AnimatedFadeInUp delay={300} duration="normal">
@@ -251,7 +251,10 @@ export default function Home() {
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
-          <AnimatedFadeInUp className="mb-8 sm:mb-12 md:mb-16 lg:mb-24" threshold={0.2}>
+          <AnimatedFadeInUp
+            className="mb-8 sm:mb-12 md:mb-16 lg:mb-24"
+            threshold={0.2}
+          >
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
               <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
@@ -313,129 +316,129 @@ export default function Home() {
             <AnimatedScaleInUp delay={100} threshold={0.2}>
               <div className="group overflow-hidden transition-all duration-300">
                 <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
-                <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
-                  <img
-                    src="https://i.ibb.co/xK0H4mRY/Screenshot-2025-12-27-at-10-17-59-PM.png"
-                    alt="Professional security guards with tactical gear"
-                    className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                  <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
+                    <img
+                      src="https://i.ibb.co/xK0H4mRY/Screenshot-2025-12-27-at-10-17-59-PM.png"
+                      alt="Professional security guards with tactical gear"
+                      className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <Link
+                        to="/services"
+                        className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      >
+                        Get a Quote
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                      <Shield className="w-5 sm:w-7 h-5 sm:h-7 text-accent" />
+                    </div>
+                    <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                      Static Security Guards
+                    </h3>
+                    <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                      Our vetted security professionals provide round-the-clock
+                      on-site protection with military discipline and precision.
+                      Each guard undergoes comprehensive background screening.
+                    </p>
                     <Link
                       to="/services"
-                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
-                      Get a Quote
+                      Learn More
+                      <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
-                    <Shield className="w-5 sm:w-7 h-5 sm:h-7 text-accent" />
-                  </div>
-                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
-                    Static Security Guards
-                  </h3>
-                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our vetted security professionals provide round-the-clock
-                    on-site protection with military discipline and precision.
-                    Each guard undergoes comprehensive background screening.
-                  </p>
-                  <Link
-                    to="/services"
-                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                  </Link>
-                </div>
               </div>
-            </div>
             </AnimatedScaleInUp>
 
             {/* Service 3 - Mobile Escorts */}
             <AnimatedScaleInUp delay={200} threshold={0.2}>
               <div className="group overflow-hidden transition-all duration-300">
                 <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
-                <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
-                  <img
-                    src="https://i.ibb.co/MxQRyL7x/Screenshot-2025-12-27-at-10-19-22-PM.png"
-                    alt="Professional mobile escort security services"
-                    className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                  <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
+                    <img
+                      src="https://i.ibb.co/MxQRyL7x/Screenshot-2025-12-27-at-10-19-22-PM.png"
+                      alt="Professional mobile escort security services"
+                      className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <Link
+                        to="/services"
+                        className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      >
+                        Get a Quote
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                      <Truck className="w-5 sm:w-7 h-5 sm:h-7 text-accent" />
+                    </div>
+                    <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                      Mobile Escorts
+                    </h3>
+                    <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                      Our mobile escort teams provide seamless protection during
+                      transit and travel. We offer route planning, threat
+                      assessment, and coordinated security response.
+                    </p>
                     <Link
                       to="/services"
-                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
-                      Get a Quote
+                      Learn More
+                      <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
-                    <Truck className="w-5 sm:w-7 h-5 sm:h-7 text-accent" />
-                  </div>
-                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
-                    Mobile Escorts
-                  </h3>
-                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our mobile escort teams provide seamless protection during
-                    transit and travel. We offer route planning, threat
-                    assessment, and coordinated security response.
-                  </p>
-                  <Link
-                    to="/services"
-                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                  </Link>
-                </div>
               </div>
-            </div>
             </AnimatedScaleInUp>
 
             {/* Service 4 - Security Equipment */}
             <AnimatedScaleInUp delay={300} threshold={0.2}>
               <div className="group overflow-hidden transition-all duration-300">
                 <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
-                <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
-                  <img
-                    src="https://i.ibb.co/1fHGWYGz/Screenshot-2025-12-27-at-10-20-06-PM.png"
-                    alt="Advanced security equipment and surveillance systems"
-                    className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                  <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
+                    <img
+                      src="https://i.ibb.co/1fHGWYGz/Screenshot-2025-12-27-at-10-20-06-PM.png"
+                      alt="Advanced security equipment and surveillance systems"
+                      className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <Link
+                        to="/services"
+                        className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      >
+                        Get a Quote
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                      <Lock className="w-5 sm:w-7 h-5 sm:h-7 text-accent" />
+                    </div>
+                    <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                      Security Equipment
+                    </h3>
+                    <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                      We deploy state-of-the-art surveillance, access control,
+                      and security monitoring systems tailored to your facility.
+                      From CCTV networks to integrated platforms.
+                    </p>
                     <Link
                       to="/services"
-                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
-                      Get a Quote
+                      Learn More
+                      <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
-                    <Lock className="w-5 sm:w-7 h-5 sm:h-7 text-accent" />
-                  </div>
-                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
-                    Security Equipment
-                  </h3>
-                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    We deploy state-of-the-art surveillance, access control, and
-                    security monitoring systems tailored to your facility. From
-                    CCTV networks to integrated platforms.
-                  </p>
-                  <Link
-                    to="/services"
-                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                  </Link>
-                </div>
               </div>
-            </div>
             </AnimatedScaleInUp>
           </div>
         </div>
@@ -518,7 +521,10 @@ export default function Home() {
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Header */}
-          <AnimatedFadeInUp className="mb-8 sm:mb-12 md:mb-16 lg:mb-24" threshold={0.2}>
+          <AnimatedFadeInUp
+            className="mb-8 sm:mb-12 md:mb-16 lg:mb-24"
+            threshold={0.2}
+          >
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
               <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
@@ -547,8 +553,9 @@ export default function Home() {
                     Expert Threat Assessment
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
-                    Our trained professionals identify vulnerabilities and create
-                    customized strategies to address your specific security needs.
+                    Our trained professionals identify vulnerabilities and
+                    create customized strategies to address your specific
+                    security needs.
                   </p>
                 </div>
               </div>
@@ -568,8 +575,9 @@ export default function Home() {
                     Rapid Response Capability
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
-                    24/7 monitoring and immediate action protocols ensure threats
-                    are addressed swiftly and effectively when situations arise.
+                    24/7 monitoring and immediate action protocols ensure
+                    threats are addressed swiftly and effectively when
+                    situations arise.
                   </p>
                 </div>
               </div>
@@ -611,8 +619,8 @@ export default function Home() {
                     Legal & Compliance Protection
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
-                    Professional security protocols ensure your organization stays
-                    compliant with national and international security
+                    Professional security protocols ensure your organization
+                    stays compliant with national and international security
                     regulations.
                   </p>
                 </div>
@@ -633,8 +641,8 @@ export default function Home() {
                     Peace of Mind & Confidence
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
-                    Knowing professionals protect what matters most allows you to
-                    focus on your business and personal growth without worry.
+                    Knowing professionals protect what matters most allows you
+                    to focus on your business and personal growth without worry.
                   </p>
                 </div>
               </div>
@@ -980,9 +988,7 @@ export default function Home() {
                 threshold={0.2}
                 animation="fade-in-up"
               >
-                <div
-                  className="relative aspect-square overflow-hidden border border-border transition-border duration-300 hover:border-pk-green-main/60 group"
-                >
+                <div className="relative aspect-square overflow-hidden border border-border transition-border duration-300 hover:border-pk-green-main/60 group">
                   <div
                     className="absolute inset-0 bg-cover bg-center transition-filter duration-300 group-hover:grayscale"
                     style={{
@@ -1085,7 +1091,10 @@ export default function Home() {
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
-          <AnimatedFadeInUp className="mb-8 sm:mb-12 md:mb-16 lg:mb-24" threshold={0.2}>
+          <AnimatedFadeInUp
+            className="mb-8 sm:mb-12 md:mb-16 lg:mb-24"
+            threshold={0.2}
+          >
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
               <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
@@ -1102,72 +1111,72 @@ export default function Home() {
             {/* Left Side - Cities and Offices */}
             <AnimatedFadeInLeft threshold={0.2}>
               <div className="flex flex-col space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10">
-              {/* Head Office */}
-              <div className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white p-6 sm:p-8 md:p-10 lg:p-12 border border-pk-green-main/20 flex flex-col">
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 sm:mb-4 md:mb-6 gap-2 sm:gap-0">
-                  <p className="font-black text-xs uppercase tracking-widest text-white">
-                    Head Office
-                  </p>
-                  <button
-                    onClick={() => {
-                      const element = document.getElementById(
-                        "head-office-location",
-                      );
-                      element?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="text-blue-300 font-black text-xs sm:text-sm hover:text-blue-200 transition-colors duration-300"
-                  >
-                    Get Directions
-                  </button>
-                </div>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 lg:mb-8 leading-tight text-white">
-                  Islamabad
-                </h3>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-white leading-relaxed">
-                  Central coordination and management hub
-                </p>
-              </div>
-
-              {/* Regional Offices with City Buttons */}
-              <div>
-                <p className="text-pk-green-main font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6">
-                  Regional Offices
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
-                  {[
-                    "Lahore",
-                    "Karachi",
-                    "Multan",
-                    "Peshawar",
-                    "Jhelum",
-                    "Gujranwala",
-                  ].map((city) => (
-                    <div
-                      key={city}
-                      className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white px-3 sm:px-4 md:px-5 py-2 text-center font-black text-xs md:text-sm leading-tight transition-all duration-300 hover:shadow-lg hover:bg-foreground group cursor-pointer border border-pk-green-main/20"
+                {/* Head Office */}
+                <div className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white p-6 sm:p-8 md:p-10 lg:p-12 border border-pk-green-main/20 flex flex-col">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 sm:mb-4 md:mb-6 gap-2 sm:gap-0">
+                    <p className="font-black text-xs uppercase tracking-widest text-white">
+                      Head Office
+                    </p>
+                    <button
+                      onClick={() => {
+                        const element = document.getElementById(
+                          "head-office-location",
+                        );
+                        element?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="text-blue-300 font-black text-xs sm:text-sm hover:text-blue-200 transition-colors duration-300"
                     >
-                      <span className="group-hover:text-white transition-colors duration-300">
-                        {city}
-                      </span>
-                    </div>
-                  ))}
+                      Get Directions
+                    </button>
+                  </div>
+                  <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 lg:mb-8 leading-tight text-white">
+                    Islamabad
+                  </h3>
+                  <p className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-white leading-relaxed">
+                    Central coordination and management hub
+                  </p>
                 </div>
-              </div>
 
-              <div className="border-2 border-pk-green-main/30 bg-gradient-to-br from-background to-background/80 p-5 sm:p-6 md:p-8 transition-all duration-300 hover:shadow-lg cursor-pointer group hover:bg-gradient-to-br hover:from-black hover:to-black/80">
-                <p className="text-pk-green-main font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6 group-hover:text-white transition-colors duration-300">
-                  National Coverage
-                </p>
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-black mb-3 sm:mb-4 md:mb-6 text-foreground group-hover:text-white transition-colors duration-300">
-                  Nationwide
-                </h3>
-                <div className="text-xs sm:text-sm md:text-base font-black text-muted-foreground group-hover:text-white space-y-1.5 sm:space-y-2 md:space-y-3 leading-relaxed transition-colors duration-300">
-                  <p>✓ Including AJK</p>
-                  <p>✓ Sub-offices in major cities</p>
-                  <p>✓ 24/7 availability everywhere</p>
+                {/* Regional Offices with City Buttons */}
+                <div>
+                  <p className="text-pk-green-main font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6">
+                    Regional Offices
+                  </p>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
+                    {[
+                      "Lahore",
+                      "Karachi",
+                      "Multan",
+                      "Peshawar",
+                      "Jhelum",
+                      "Gujranwala",
+                    ].map((city) => (
+                      <div
+                        key={city}
+                        className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white px-3 sm:px-4 md:px-5 py-2 text-center font-black text-xs md:text-sm leading-tight transition-all duration-300 hover:shadow-lg hover:bg-foreground group cursor-pointer border border-pk-green-main/20"
+                      >
+                        <span className="group-hover:text-white transition-colors duration-300">
+                          {city}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="border-2 border-pk-green-main/30 bg-gradient-to-br from-background to-background/80 p-5 sm:p-6 md:p-8 transition-all duration-300 hover:shadow-lg cursor-pointer group hover:bg-gradient-to-br hover:from-black hover:to-black/80">
+                  <p className="text-pk-green-main font-black text-xs uppercase tracking-widest mb-3 sm:mb-4 md:mb-6 group-hover:text-white transition-colors duration-300">
+                    National Coverage
+                  </p>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-black mb-3 sm:mb-4 md:mb-6 text-foreground group-hover:text-white transition-colors duration-300">
+                    Nationwide
+                  </h3>
+                  <div className="text-xs sm:text-sm md:text-base font-black text-muted-foreground group-hover:text-white space-y-1.5 sm:space-y-2 md:space-y-3 leading-relaxed transition-colors duration-300">
+                    <p>✓ Including AJK</p>
+                    <p>✓ Sub-offices in major cities</p>
+                    <p>✓ 24/7 availability everywhere</p>
+                  </div>
                 </div>
               </div>
-            </div>
             </AnimatedFadeInLeft>
 
             {/* Right Side - Pakistan Map */}
@@ -1258,7 +1267,10 @@ export default function Home() {
         </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
-          <AnimatedFadeInDown className="mb-8 sm:mb-12 md:mb-16 text-center" threshold={0.2}>
+          <AnimatedFadeInDown
+            className="mb-8 sm:mb-12 md:mb-16 text-center"
+            threshold={0.2}
+          >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-3 sm:mb-4 md:mb-6">
               Our Trusted Clients
             </h2>

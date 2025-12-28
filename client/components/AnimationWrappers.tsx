@@ -1,40 +1,49 @@
-import React from 'react';
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import React from "react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 interface AnimationWrapperProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  duration?: 'fast' | 'normal' | 'slow';
+  duration?: "fast" | "normal" | "slow";
   threshold?: number;
-  animation?: 'fade-in-up' | 'fade-in-down' | 'fade-in-left' | 'fade-in-right' | 'scale-in-up' | 'bounce-in' | 'slide-in-from-bottom' | 'fade-in';
+  animation?:
+    | "fade-in-up"
+    | "fade-in-down"
+    | "fade-in-left"
+    | "fade-in-right"
+    | "scale-in-up"
+    | "bounce-in"
+    | "slide-in-from-bottom"
+    | "fade-in";
 }
 
 const durationMap = {
-  fast: 'duration-300',
-  normal: 'duration-700',
-  slow: 'duration-1000',
+  fast: "duration-300",
+  normal: "duration-700",
+  slow: "duration-1000",
 };
 
-export function AnimatedFadeInUp({ 
-  children, 
-  className = '', 
+export function AnimatedFadeInUp({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   return (
     <div
       ref={ref}
       className={`${
-        isVisible 
-          ? `animate-fade-in-up ${durationMap[duration]}` 
-          : 'opacity-0'
+        isVisible ? `animate-fade-in-up ${durationMap[duration]}` : "opacity-0"
       } ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
@@ -42,25 +51,28 @@ export function AnimatedFadeInUp({
   );
 }
 
-export function AnimatedFadeInDown({ 
-  children, 
-  className = '', 
+export function AnimatedFadeInDown({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   return (
     <div
       ref={ref}
       className={`${
-        isVisible 
-          ? `animate-fade-in-down ${durationMap[duration]}` 
-          : 'opacity-0'
+        isVisible
+          ? `animate-fade-in-down ${durationMap[duration]}`
+          : "opacity-0"
       } ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
@@ -68,25 +80,28 @@ export function AnimatedFadeInDown({
   );
 }
 
-export function AnimatedFadeInLeft({ 
-  children, 
-  className = '', 
+export function AnimatedFadeInLeft({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   return (
     <div
       ref={ref}
       className={`${
-        isVisible 
-          ? `animate-fade-in-left ${durationMap[duration]}` 
-          : 'opacity-0'
+        isVisible
+          ? `animate-fade-in-left ${durationMap[duration]}`
+          : "opacity-0"
       } ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
@@ -94,25 +109,28 @@ export function AnimatedFadeInLeft({
   );
 }
 
-export function AnimatedFadeInRight({ 
-  children, 
-  className = '', 
+export function AnimatedFadeInRight({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   return (
     <div
       ref={ref}
       className={`${
-        isVisible 
-          ? `animate-fade-in-right ${durationMap[duration]}` 
-          : 'opacity-0'
+        isVisible
+          ? `animate-fade-in-right ${durationMap[duration]}`
+          : "opacity-0"
       } ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
@@ -120,25 +138,28 @@ export function AnimatedFadeInRight({
   );
 }
 
-export function AnimatedScaleInUp({ 
-  children, 
-  className = '', 
+export function AnimatedScaleInUp({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   return (
     <div
       ref={ref}
       className={`${
-        isVisible 
-          ? `animate-scale-in-up ${durationMap[duration]}` 
-          : 'opacity-0 scale-95'
+        isVisible
+          ? `animate-scale-in-up ${durationMap[duration]}`
+          : "opacity-0 scale-95"
       } ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
@@ -146,25 +167,28 @@ export function AnimatedScaleInUp({
   );
 }
 
-export function AnimatedBounceIn({ 
-  children, 
-  className = '', 
+export function AnimatedBounceIn({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   return (
     <div
       ref={ref}
       className={`${
-        isVisible 
-          ? `animate-bounce-in ${durationMap[duration]}` 
-          : 'opacity-0 scale-50'
+        isVisible
+          ? `animate-bounce-in ${durationMap[duration]}`
+          : "opacity-0 scale-50"
       } ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
@@ -172,25 +196,28 @@ export function AnimatedBounceIn({
   );
 }
 
-export function AnimatedSlideInFromBottom({ 
-  children, 
-  className = '', 
+export function AnimatedSlideInFromBottom({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   return (
     <div
       ref={ref}
       className={`${
-        isVisible 
-          ? `animate-slide-in-from-bottom ${durationMap[duration]}` 
-          : 'opacity-0'
+        isVisible
+          ? `animate-slide-in-from-bottom ${durationMap[duration]}`
+          : "opacity-0"
       } ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
@@ -198,16 +225,19 @@ export function AnimatedSlideInFromBottom({
   );
 }
 
-export function AnimatedStaggerContainer({ 
-  children, 
-  className = '',
+export function AnimatedStaggerContainer({
+  children,
+  className = "",
   itemCount = 0,
 }: {
   children: React.ReactNode;
   className?: string;
   itemCount?: number;
 }) {
-  const { ref, isVisible } = useScrollAnimation({ threshold: 0.1, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
 
   return (
     <div ref={ref} className={className}>
@@ -216,7 +246,9 @@ export function AnimatedStaggerContainer({
         return (
           <div
             style={{
-              animation: isVisible ? `fade-in-up 0.7s ease-out ${delay}ms forwards` : 'none',
+              animation: isVisible
+                ? `fade-in-up 0.7s ease-out ${delay}ms forwards`
+                : "none",
               opacity: isVisible ? 1 : 0,
             }}
           >
@@ -228,28 +260,27 @@ export function AnimatedStaggerContainer({
   );
 }
 
-export function AnimationWrapper({ 
-  children, 
-  className = '', 
+export function AnimationWrapper({
+  children,
+  className = "",
   delay = 0,
-  duration = 'normal',
+  duration = "normal",
   threshold = 0.1,
-  animation = 'fade-in-up',
+  animation = "fade-in-up",
 }: AnimationWrapperProps) {
-  const { ref, isVisible } = useScrollAnimation({ threshold, triggerOnce: true });
+  const { ref, isVisible } = useScrollAnimation({
+    threshold,
+    triggerOnce: true,
+  });
 
   const animationClass = `animate-${animation} ${durationMap[duration]}`;
 
   return (
     <div
       ref={ref}
-      className={`${
-        isVisible 
-          ? animationClass
-          : 'opacity-0'
-      } ${className}`}
+      className={`${isVisible ? animationClass : "opacity-0"} ${className}`}
       style={{
-        transitionDelay: isVisible ? `${delay}ms` : '0ms',
+        transitionDelay: isVisible ? `${delay}ms` : "0ms",
       }}
     >
       {children}
