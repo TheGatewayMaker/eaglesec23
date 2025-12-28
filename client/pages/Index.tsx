@@ -604,8 +604,8 @@ export default function Home() {
       {/* Presence Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
         {/* Decorative Background Elements */}
-        <div className="absolute top-1/4 left-0 w-[480px] h-[480px] bg-accent/13 rounded-full blur-3xl -translate-x-1/2 opacity-60"></div>
-        <div className="absolute bottom-0 -right-32 w-[520px] h-[520px] bg-accent/14 rounded-full blur-2xl opacity-65"></div>
+        <div className="absolute top-1/4 left-0 w-[480px] h-[480px] bg-accent/24 rounded-full blur-3xl -translate-x-1/2 opacity-90"></div>
+        <div className="absolute bottom-0 -right-32 w-[520px] h-[520px] bg-accent/26 rounded-full blur-2xl opacity-95"></div>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
