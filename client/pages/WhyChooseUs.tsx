@@ -1,5 +1,4 @@
 import { Award, Shield, Users, CheckCircle2, Star, Zap } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export default function WhyChooseUs() {
   return (
@@ -229,12 +228,12 @@ export default function WhyChooseUs() {
           <p className="text-base md:text-xl text-muted-foreground mb-10 font-bold">
             Contact us today for a security consultation
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="/contact"
             className="bg-accent text-accent-foreground px-8 md:px-10 py-4 md:py-5 font-black text-base md:text-lg rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
           >
             Get in Touch
-          </Link>
+          </a>
         </div>
       </section>
     </div>
