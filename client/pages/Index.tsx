@@ -1085,7 +1085,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
-          <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
+          <AnimatedFadeInUp className="mb-8 sm:mb-12 md:mb-16 lg:mb-24" threshold={0.2}>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
               <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
@@ -1096,7 +1096,7 @@ export default function Home() {
               Offices across Pakistan ensuring reliable coverage and local
               expertise
             </p>
-          </div>
+          </AnimatedFadeInUp>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             {/* Left Side - Cities and Offices */}
