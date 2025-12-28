@@ -1,19 +1,16 @@
-import {
-  Shield,
-  Users,
-  Truck,
-  Lock,
-  ArrowRight,
-} from "lucide-react";
+import { Shield, Users, Truck, Lock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Services() {
   return (
-    <div className="text-foreground" style={{
-      background:
-        "linear-gradient(to bottom, #f9f9f9 0%, #f3f3f3 40%, #efefef 100%)",
-    }}>
+    <div
+      className="text-foreground"
+      style={{
+        background:
+          "linear-gradient(to bottom, #f9f9f9 0%, #f3f3f3 40%, #efefef 100%)",
+      }}
+    >
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-background via-background to-background/95 text-foreground relative overflow-hidden py-10 sm:py-14 md:py-20 lg:py-32 transition-colors duration-300">
         {/* Decorative Background Elements - Hero Section */}
@@ -120,7 +117,9 @@ export default function Services() {
                 Elite Security Services Tailored For You
               </h1>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground font-bold mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-2xl">
-                From static guards to mobile escorts, our comprehensive security portfolio delivers world-class protection with military precision and professional excellence.
+                From static guards to mobile escorts, our comprehensive security
+                portfolio delivers world-class protection with military
+                precision and professional excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
                 <Link
@@ -242,7 +241,8 @@ export default function Services() {
               </h2>
             </div>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
-              Comprehensive solutions designed to protect what matters most to you
+              Comprehensive solutions designed to protect what matters most to
+              you
             </p>
           </div>
 
@@ -273,7 +273,10 @@ export default function Services() {
                     Static Security Guards
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our vetted security professionals drawn from armed forces provide round-the-clock on-site protection with military discipline and precision. Each guard undergoes comprehensive background screening and professional training.
+                    Our vetted security professionals drawn from armed forces
+                    provide round-the-clock on-site protection with military
+                    discipline and precision. Each guard undergoes comprehensive
+                    background screening and professional training.
                   </p>
                   <Link
                     to="/contact"
@@ -312,7 +315,10 @@ export default function Services() {
                     Elite Bodyguards
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our SSG-trained specialists deliver executive-level protection with tactical expertise and discretion. Every bodyguard undergoes rigorous military training and psychological evaluation for high-risk scenarios.
+                    Our SSG-trained specialists deliver executive-level
+                    protection with tactical expertise and discretion. Every
+                    bodyguard undergoes rigorous military training and
+                    psychological evaluation for high-risk scenarios.
                   </p>
                   <Link
                     to="/contact"
@@ -351,7 +357,10 @@ export default function Services() {
                     Mobile Escorts
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our mobile escort teams provide seamless protection during transit and travel. We offer route planning, threat assessment, and coordinated security response with fully trained defensive personnel.
+                    Our mobile escort teams provide seamless protection during
+                    transit and travel. We offer route planning, threat
+                    assessment, and coordinated security response with fully
+                    trained defensive personnel.
                   </p>
                   <Link
                     to="/contact"
@@ -390,7 +399,10 @@ export default function Services() {
                     Security Equipment
                   </h3>
                   <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    We deploy state-of-the-art surveillance, access control, and security monitoring systems. From CCTV networks to integrated platforms, every solution is tailored to your facility's unique requirements.
+                    We deploy state-of-the-art surveillance, access control, and
+                    security monitoring systems. From CCTV networks to
+                    integrated platforms, every solution is tailored to your
+                    facility's unique requirements.
                   </p>
                   <Link
                     to="/contact"
@@ -500,7 +512,11 @@ export default function Services() {
                 Military-Trained Personnel & Advanced Solutions
               </h3>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed mb-6 sm:mb-8">
-                From comprehensive threat assessment to rapid response protocols, our personnel deliver world-class security backed by military expertise, rigorous training standards, and proven track record spanning over 30 years of trusted service to Pakistan's leading organizations.
+                From comprehensive threat assessment to rapid response
+                protocols, our personnel deliver world-class security backed by
+                military expertise, rigorous training standards, and proven
+                track record spanning over 30 years of trusted service to
+                Pakistan's leading organizations.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
                 <Link
@@ -572,7 +588,9 @@ export default function Services() {
             Ready to Secure Your Organization?
           </h2>
           <p className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-muted-foreground mb-6 sm:mb-8 md:mb-10 lg:mb-14 leading-relaxed">
-            Contact our security experts today for a personalized consultation and discover how Eagle Security can protect what matters most to you.
+            Contact our security experts today for a personalized consultation
+            and discover how Eagle Security can protect what matters most to
+            you.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
             <Link
