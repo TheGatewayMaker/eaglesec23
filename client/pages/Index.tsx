@@ -18,9 +18,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-background via-background to-background/95 text-foreground relative overflow-hidden py-10 sm:py-14 md:py-20 lg:py-32 transition-colors duration-300">
         {/* Decorative Background Elements */}
-        <div className="absolute -top-20 -left-40 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl opacity-70"></div>
-        <div className="absolute top-1/4 -right-20 w-[400px] h-[400px] bg-accent/12 rounded-full blur-2xl opacity-60"></div>
-        <div className="absolute -bottom-32 left-1/3 w-[450px] h-[450px] bg-accent/10 rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute -top-20 -left-40 w-[500px] h-[500px] bg-accent/25 rounded-full blur-3xl opacity-100"></div>
+        <div className="absolute top-1/4 -right-20 w-[400px] h-[400px] bg-accent/20 rounded-full blur-2xl opacity-90"></div>
+        <div className="absolute -bottom-32 left-1/3 w-[450px] h-[450px] bg-accent/22 rounded-full blur-3xl opacity-85"></div>
 
         {/* Hero Background Image - Right Half Only */}
         <div
