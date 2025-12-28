@@ -1,6 +1,12 @@
 import { Shield, Users, Truck, Lock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import {
+  AnimatedFadeInUp,
+  AnimatedFadeInDown,
+  AnimatedFadeInLeft,
+  AnimatedFadeInRight,
+} from "@/components/AnimationWrappers";
 
 export default function Services() {
   return (
