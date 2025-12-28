@@ -79,26 +79,26 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button - Hamburger */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-3">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="flex flex-col gap-1.5 w-8 h-8 items-center justify-center hover:opacity-70 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background rounded-md"
+              className="flex flex-col gap-1.5 w-10 h-10 items-center justify-center hover:bg-accent/10 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background group"
               aria-label="Toggle mobile menu"
               aria-expanded={mobileMenuOpen}
             >
               <span
-                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out origin-center ${
-                  mobileMenuOpen ? "rotate-45 translate-y-2.5" : ""
+                className={`block w-5 h-0.5 bg-foreground group-hover:bg-accent transition-all duration-300 ease-out origin-center ${
+                  mobileMenuOpen ? "rotate-45 translate-y-2" : ""
                 }`}
               ></span>
               <span
-                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out ${
+                className={`block w-5 h-0.5 bg-foreground group-hover:bg-accent transition-all duration-300 ease-out ${
                   mobileMenuOpen ? "opacity-0" : "opacity-100"
                 }`}
               ></span>
               <span
-                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out origin-center ${
-                  mobileMenuOpen ? "-rotate-45 -translate-y-2.5" : ""
+                className={`block w-5 h-0.5 bg-foreground group-hover:bg-accent transition-all duration-300 ease-out origin-center ${
+                  mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
                 }`}
               ></span>
             </button>
@@ -110,19 +110,19 @@ export default function Navigation() {
           <>
             {/* Overlay backdrop */}
             <div
-              className="fixed inset-0 bg-black/40 md:hidden animate-fadeIn"
+              className="fixed inset-0 bg-black/50 md:hidden z-40 animate-fadeIn"
               onClick={() => setMobileMenuOpen(false)}
             ></div>
 
             {/* Mobile Menu Panel */}
-            <div className="absolute top-full left-0 right-0 bg-background border-b-2 border-accent shadow-xl md:hidden animate-slideDown">
-              <div className="container mx-auto px-4 sm:px-6 py-4">
+            <div className="fixed top-[var(--nav-height,60px)] left-0 right-0 bottom-0 bg-background md:hidden z-40 overflow-y-auto animate-slideDown">
+              <div className="container mx-auto px-4 sm:px-6 py-6 flex flex-col gap-2">
                 {navigationLinks.map((link, index) => (
                   <Link
                     key={link.to}
                     to={link.to}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="block py-3.5 px-4 font-black text-base text-foreground hover:bg-accent/10 hover:text-accent transition-all duration-300 mb-1 border-l-4 border-transparent hover:border-accent hover:pl-5 animate-slideInUp"
+                    onClick={handleNavLinkClick}
+                    className="block py-4 px-4 font-black text-lg text-foreground hover:bg-accent/15 hover:text-accent transition-all duration-300 border-l-4 border-transparent hover:border-accent hover:pl-5 rounded-lg animate-slideInUp"
                     style={{
                       animationDelay: `${index * 50}ms`,
                     }}
