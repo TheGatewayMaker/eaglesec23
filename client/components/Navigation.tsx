@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import WhatsAppButton from "./WhatsAppButton";
 
@@ -6,10 +5,10 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigationLinks = [
-    { to: "/", label: "HOME" },
-    { to: "/services", label: "SERVICES" },
-    { to: "/about", label: "ABOUT" },
-    { to: "/contact", label: "CONTACT" },
+    { href: "/", label: "HOME" },
+    { href: "/services", label: "SERVICES" },
+    { href: "/about", label: "ABOUT" },
+    { href: "/contact", label: "CONTACT" },
   ];
 
   // Close menu when window resizes to larger screen
