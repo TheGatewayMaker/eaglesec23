@@ -248,16 +248,20 @@ export default function Services() {
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title */}
           <div id="services" className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
-            <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
-              <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
-                Our Security Services
-              </h2>
-            </div>
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
-              Comprehensive solutions designed to protect what matters most to
-              you
-            </p>
+            <AnimatedFadeInDown delay={0} threshold={0.2}>
+              <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
+                <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-accent rounded-full flex-shrink-0"></div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
+                  Our Security Services
+                </h2>
+              </div>
+            </AnimatedFadeInDown>
+            <AnimatedFadeInDown delay={100} threshold={0.2}>
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-3xl leading-relaxed">
+                Comprehensive solutions designed to protect what matters most to
+                you
+              </p>
+            </AnimatedFadeInDown>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
