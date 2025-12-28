@@ -66,7 +66,7 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex gap-12 items-center">
+          <div className="hidden md:flex gap-8 lg:gap-12 items-center">
             {navigationLinks.map((link) => (
               <Link
                 key={link.to}
@@ -77,6 +77,8 @@ export default function Navigation() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
+            <div className="w-px h-6 bg-border/30"></div>
+            <WhatsAppButton size="sm" />
           </div>
 
           {/* Mobile Menu Button - Hamburger */}
