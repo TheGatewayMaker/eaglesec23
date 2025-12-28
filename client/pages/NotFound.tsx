@@ -1,15 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
-
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname,
-    );
-  }, [location.pathname]);
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center transition-colors duration-300">
@@ -24,12 +13,12 @@ const NotFound = () => {
           The page you're looking for doesn't exist or is still under
           development.
         </p>
-        <Link
-          to="/"
+        <a
+          href="/"
           className="bg-accent text-accent-foreground px-8 md:px-12 py-4 md:py-5 font-black text-base md:text-lg rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block"
         >
           Back to Home
-        </Link>
+        </a>
       </div>
     </div>
   );
