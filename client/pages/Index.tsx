@@ -534,23 +534,25 @@ export default function Home() {
           {/* Key Reasons Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
             {/* Reason 1 */}
-            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
-              <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
-              <div className="relative z-10">
-                <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
-                  <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">
-                    01
-                  </span>
+            <AnimatedFadeInUp delay={0} threshold={0.2}>
+              <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
+                <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
+                <div className="relative z-10">
+                  <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                    <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">
+                      01
+                    </span>
+                  </div>
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
+                    Expert Threat Assessment
+                  </h3>
+                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
+                    Our trained professionals identify vulnerabilities and create
+                    customized strategies to address your specific security needs.
+                  </p>
                 </div>
-                <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
-                  Expert Threat Assessment
-                </h3>
-                <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
-                  Our trained professionals identify vulnerabilities and create
-                  customized strategies to address your specific security needs.
-                </p>
               </div>
-            </div>
+            </AnimatedFadeInUp>
 
             {/* Reason 2 */}
             <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
