@@ -276,16 +276,16 @@ export default function Home() {
           {/* Key Reasons Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
             {/* Reason 1 */}
-            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-8 md:p-10 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-                  <span className="text-2xl font-black text-accent">01</span>
+                <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">01</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-black leading-tight mb-4 text-foreground">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
                   Expert Threat Assessment
                 </h3>
-                <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground">
+                <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
                   Our trained professionals identify vulnerabilities and create
                   customized strategies to address your specific security needs.
                 </p>
@@ -293,16 +293,16 @@ export default function Home() {
             </div>
 
             {/* Reason 2 */}
-            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-8 md:p-10 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-                  <span className="text-2xl font-black text-accent">02</span>
+                <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">02</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-black leading-tight mb-4 text-foreground">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
                   Rapid Response Capability
                 </h3>
-                <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground">
+                <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
                   24/7 monitoring and immediate action protocols ensure threats
                   are addressed swiftly and effectively when situations arise.
                 </p>
@@ -310,16 +310,16 @@ export default function Home() {
             </div>
 
             {/* Reason 3 */}
-            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-8 md:p-10 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-                  <span className="text-2xl font-black text-accent">03</span>
+                <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">03</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-black leading-tight mb-4 text-foreground">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
                   Advanced Training & Standards
                 </h3>
-                <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground">
+                <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
                   Military-backed personnel with rigorous training ensure
                   compliance with international security protocols and
                   standards.
@@ -328,16 +328,16 @@ export default function Home() {
             </div>
 
             {/* Reason 4 */}
-            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-8 md:p-10 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-                  <span className="text-2xl font-black text-accent">04</span>
+                <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">04</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-black leading-tight mb-4 text-foreground">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
                   Legal & Compliance Protection
                 </h3>
-                <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground">
+                <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
                   Professional security protocols ensure your organization stays
                   compliant with national and international security
                   regulations.
@@ -346,16 +346,16 @@ export default function Home() {
             </div>
 
             {/* Reason 5 */}
-            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-8 md:p-10 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-                  <span className="text-2xl font-black text-accent">05</span>
+                <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">05</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-black leading-tight mb-4 text-foreground">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
                   Peace of Mind & Confidence
                 </h3>
-                <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground">
+                <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
                   Knowing professionals protect what matters most allows you to
                   focus on your business and personal growth without worry.
                 </p>
@@ -363,16 +363,16 @@ export default function Home() {
             </div>
 
             {/* Reason 6 */}
-            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-8 md:p-10 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-card to-card/80 border border-border/50 p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -right-12 -top-12 w-32 h-32 bg-accent/5 rounded-full group-hover:bg-accent/10 transition-all duration-300 group-hover:scale-110"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-                  <span className="text-2xl font-black text-accent">06</span>
+                <div className="w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-lg sm:text-xl lg:text-2xl font-black text-accent">06</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-black leading-tight mb-4 text-foreground">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-black leading-tight mb-2 sm:mb-3 lg:mb-4 text-foreground">
                   Proven Track Record
                 </h3>
-                <p className="text-sm md:text-base font-bold leading-relaxed text-muted-foreground">
+                <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground">
                   Three decades of protecting Pakistan's leading organizations
                   with zero compromise on quality and professionalism.
                 </p>
