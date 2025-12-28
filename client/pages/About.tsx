@@ -82,52 +82,52 @@ export default function About() {
       </section>
 
       {/* Who We Are Section */}
-      <section className="py-14 sm:py-20 md:py-28 bg-background transition-colors duration-300">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-background transition-colors duration-300">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center mb-12 sm:mb-16 animate-fade-in">
-            <div>
-              <div className="inline-block mb-4 sm:mb-6">
-                <span className="bg-accent/20 text-accent font-black px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm rounded-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 animate-fade-in">
+            <div className="order-2 md:order-1">
+              <div className="inline-block mb-3 sm:mb-4 md:mb-6">
+                <span className="bg-accent/20 text-accent font-black px-3 py-1 text-xs sm:text-sm rounded-lg">
                   WHO WE ARE
                 </span>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-6 sm:mb-8 leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-4 sm:mb-6 md:mb-8 leading-tight">
                 Founded on Military Excellence
               </h2>
-              <p className="text-muted-foreground leading-relaxed text-sm sm:text-base md:text-lg font-bold mb-4 sm:mb-6">
+              <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-3 sm:mb-4 md:mb-6">
                 Eagle Security Guards was established in 1992 with a singular
                 vision: to bring military-grade discipline and professionalism
                 to civilian security. We're not just a security company—we're a
                 legacy built on the foundation of Pakistan's armed forces.
               </p>
-              <p className="text-muted-foreground leading-relaxed text-sm sm:text-base md:text-lg font-bold mb-6 sm:mb-8">
+              <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-4 sm:mb-6 md:mb-8">
                 Licensed to operate nationwide across Pakistan and Azad Jammu &
                 Kashmir, we've grown into one of the most trusted private
                 security providers in the nation.
               </p>
 
-              <div className="space-y-4">
-                <div className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors">
-                  <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-0" />
-                  <span className="text-foreground font-bold">
+              <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                <div className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors">
+                  <CheckCircle2 className="w-5 sm:w-6 h-5 sm:h-6 text-accent flex-shrink-0 mt-0" />
+                  <span className="text-foreground font-bold text-xs md:text-sm lg:text-base">
                     National Coverage with Local Expertise
                   </span>
                 </div>
-                <div className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors">
-                  <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-0" />
-                  <span className="text-foreground font-bold">
+                <div className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors">
+                  <CheckCircle2 className="w-5 sm:w-6 h-5 sm:h-6 text-accent flex-shrink-0 mt-0" />
+                  <span className="text-foreground font-bold text-xs md:text-sm lg:text-base">
                     Ex-Army Officers Leading Strategic Operations
                   </span>
                 </div>
-                <div className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors">
-                  <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-0" />
-                  <span className="text-foreground font-bold">
+                <div className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors">
+                  <CheckCircle2 className="w-5 sm:w-6 h-5 sm:h-6 text-accent flex-shrink-0 mt-0" />
+                  <span className="text-foreground font-bold text-xs md:text-sm lg:text-base">
                     Government, Banking & Corporate Approved
                   </span>
                 </div>
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl shadow-2xl h-56 sm:h-72 md:h-96">
+            <div className="overflow-hidden rounded-2xl shadow-2xl h-40 sm:h-48 md:h-64 lg:h-96 order-1 md:order-2">
               <img
                 src="https://i.ibb.co/Ps11NyHH/Screenshot-2025-12-27-at-10-23-11-PM.png"
                 alt="Elite security personnel in formation"
@@ -139,25 +139,25 @@ export default function About() {
       </section>
 
       {/* Vision, Mission, Values Section - Enhanced */}
-      <section className="py-14 sm:py-20 md:py-28 bg-gradient-to-b from-background via-accent/5 to-background transition-colors duration-300">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background via-accent/5 to-background transition-colors duration-300">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-3 sm:mb-4">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-2 sm:mb-3 md:mb-4">
               The Eagle Foundation
             </h2>
-            <p className="text-sm sm:text-base md:text-xl text-muted-foreground font-bold max-w-2xl mx-auto">
+            <p className="text-xs sm:text-sm md:text-base lg:text-xl text-muted-foreground font-bold max-w-2xl mx-auto">
               Our vision, mission, and values are the pillars upon which every
               decision, every action, and every commitment is built.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 max-w-5xl mx-auto">
             {/* Vision */}
-            <div className="bg-card p-6 sm:p-8 md:p-12 rounded-2xl border-2 border-border shadow-lg hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300 animate-slide-in-from-bottom">
-              <div className="flex items-center justify-center w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-accent/20 mb-6 sm:mb-8">
-                <Lightbulb className="w-6 sm:w-8 h-6 sm:h-8 text-accent" />
+            <div className="bg-card p-4 sm:p-6 md:p-8 lg:p-12 rounded-2xl border-2 border-border shadow-lg hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300 animate-slide-in-from-bottom">
+              <div className="flex items-center justify-center w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-xl bg-accent/20 mb-4 sm:mb-6 lg:mb-8">
+                <Lightbulb className="w-5 sm:w-6 lg:w-8 h-5 sm:h-6 lg:h-8 text-accent" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-foreground mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-foreground mb-2 sm:mb-3 lg:mb-4">
                 Vision
               </h3>
               <p className="text-muted-foreground leading-relaxed font-bold text-xs sm:text-sm md:text-base">
@@ -169,13 +169,13 @@ export default function About() {
 
             {/* Mission */}
             <div
-              className="bg-card p-6 sm:p-8 md:p-12 rounded-2xl border-2 border-border shadow-lg hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300 animate-slide-in-from-bottom"
+              className="bg-card p-4 sm:p-6 md:p-8 lg:p-12 rounded-2xl border-2 border-border shadow-lg hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300 animate-slide-in-from-bottom"
               style={{ animationDelay: "100ms" }}
             >
-              <div className="flex items-center justify-center w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-accent/20 mb-6 sm:mb-8">
-                <Target className="w-6 sm:w-8 h-6 sm:h-8 text-accent" />
+              <div className="flex items-center justify-center w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-xl bg-accent/20 mb-4 sm:mb-6 lg:mb-8">
+                <Target className="w-5 sm:w-6 lg:w-8 h-5 sm:h-6 lg:h-8 text-accent" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-foreground mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-foreground mb-2 sm:mb-3 lg:mb-4">
                 Mission
               </h3>
               <p className="text-muted-foreground leading-relaxed font-bold text-xs sm:text-sm md:text-base">
@@ -187,13 +187,13 @@ export default function About() {
 
             {/* Commitment */}
             <div
-              className="bg-card p-6 sm:p-8 md:p-12 rounded-2xl border-2 border-border shadow-lg hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300 animate-slide-in-from-bottom"
+              className="bg-card p-4 sm:p-6 md:p-8 lg:p-12 rounded-2xl border-2 border-border shadow-lg hover:shadow-2xl hover:border-accent hover:-translate-y-2 transition-all duration-300 animate-slide-in-from-bottom"
               style={{ animationDelay: "200ms" }}
             >
-              <div className="flex items-center justify-center w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-accent/20 mb-6 sm:mb-8">
-                <Compass className="w-6 sm:w-8 h-6 sm:h-8 text-accent" />
+              <div className="flex items-center justify-center w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-xl bg-accent/20 mb-4 sm:mb-6 lg:mb-8">
+                <Compass className="w-5 sm:w-6 lg:w-8 h-5 sm:h-6 lg:h-8 text-accent" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-foreground mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-foreground mb-2 sm:mb-3 lg:mb-4">
                 Commitment
               </h3>
               <p className="text-muted-foreground leading-relaxed font-bold text-xs sm:text-sm md:text-base">
