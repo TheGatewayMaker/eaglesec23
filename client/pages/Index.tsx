@@ -1406,28 +1406,34 @@ export default function Home() {
         </svg>
 
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl relative z-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
-            Ready to Protect What Matters?
-          </h2>
-          <p className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-muted-foreground mb-6 sm:mb-8 md:mb-10 lg:mb-14 leading-relaxed">
-            Contact our security experts today for a personalized consultation
-            and secure your peace of mind
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
-            <Link
-              to="/contact"
-              className="bg-accent text-accent-foreground px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:shadow-lg transition-shadow duration-300 inline-block rounded-lg"
-            >
-              Start Your Consultation
-            </Link>
-            <Link
-              to="/services"
-              className="border-2 border-accent text-accent px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:bg-accent hover:text-accent-foreground transition-colors duration-300 inline-block rounded-lg"
-            >
-              View Services
-            </Link>
-            <WhatsAppButton size="md" />
-          </div>
+          <AnimatedFadeInDown delay={0} threshold={0.2}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
+              Ready to Protect What Matters?
+            </h2>
+          </AnimatedFadeInDown>
+          <AnimatedFadeInDown delay={100} threshold={0.2}>
+            <p className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-muted-foreground mb-6 sm:mb-8 md:mb-10 lg:mb-14 leading-relaxed">
+              Contact our security experts today for a personalized consultation
+              and secure your peace of mind
+            </p>
+          </AnimatedFadeInDown>
+          <AnimatedFadeInUp delay={200} threshold={0.2}>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
+              <Link
+                to="/contact"
+                className="bg-accent text-accent-foreground px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:shadow-lg transition-shadow duration-300 inline-block rounded-lg"
+              >
+                Start Your Consultation
+              </Link>
+              <Link
+                to="/services"
+                className="border-2 border-accent text-accent px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:bg-accent hover:text-accent-foreground transition-colors duration-300 inline-block rounded-lg"
+              >
+                View Services
+              </Link>
+              <WhatsAppButton size="md" />
+            </div>
+          </AnimatedFadeInUp>
         </div>
       </section>
 
