@@ -882,9 +882,20 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-1/4 left-1/2 w-[500px] h-[500px] bg-accent/26 rounded-full blur-3xl -translate-x-1/2 opacity-95"></div>
-        <div className="absolute bottom-1/3 -right-40 w-[450px] h-[450px] bg-accent/22 rounded-full blur-2xl opacity-90"></div>
+        {/* Decorative Background Elements - CTA Section */}
+        <svg className="absolute top-1/4 left-1/2 w-2/3 h-3/4 -translate-x-1/2 opacity-40" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ctaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.4}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.05}} />
+            </linearGradient>
+          </defs>
+          <path d="M0,200 Q200,100 400,200 Q600,300 800,200 L800,0 L0,0 Z" fill="url(#ctaGradient)"/>
+          <path d="M0,400 Q150,350 300,400 Q450,450 600,400 Q700,380 800,400 L800,600 L0,600 Z" fill="var(--accent)" opacity="0.04"/>
+          <circle cx="400" cy="300" r="100" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2" strokeDasharray="10,8"/>
+          <line x1="150" y1="250" x2="150" y2="450" stroke="var(--accent)" strokeWidth="1" opacity="0.15"/>
+          <line x1="650" y1="250" x2="650" y2="450" stroke="var(--accent)" strokeWidth="1" opacity="0.15"/>
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl relative z-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
