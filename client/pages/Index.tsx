@@ -92,12 +92,12 @@ export default function Home() {
 
         {/* Hero Background Image - Right Half Only */}
         <div
-          className="hidden md:block absolute right-8 lg:right-12 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
+          className="hidden md:block absolute right-12 lg:right-16 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
           style={{
             backgroundImage:
-              "url('https://cdn.builder.io/api/v1/image/assets%2F151c661f676241159dc387d4f0557eb8%2Fc6fb9be958f544c6a63756ea3bde1005?format=webp&width=800')",
+              "url('https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2Fdb21de2b9ad54e15b9a12e4485f61691?format=webp&width=800')",
             backgroundSize: "contain",
-            backgroundPosition: "right center",
+            backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
           }}
         >
