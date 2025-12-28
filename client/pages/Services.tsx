@@ -354,88 +354,92 @@ export default function Services() {
             </AnimatedFadeInUp>
 
             {/* Service 3 - Mobile Escorts */}
-            <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
-                <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
-                  <img
-                    src="https://i.ibb.co/zhQrVk6Q/Screenshot-2025-12-27-at-10-24-55-PM.png"
-                    alt="Mobile security escort team"
-                    className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+            <AnimatedFadeInUp delay={200} threshold={0.2}>
+              <div className="group overflow-hidden transition-all duration-300">
+                <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
+                  <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
+                    <img
+                      src="https://i.ibb.co/zhQrVk6Q/Screenshot-2025-12-27-at-10-24-55-PM.png"
+                      alt="Mobile security escort team"
+                      className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <Link
+                        to="/contact"
+                        className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      >
+                        Get a Quote
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                      <Truck className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
+                    </div>
+                    <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                      Mobile Escorts
+                    </h3>
+                    <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                      Our mobile escort teams provide seamless protection during
+                      transit and travel. We offer route planning, threat
+                      assessment, and coordinated security response with fully
+                      trained defensive personnel.
+                    </p>
                     <Link
                       to="/contact"
-                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
-                      Get a Quote
+                      Learn More
+                      <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
-                    <Truck className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
-                  </div>
-                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
-                    Mobile Escorts
-                  </h3>
-                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our mobile escort teams provide seamless protection during
-                    transit and travel. We offer route planning, threat
-                    assessment, and coordinated security response with fully
-                    trained defensive personnel.
-                  </p>
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                  </Link>
-                </div>
               </div>
-            </div>
+            </AnimatedFadeInUp>
 
             {/* Service 4 - Security Equipment */}
-            <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
-                <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
-                  <img
-                    src="https://i.ibb.co/1JG05cV5/Screenshot-2025-12-27-at-10-24-10-PM.png"
-                    alt="Professional security equipment and surveillance"
-                    className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+            <AnimatedFadeInUp delay={300} threshold={0.2}>
+              <div className="group overflow-hidden transition-all duration-300">
+                <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
+                  <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
+                    <img
+                      src="https://i.ibb.co/1JG05cV5/Screenshot-2025-12-27-at-10-24-10-PM.png"
+                      alt="Professional security equipment and surveillance"
+                      className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <Link
+                        to="/contact"
+                        className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      >
+                        Get a Quote
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                      <Lock className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
+                    </div>
+                    <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                      Security Equipment
+                    </h3>
+                    <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                      We deploy state-of-the-art surveillance, access control, and
+                      security monitoring systems. From CCTV networks to
+                      integrated platforms, every solution is tailored to your
+                      facility's unique requirements.
+                    </p>
                     <Link
                       to="/contact"
-                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
-                      Get a Quote
+                      Learn More
+                      <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
-                    <Lock className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
-                  </div>
-                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
-                    Security Equipment
-                  </h3>
-                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    We deploy state-of-the-art surveillance, access control, and
-                    security monitoring systems. From CCTV networks to
-                    integrated platforms, every solution is tailored to your
-                    facility's unique requirements.
-                  </p>
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                  </Link>
-                </div>
               </div>
-            </div>
+            </AnimatedFadeInUp>
           </div>
         </div>
       </section>
