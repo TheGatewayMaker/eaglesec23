@@ -95,7 +95,7 @@ export default function Home() {
           className="hidden md:block absolute right-12 lg:right-16 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
           style={{
             backgroundImage:
-              "url('https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2Fdb21de2b9ad54e15b9a12e4485f61691?format=webp&width=800')",
+              "url('https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2Fbde89591a5894a43a7003a9d6c471bea?format=webp&width=800')",
             backgroundSize: "contain",
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
