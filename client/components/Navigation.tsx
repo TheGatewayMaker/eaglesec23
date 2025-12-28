@@ -75,8 +75,8 @@ export default function Navigation() {
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </a>
-            ))},
-            <div className="w-px h-6 bg-border/30"></div>
+            ))}
+            ,<div className="w-px h-6 bg-border/30"></div>
             <WhatsAppButton size="sm" />
           </div>
 

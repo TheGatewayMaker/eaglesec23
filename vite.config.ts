@@ -60,10 +60,12 @@ function expressPlugin(): Plugin {
           if (fs.existsSync(htmlPath)) {
             const html = fs.readFileSync(htmlPath, "utf-8");
             // Transform and serve the HTML through Vite
-            return server.transformIndexHtml(pathName, html).then((transformedHtml) => {
-              res.setHeader("Content-Type", "text/html");
-              res.end(transformedHtml);
-            });
+            return server
+              .transformIndexHtml(pathName, html)
+              .then((transformedHtml) => {
+                res.setHeader("Content-Type", "text/html");
+                res.end(transformedHtml);
+              });
           }
         }
 
