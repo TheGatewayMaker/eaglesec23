@@ -406,11 +406,15 @@ export default function Home() {
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4 sm:mb-6 text-foreground max-w-3xl">
                   Professional Security Is An Investment In Your Future
                 </h3>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed mb-6 sm:mb-8">
                   From comprehensive threat assessment to rapid response
                   protocols, we provide complete protection backed by military
                   expertise and decades of proven success.
                 </p>
+                <WhatsAppButton
+                  size="md"
+                  message="I'm interested in learning more about Eagle Security's professional security services."
+                />
               </div>
             </div>
           </div>
