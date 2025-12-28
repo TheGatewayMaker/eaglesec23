@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "../context/ThemeContext";
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   const navigationLinks = [
     { to: "/", label: "HOME" },
@@ -53,50 +50,30 @@ export default function Navigation() {
           </div>
 
           {/* Theme Toggle and Mobile Menu */}
-          <div className="flex items-center gap-4">
-            {/* Theme Toggle Button */}
+          {/* Professional Mobile Menu Button - Hamburger */}
+          <div className="md:hidden">
             <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-accent/10 transition-all duration-300 flex items-center justify-center"
-              aria-label="Toggle dark mode"
-              title={
-                theme === "light"
-                  ? "Switch to Dark Mode"
-                  : "Switch to Light Mode"
-              }
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="flex flex-col gap-1.5 w-8 h-8 items-center justify-center hover:opacity-80 transition-opacity duration-300 focus:outline-none"
+              aria-label="Toggle mobile menu"
+              aria-expanded={mobileMenuOpen}
             >
-              {theme === "light" ? (
-                <Moon className="w-5 h-5 md:w-6 md:h-6 text-foreground transition-transform duration-300" />
-              ) : (
-                <Sun className="w-5 h-5 md:w-6 md:h-6 text-foreground transition-transform duration-300" />
-              )}
+              <span
+                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out origin-center ${
+                  mobileMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
+              ></span>
+              <span
+                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out ${
+                  mobileMenuOpen ? "opacity-0" : "opacity-100"
+                }`}
+              ></span>
+              <span
+                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out origin-center ${
+                  mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
+              ></span>
             </button>
-
-            {/* Professional Mobile Menu Button - Hamburger */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="flex flex-col gap-1.5 w-8 h-8 items-center justify-center hover:opacity-80 transition-opacity duration-300 focus:outline-none"
-                aria-label="Toggle mobile menu"
-                aria-expanded={mobileMenuOpen}
-              >
-                <span
-                  className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out origin-center ${
-                    mobileMenuOpen ? "rotate-45 translate-y-2" : ""
-                  }`}
-                ></span>
-                <span
-                  className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out ${
-                    mobileMenuOpen ? "opacity-0" : "opacity-100"
-                  }`}
-                ></span>
-                <span
-                  className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ease-out origin-center ${
-                    mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                  }`}
-                ></span>
-              </button>
-            </div>
           </div>
         </div>
 
