@@ -826,8 +826,8 @@ export default function Home() {
         className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/98 to-background transition-colors duration-300 relative overflow-hidden"
       >
         {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-32 w-[480px] h-[480px] bg-accent/14 rounded-full blur-3xl opacity-60"></div>
-        <div className="absolute bottom-0 -right-40 w-[520px] h-[520px] bg-accent/12 rounded-full blur-2xl opacity-55"></div>
+        <div className="absolute top-0 -left-32 w-[480px] h-[480px] bg-accent/26 rounded-full blur-3xl opacity-95"></div>
+        <div className="absolute bottom-0 -right-40 w-[520px] h-[520px] bg-accent/24 rounded-full blur-2xl opacity-90"></div>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="mb-8 sm:mb-12 md:mb-16">
