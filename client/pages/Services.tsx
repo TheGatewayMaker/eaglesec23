@@ -1,5 +1,4 @@
 import { Shield, Users, Truck, Lock, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import {
   AnimatedFadeInUp,
@@ -135,18 +134,18 @@ export default function Services() {
               </AnimatedFadeInDown>
               <AnimatedFadeInUp delay={300} duration="normal">
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
-                  <Link
-                    to="/contact"
+                  <a
+                    href="/contact"
                     className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
                   >
                     Get a Quote Now
-                  </Link>
-                  <Link
-                    to="/#services"
+                  </a>
+                  <a
+                    href="/#services"
                     className="border-2 border-accent text-accent px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
                   >
                     Explore Services
-                  </Link>
+                  </a>
                   <WhatsAppButton size="md" />
                 </div>
               </AnimatedFadeInUp>
@@ -276,12 +275,12 @@ export default function Services() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/contact"
+                      <a
+                        href="/contact"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -298,13 +297,13 @@ export default function Services() {
                       comprehensive background screening and professional
                       training.
                     </p>
-                    <Link
-                      to="/contact"
+                    <a
+                      href="/contact"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -321,12 +320,12 @@ export default function Services() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/contact"
+                      <a
+                        href="/contact"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -342,13 +341,13 @@ export default function Services() {
                       bodyguard undergoes rigorous military training and
                       psychological evaluation for high-risk scenarios.
                     </p>
-                    <Link
-                      to="/contact"
+                    <a
+                      href="/contact"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -365,12 +364,12 @@ export default function Services() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/contact"
+                      <a
+                        href="/contact"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -386,13 +385,13 @@ export default function Services() {
                       assessment, and coordinated security response with fully
                       trained defensive personnel.
                     </p>
-                    <Link
-                      to="/contact"
+                    <a
+                      href="/contact"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -409,12 +408,12 @@ export default function Services() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/contact"
+                      <a
+                        href="/contact"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -430,13 +429,13 @@ export default function Services() {
                       integrated platforms, every solution is tailored to your
                       facility's unique requirements.
                     </p>
-                    <Link
-                      to="/contact"
+                    <a
+                      href="/contact"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -551,12 +550,12 @@ export default function Services() {
                   Pakistan's leading organizations.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
-                  <Link
-                    to="/contact"
+                  <a
+                    href="/contact"
                     className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
                   >
                     Request Consultation
-                  </Link>
+                  </a>
                   <WhatsAppButton
                     size="md"
                     message="I'm interested in learning more about Eagle Security's professional security services."
@@ -634,18 +633,18 @@ export default function Services() {
           </AnimatedFadeInDown>
           <AnimatedFadeInUp delay={200} threshold={0.2}>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
-              <Link
-                to="/contact"
+              <a
+                href="/contact"
                 className="bg-accent text-accent-foreground px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
               >
                 Get a Quote Now
-              </Link>
-              <Link
-                to="/contact"
+              </a>
+              <a
+                href="/contact"
                 className="border-2 border-accent text-accent px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
               >
                 Schedule Consultation
-              </Link>
+              </a>
               <WhatsAppButton size="md" />
             </div>
           </AnimatedFadeInUp>
