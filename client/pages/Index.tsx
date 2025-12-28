@@ -13,6 +13,7 @@ import {
   AnimatedScaleInUp,
   AnimatedSlideInFromBottom,
   AnimationWrapper,
+  AnimatedBounceIn,
 } from "@/components/AnimationWrappers";
 
 export default function Home() {
