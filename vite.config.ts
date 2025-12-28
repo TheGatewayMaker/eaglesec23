@@ -14,7 +14,16 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "dist/spa",
+    outDir: "dist/pages",
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        services: path.resolve(__dirname, "pages/services.html"),
+        about: path.resolve(__dirname, "pages/about.html"),
+        "why-choose-us": path.resolve(__dirname, "pages/why-choose-us.html"),
+        contact: path.resolve(__dirname, "pages/contact.html"),
+      },
+    },
   },
   plugins: [react(), expressPlugin()],
   resolve: {
