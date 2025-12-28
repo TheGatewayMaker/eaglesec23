@@ -133,6 +133,18 @@ export default function Navigation() {
                     {link.label}
                   </Link>
                 ))}
+                <div className="my-2 h-px bg-border/30"></div>
+                <div
+                  className="py-4 animate-slideInUp"
+                  style={{
+                    animationDelay: `${navigationLinks.length * 50}ms`,
+                  }}
+                >
+                  <WhatsAppButton
+                    size="md"
+                    className="w-full justify-center"
+                  />
+                </div>
               </div>
             </div>
           </>
