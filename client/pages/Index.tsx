@@ -668,9 +668,23 @@ export default function Home() {
 
       {/* Presence Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-1/4 left-0 w-[480px] h-[480px] bg-accent/24 rounded-full blur-3xl -translate-x-1/2 opacity-90"></div>
-        <div className="absolute bottom-0 -right-32 w-[520px] h-[520px] bg-accent/26 rounded-full blur-2xl opacity-95"></div>
+        {/* Decorative Background Elements - Presence Section */}
+        <svg className="absolute top-1/4 left-0 w-1/3 h-3/4 -translate-x-1/4 opacity-35" viewBox="0 0 400 600" preserveAspectRatio="xMinYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="presenceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.4}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.05}} />
+            </linearGradient>
+          </defs>
+          <path d="M0,200 Q100,150 200,200 Q300,250 400,200 L400,0 L0,0 Z" fill="url(#presenceGradient)"/>
+          <path d="M0,400 Q200,350 400,400 L400,600 L0,600 Z" fill="var(--accent)" opacity="0.05"/>
+          <circle cx="200" cy="300" r="90" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2" strokeDasharray="8,6"/>
+        </svg>
+        <svg className="absolute bottom-0 -right-20 w-2/5 h-1/2 opacity-30" viewBox="0 0 500 400" preserveAspectRatio="xMaxYMax slice" xmlns="http://www.w3.org/2000/svg">
+          <path d="M500,100 Q375,50 250,100 Q125,150 0,100 L0,400 L500,400 Z" fill="var(--accent)" opacity="0.06"/>
+          <circle cx="350" cy="250" r="80" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.2"/>
+          <line x1="100" y1="150" x2="400" y2="250" stroke="var(--accent)" strokeWidth="1" opacity="0.15"/>
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
