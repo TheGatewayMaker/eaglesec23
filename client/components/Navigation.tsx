@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import WhatsAppButton from "./WhatsAppButton";
 
@@ -6,10 +5,10 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigationLinks = [
-    { to: "/", label: "HOME" },
-    { to: "/services", label: "SERVICES" },
-    { to: "/about", label: "ABOUT" },
-    { to: "/contact", label: "CONTACT" },
+    { href: "/", label: "HOME" },
+    { href: "/services", label: "SERVICES" },
+    { href: "/about", label: "ABOUT" },
+    { href: "/contact", label: "CONTACT" },
   ];
 
   // Close menu when window resizes to larger screen
@@ -46,8 +45,8 @@ export default function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 py-3 md:py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Company Name */}
-          <Link
-            to="/"
+          <a
+            href="/"
             className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition duration-300 flex-shrink-0"
           >
             <img
@@ -63,21 +62,21 @@ export default function Navigation() {
                 SECURITY GUARDS
               </span>
             </div>
-          </Link>
+          </a>
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex gap-8 lg:gap-12 items-center">
             {navigationLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
+              <a
+                key={link.href}
+                href={link.href}
                 className="font-black text-base text-foreground hover:text-accent transition-colors duration-300 relative group"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
-              </Link>
+              </a>
             ))}
-            <div className="w-px h-6 bg-border/30"></div>
+            ,<div className="w-px h-6 bg-border/30"></div>
             <WhatsAppButton size="sm" />
           </div>
 
@@ -121,9 +120,9 @@ export default function Navigation() {
             <div className="fixed top-[var(--nav-height,60px)] left-0 right-0 bottom-0 bg-background md:hidden z-40 overflow-y-auto animate-slideDown">
               <div className="container mx-auto px-4 sm:px-6 py-6 flex flex-col gap-2">
                 {navigationLinks.map((link, index) => (
-                  <Link
-                    key={link.to}
-                    to={link.to}
+                  <a
+                    key={link.href}
+                    href={link.href}
                     onClick={handleNavLinkClick}
                     className="block py-4 px-4 font-black text-lg text-foreground hover:bg-accent/15 hover:text-accent transition-all duration-300 border-l-4 border-transparent hover:border-accent hover:pl-5 rounded-lg animate-slideInUp"
                     style={{
@@ -131,7 +130,7 @@ export default function Navigation() {
                     }}
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
                 <div className="my-2 h-px bg-border/30"></div>
                 <div

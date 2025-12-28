@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   Target,
   Lightbulb,
@@ -369,18 +368,18 @@ export default function About() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center">
-              <Link
-                to="/services"
+              <a
+                href="/services"
                 className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
               >
                 Explore Our Services
-              </Link>
-              <Link
-                to="/contact"
+              </a>
+              <a
+                href="/contact"
                 className="border-2 border-accent text-accent px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg hover:bg-accent/10 transition-all duration-300 inline-block rounded-lg"
               >
                 Get in Touch
-              </Link>
+              </a>
             </div>
           </div>
         </div>

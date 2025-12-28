@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Shield, Users, Truck, Lock, ArrowRight } from "lucide-react";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import CompanyWiseDeployments from "@/components/CompanyWiseDeployments";
@@ -140,18 +139,18 @@ export default function Home() {
               </AnimatedFadeInDown>
               <AnimatedFadeInUp delay={300} duration="normal">
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
-                  <Link
-                    to="/services"
+                  <a
+                    href="/services"
                     className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
                   >
                     Explore Services
-                  </Link>
-                  <Link
-                    to="/contact"
+                  </a>
+                  <a
+                    href="/contact"
                     className="border-2 border-accent text-accent px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
                   >
                     Get a Quote Now
-                  </Link>
+                  </a>
                   <WhatsAppButton size="md" />
                 </div>
               </AnimatedFadeInUp>
@@ -280,12 +279,12 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/services"
+                      <a
+                        href="/services"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -301,13 +300,13 @@ export default function Home() {
                       bodyguard undergoes rigorous military training and
                       psychological evaluation.
                     </p>
-                    <Link
-                      to="/services"
+                    <a
+                      href="/services"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -324,12 +323,12 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/services"
+                      <a
+                        href="/services"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -344,13 +343,13 @@ export default function Home() {
                       on-site protection with military discipline and precision.
                       Each guard undergoes comprehensive background screening.
                     </p>
-                    <Link
-                      to="/services"
+                    <a
+                      href="/services"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -367,12 +366,12 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/services"
+                      <a
+                        href="/services"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -387,13 +386,13 @@ export default function Home() {
                       transit and travel. We offer route planning, threat
                       assessment, and coordinated security response.
                     </p>
-                    <Link
-                      to="/services"
+                    <a
+                      href="/services"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -410,12 +409,12 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                      <Link
-                        to="/services"
+                      <a
+                        href="/services"
                         className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
                       >
                         Get a Quote
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
@@ -430,13 +429,13 @@ export default function Home() {
                       and security monitoring systems tailored to your facility.
                       From CCTV networks to integrated platforms.
                     </p>
-                    <Link
-                      to="/services"
+                    <a
+                      href="/services"
                       className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
                       Learn More
                       <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1432,18 +1431,18 @@ export default function Home() {
           </AnimatedFadeInDown>
           <AnimatedFadeInUp delay={200} threshold={0.2}>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
-              <Link
-                to="/contact"
+              <a
+                href="/contact"
                 className="bg-accent text-accent-foreground px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:shadow-lg transition-shadow duration-300 inline-block rounded-lg"
               >
                 Start Your Consultation
-              </Link>
-              <Link
-                to="/services#services-cta"
+              </a>
+              <a
+                href="/services#services-cta"
                 className="border-2 border-accent text-accent px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:bg-accent hover:text-accent-foreground transition-colors duration-300 inline-block rounded-lg"
               >
                 View Services
-              </Link>
+              </a>
               <WhatsAppButton size="md" />
             </div>
           </AnimatedFadeInUp>
