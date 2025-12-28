@@ -785,9 +785,22 @@ export default function Home() {
 
       {/* Trusted By Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-pk-green-main/20 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-40 w-[500px] h-[500px] bg-accent/24 rounded-full blur-3xl opacity-90"></div>
-        <div className="absolute bottom-0 -right-36 w-[480px] h-[480px] bg-accent/26 rounded-full blur-2xl opacity-95"></div>
+        {/* Decorative Background Elements - Trusted By Section */}
+        <svg className="absolute top-0 left-0 w-2/5 h-1/2 opacity-35" viewBox="0 0 500 300" preserveAspectRatio="xMinYMin slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="trustedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.4}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.08}} />
+            </linearGradient>
+          </defs>
+          <path d="M0,100 Q125,50 250,100 Q375,150 500,100 L500,0 L0,0 Z" fill="url(#trustedGradient)"/>
+          <circle cx="250" cy="150" r="60" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.25"/>
+          <line x1="50" y1="200" x2="450" y2="200" stroke="var(--accent)" strokeWidth="1" opacity="0.15"/>
+        </svg>
+        <svg className="absolute bottom-0 right-0 w-1/3 h-2/3 opacity-30" viewBox="0 0 400 500" preserveAspectRatio="xMaxYMax slice" xmlns="http://www.w3.org/2000/svg">
+          <path d="M400,200 Q300,150 200,200 Q100,250 0,200 L0,500 L400,500 Z" fill="var(--accent)" opacity="0.05"/>
+          <circle cx="300" cy="350" r="70" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2" strokeDasharray="5,5"/>
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="mb-8 sm:mb-12 md:mb-16 text-center">
