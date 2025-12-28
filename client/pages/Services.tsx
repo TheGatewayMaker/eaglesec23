@@ -266,88 +266,92 @@ export default function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
             {/* Service 1 - Static Security Guards */}
-            <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
-                <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
-                  <img
-                    src="https://i.ibb.co/Dg43BJC0/Screenshot-2025-12-27-at-10-23-30-PM.png"
-                    alt="Professional security guards with tactical gear"
-                    className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+            <AnimatedFadeInUp delay={0} threshold={0.2}>
+              <div className="group overflow-hidden transition-all duration-300">
+                <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
+                  <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
+                    <img
+                      src="https://i.ibb.co/Dg43BJC0/Screenshot-2025-12-27-at-10-23-30-PM.png"
+                      alt="Professional security guards with tactical gear"
+                      className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <Link
+                        to="/contact"
+                        className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      >
+                        Get a Quote
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                      <Shield className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
+                    </div>
+                    <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                      Static Security Guards
+                    </h3>
+                    <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                      Our vetted security professionals drawn from armed forces
+                      provide round-the-clock on-site protection with military
+                      discipline and precision. Each guard undergoes comprehensive
+                      background screening and professional training.
+                    </p>
                     <Link
                       to="/contact"
-                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
-                      Get a Quote
+                      Learn More
+                      <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
-                    <Shield className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
-                  </div>
-                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
-                    Static Security Guards
-                  </h3>
-                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our vetted security professionals drawn from armed forces
-                    provide round-the-clock on-site protection with military
-                    discipline and precision. Each guard undergoes comprehensive
-                    background screening and professional training.
-                  </p>
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                  </Link>
-                </div>
               </div>
-            </div>
+            </AnimatedFadeInUp>
 
             {/* Service 2 - Bodyguards */}
-            <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
-                <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
-                  <img
-                    src="https://i.ibb.co/MxQRyL7x/Screenshot-2025-12-27-at-10-19-22-PM.png"
-                    alt="Elite security professional in uniform"
-                    className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+            <AnimatedFadeInUp delay={100} threshold={0.2}>
+              <div className="group overflow-hidden transition-all duration-300">
+                <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
+                  <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 aspect-video">
+                    <img
+                      src="https://i.ibb.co/MxQRyL7x/Screenshot-2025-12-27-at-10-19-22-PM.png"
+                      alt="Elite security professional in uniform"
+                      className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                      <Link
+                        to="/contact"
+                        className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      >
+                        Get a Quote
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
+                    <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
+                      <Users className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
+                    </div>
+                    <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
+                      Elite Bodyguards
+                    </h3>
+                    <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
+                      Our SSG-trained specialists deliver executive-level
+                      protection with tactical expertise and discretion. Every
+                      bodyguard undergoes rigorous military training and
+                      psychological evaluation for high-risk scenarios.
+                    </p>
                     <Link
                       to="/contact"
-                      className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2 sm:py-3 lg:py-3.5 font-black text-xs sm:text-sm lg:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-lg"
+                      className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
                     >
-                      Get a Quote
+                      Learn More
+                      <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
                     </Link>
                   </div>
                 </div>
-                <div className="p-4 sm:p-6 lg:p-8 flex flex-col flex-grow">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 sm:mb-4">
-                    <Users className="w-5 sm:w-7 h-5 sm:w-7 text-accent" />
-                  </div>
-                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 leading-tight text-foreground">
-                    Elite Bodyguards
-                  </h3>
-                  <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                    Our SSG-trained specialists deliver executive-level
-                    protection with tactical expertise and discretion. Every
-                    bodyguard undergoes rigorous military training and
-                    psychological evaluation for high-risk scenarios.
-                  </p>
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 text-accent font-black text-xs sm:text-sm lg:text-base hover:text-accent-foreground transition-colors duration-300 w-fit"
-                  >
-                    Learn More
-                    <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-                  </Link>
-                </div>
               </div>
-            </div>
+            </AnimatedFadeInUp>
 
             {/* Service 3 - Mobile Escorts */}
             <div className="group overflow-hidden transition-all duration-300">
