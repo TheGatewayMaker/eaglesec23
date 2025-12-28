@@ -310,8 +310,9 @@ export default function Home() {
             </AnimatedScaleInUp>
 
             {/* Service 2 - Static Guards */}
-            <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
+            <AnimatedScaleInUp delay={100} threshold={0.2}>
+              <div className="group overflow-hidden transition-all duration-300">
+                <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
                   <img
                     src="https://i.ibb.co/xK0H4mRY/Screenshot-2025-12-27-at-10-17-59-PM.png"
@@ -349,10 +350,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </AnimatedScaleInUp>
 
             {/* Service 3 - Mobile Escorts */}
-            <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
+            <AnimatedScaleInUp delay={200} threshold={0.2}>
+              <div className="group overflow-hidden transition-all duration-300">
+                <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
                   <img
                     src="https://i.ibb.co/MxQRyL7x/Screenshot-2025-12-27-at-10-19-22-PM.png"
@@ -390,10 +393,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </AnimatedScaleInUp>
 
             {/* Service 4 - Security Equipment */}
-            <div className="group overflow-hidden transition-all duration-300">
-              <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
+            <AnimatedScaleInUp delay={300} threshold={0.2}>
+              <div className="group overflow-hidden transition-all duration-300">
+                <div className="bg-card border border-border/50 overflow-hidden transition-colors duration-300 h-full flex flex-col hover:border-accent/30">
                 <div className="relative overflow-hidden bg-gradient-to-br from-pk-green-main/10 to-accent/10 aspect-video">
                   <img
                     src="https://i.ibb.co/1fHGWYGz/Screenshot-2025-12-27-at-10-20-06-PM.png"
@@ -431,6 +436,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </AnimatedScaleInUp>
           </div>
         </div>
       </section>
