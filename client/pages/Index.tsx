@@ -974,26 +974,32 @@ export default function Home() {
                   "https://i.ibb.co/Dfm7BDgy/Screenshot-2025-12-27-at-10-20-35-PM.png",
               },
             ].map((item, i) => (
-              <div
+              <AnimationWrapper
                 key={i}
-                className="relative aspect-square overflow-hidden border border-border transition-border duration-300 hover:border-pk-green-main/60 group"
+                delay={i * 100}
+                threshold={0.2}
+                animation="fade-in-up"
               >
                 <div
-                  className="absolute inset-0 bg-cover bg-center transition-filter duration-300 group-hover:grayscale"
-                  style={{
-                    backgroundImage: `url('${item.image}')`,
-                  }}
-                />
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/55 transition-colors duration-300"></div>
-                <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
-                  <h3 className="text-xl md:text-2xl font-black mb-3 text-white leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm md:text-base font-bold text-white/95 leading-relaxed">
-                    {item.desc}
-                  </p>
+                  className="relative aspect-square overflow-hidden border border-border transition-border duration-300 hover:border-pk-green-main/60 group"
+                >
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-filter duration-300 group-hover:grayscale"
+                    style={{
+                      backgroundImage: `url('${item.image}')`,
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/55 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
+                    <h3 className="text-xl md:text-2xl font-black mb-3 text-white leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm md:text-base font-bold text-white/95 leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </AnimationWrapper>
             ))}
           </div>
         </div>
