@@ -92,7 +92,7 @@ export default function Home() {
 
         {/* Hero Background Image - Right Half Only */}
         <div
-          className="hidden md:block absolute right-8 lg:right-12 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
+          className="hidden md:block absolute right-2 lg:right-4 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
           style={{
             backgroundImage:
               "url('https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2Fbde89591a5894a43a7003a9d6c471bea?format=webp&width=800')",
