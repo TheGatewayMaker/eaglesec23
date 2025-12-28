@@ -1,5 +1,4 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 interface Logo {
   name: string;
@@ -12,51 +11,82 @@ interface LogoCarouselProps {
 
 export default function LogoCarousel({ logos }: LogoCarouselProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const isDraggingRef = useRef(false);
+  const dragStartXRef = useRef(0);
+  const dragStartScrollRef = useRef(0);
+  const [isHovering, setIsHovering] = useState(false);
 
-  const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 400;
-      const newScrollPosition =
-        scrollContainerRef.current.scrollLeft +
-        (direction === "left" ? -scrollAmount : scrollAmount);
+  // Auto-scroll functionality
+  useEffect(() => {
+    if (isHovering || isDraggingRef.current) return;
 
-      scrollContainerRef.current.scrollTo({
-        left: newScrollPosition,
-        behavior: "smooth",
-      });
-    }
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const scrollSpeed = 1; // pixels per frame
+    let animationFrameId: number;
+
+    const autoScroll = () => {
+      if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+        container.scrollLeft = 0;
+      } else {
+        container.scrollLeft += scrollSpeed;
+      }
+      animationFrameId = requestAnimationFrame(autoScroll);
+    };
+
+    animationFrameId = requestAnimationFrame(autoScroll);
+
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [isHovering]);
+
+  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    isDraggingRef.current = true;
+    dragStartXRef.current = e.clientX;
+    dragStartScrollRef.current = scrollContainerRef.current?.scrollLeft || 0;
+  };
+
+  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!isDraggingRef.current || !scrollContainerRef.current) return;
+
+    const dragDistance = e.clientX - dragStartXRef.current;
+    scrollContainerRef.current.scrollLeft =
+      dragStartScrollRef.current - dragDistance;
+  };
+
+  const handlePointerUp = () => {
+    isDraggingRef.current = false;
   };
 
   return (
     <div className="relative w-full">
-      {/* Navigation Buttons */}
-      <button
-        onClick={() => scroll("left")}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 hover:bg-background transition-colors duration-300 p-2 rounded-full border border-border"
-        aria-label="Scroll left"
-      >
-        <ChevronLeft className="w-6 h-6 text-foreground" />
-      </button>
-
       {/* Carousel Container */}
       <div
         ref={scrollContainerRef}
-        className="flex gap-8 md:gap-12 overflow-x-auto scroll-smooth px-16 py-8 scroll-smooth scrollbar-hide"
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerLeave={handlePointerUp}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+        className="flex gap-8 md:gap-12 overflow-x-auto px-4 sm:px-6 py-8 scrollbar-hide cursor-grab active:cursor-grabbing"
         style={{
-          scrollBehavior: "smooth",
           scrollbarWidth: "none",
           msOverflowStyle: "none",
+          WebkitUserSelect: "none",
+          userSelect: "none",
         }}
       >
         {logos.map((logo) => (
           <div
             key={logo.name}
-            className="flex-shrink-0 h-24 md:h-28 flex items-center justify-center"
+            className="flex-shrink-0 h-24 md:h-28 flex items-center justify-center pointer-events-none"
           >
             <img
               src={logo.src}
               alt={logo.name}
               className="h-full w-auto object-contain max-w-xs filter grayscale hover:grayscale-0 transition-all duration-300"
+              draggable="false"
             />
           </div>
         ))}
@@ -68,14 +98,6 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
           display: none;
         }
       `}</style>
-
-      <button
-        onClick={() => scroll("right")}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 hover:bg-background transition-colors duration-300 p-2 rounded-full border border-border"
-        aria-label="Scroll right"
-      >
-        <ChevronRight className="w-6 h-6 text-foreground" />
-      </button>
     </div>
   );
 }
