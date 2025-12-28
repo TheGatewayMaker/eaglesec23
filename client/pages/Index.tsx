@@ -765,7 +765,7 @@ export default function Home() {
             Contact our security experts today for a personalized consultation
             and secure your peace of mind
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
             <Link
               to="/contact"
               className="bg-accent text-accent-foreground px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:shadow-lg transition-shadow duration-300 inline-block rounded-lg"
@@ -778,6 +778,7 @@ export default function Home() {
             >
               View Services
             </Link>
+            <WhatsAppButton size="md" />
           </div>
         </div>
       </section>
