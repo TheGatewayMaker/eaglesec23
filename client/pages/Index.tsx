@@ -1100,7 +1100,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             {/* Left Side - Cities and Offices */}
-            <div className="flex flex-col space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10">
+            <AnimatedFadeInLeft threshold={0.2}>
+              <div className="flex flex-col space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10">
               {/* Head Office */}
               <div className="bg-gradient-to-br from-pk-green-main to-[#2d6b3d] text-white p-6 sm:p-8 md:p-10 lg:p-12 border border-pk-green-main/20 flex flex-col">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 sm:mb-4 md:mb-6 gap-2 sm:gap-0">
@@ -1167,15 +1168,18 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </AnimatedFadeInLeft>
 
             {/* Right Side - Pakistan Map */}
-            <div className="flex items-center justify-end md:ml-20">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2F60eb292d774d4532a0bd29f0a158fe2f?format=webp&width=800"
-                alt="Pakistan map showing Eagle Security locations"
-                className="w-full h-auto md:scale-110"
-              />
-            </div>
+            <AnimatedFadeInRight threshold={0.2}>
+              <div className="flex items-center justify-end md:ml-20">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fefd74c09605244708143d8415fd15fc4%2F60eb292d774d4532a0bd29f0a158fe2f?format=webp&width=800"
+                  alt="Pakistan map showing Eagle Security locations"
+                  className="w-full h-auto md:scale-110"
+                />
+              </div>
+            </AnimatedFadeInRight>
           </div>
         </div>
       </section>
