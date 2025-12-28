@@ -616,29 +616,35 @@ export default function Services() {
         </svg>
 
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl relative z-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
-            Ready to Secure Your Organization?
-          </h2>
-          <p className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-muted-foreground mb-6 sm:mb-8 md:mb-10 lg:mb-14 leading-relaxed">
-            Contact our security experts today for a personalized consultation
-            and discover how Eagle Security can protect what matters most to
-            you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
-            <Link
-              to="/contact"
-              className="bg-accent text-accent-foreground px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
-            >
-              Get a Quote Now
-            </Link>
-            <Link
-              to="/contact"
-              className="border-2 border-accent text-accent px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
-            >
-              Schedule Consultation
-            </Link>
-            <WhatsAppButton size="md" />
-          </div>
+          <AnimatedFadeInDown delay={0} threshold={0.2}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
+              Ready to Secure Your Organization?
+            </h2>
+          </AnimatedFadeInDown>
+          <AnimatedFadeInDown delay={100} threshold={0.2}>
+            <p className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-muted-foreground mb-6 sm:mb-8 md:mb-10 lg:mb-14 leading-relaxed">
+              Contact our security experts today for a personalized consultation
+              and discover how Eagle Security can protect what matters most to
+              you.
+            </p>
+          </AnimatedFadeInDown>
+          <AnimatedFadeInUp delay={200} threshold={0.2}>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
+              <Link
+                to="/contact"
+                className="bg-accent text-accent-foreground px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+              >
+                Get a Quote Now
+              </Link>
+              <Link
+                to="/contact"
+                className="border-2 border-accent text-accent px-6 sm:px-8 md:px-10 lg:px-12 py-2.5 sm:py-3 md:py-4 lg:py-5 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-all duration-300 inline-block rounded-lg"
+              >
+                Schedule Consultation
+              </Link>
+              <WhatsAppButton size="md" />
+            </div>
+          </AnimatedFadeInUp>
         </div>
       </section>
     </div>
