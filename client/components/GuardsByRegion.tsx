@@ -90,7 +90,8 @@ export default function GuardsByRegion() {
               />
               <Bar
                 dataKey="guards"
-                radius={[12, 12, 0, 0]}
+                radius={[0, 0, 0, 0]}
+                barSize={40}
                 isAnimationActive={true}
               >
                 {data.map((entry, index) => (
