@@ -95,63 +95,63 @@ export default function Services() {
           </div>
 
           {/* Bodyguards */}
-          <div className="mb-16 md:mb-20 pb-12 md:pb-16 border-b border-border">
+          <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 pb-6 sm:pb-8 md:pb-12 lg:pb-16 border-b border-border">
             <div
-              className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center animate-fade-in"
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center animate-fade-in"
               style={{ animationDelay: "100ms" }}
             >
-              <div className="overflow-hidden shadow-lg h-48 sm:h-56 md:h-96 group relative">
+              <div className="overflow-hidden shadow-lg h-40 sm:h-48 md:h-64 lg:h-96 group relative order-2 md:order-1">
                 <img
                   src="https://i.ibb.co/MxQRyL7x/Screenshot-2025-12-27-at-10-19-22-PM.png"
                   alt="Elite security professional in uniform"
-                  className="w-full h-full object-cover transition-transform duration-500"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-4 sm:gap-6">
+                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-2 sm:gap-4 md:gap-6">
                   <img
                     src="https://i.ibb.co/8gTBwZC9/eaglesecurityoriginallogomonochrome.png"
                     alt="Eagle Security Logo"
-                    className="w-20 sm:w-32 md:w-44 h-20 sm:h-32 md:h-44 object-contain opacity-100"
+                    className="w-16 sm:w-24 md:w-32 lg:w-44 h-16 sm:h-24 md:h-32 lg:h-44 object-contain opacity-100"
                   />
-                  <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
+                  <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer rounded-lg">
                     Get a Quote Now
                   </span>
                 </div>
               </div>
-              <div>
-                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                  <Users className="w-9 sm:w-10 md:w-12 h-9 sm:h-10 md:h-12 text-accent flex-shrink-0" />
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground">
+              <div className="order-1 md:order-2">
+                <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 md:mb-6">
+                  <Users className="w-7 sm:w-9 md:w-10 lg:w-12 h-7 sm:h-9 md:h-10 lg:h-12 text-accent flex-shrink-0" />
+                  <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground">
                     Bodyguards
                   </h2>
                 </div>
-                <p className="text-muted-foreground leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base md:text-xl font-black">
+                <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base lg:text-lg font-black">
                   Our bodyguards are mainly drawn from Special Service Group
                   (SSG) of Pakistan Army, an elite force trained to use all
                   available means to survive the worst security hazards.
                 </p>
-                <ul className="space-y-5">
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                <ul className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Elite personnel from Special Service Group (SSG)
                     </span>
                   </li>
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Cream of handpicked men dedicated to difficult missions
                     </span>
                   </li>
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Advanced threat assessment and response training
                     </span>
                   </li>
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Protection in high-risk security scenarios
                     </span>
                   </li>
@@ -161,64 +161,64 @@ export default function Services() {
           </div>
 
           {/* Mobile Escorts */}
-          <div className="mb-16 md:mb-20 pb-12 md:pb-16 border-b border-border">
+          <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 pb-6 sm:pb-8 md:pb-12 lg:pb-16 border-b border-border">
             <div
-              className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center animate-fade-in"
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center animate-fade-in"
               style={{ animationDelay: "200ms" }}
             >
-              <div>
-                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                  <Truck className="w-9 sm:w-10 md:w-12 h-9 sm:h-10 md:h-12 text-accent flex-shrink-0" />
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground">
+              <div className="order-2 md:order-1">
+                <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 md:mb-6">
+                  <Truck className="w-7 sm:w-9 md:w-10 lg:w-12 h-7 sm:h-9 md:h-10 lg:h-12 text-accent flex-shrink-0" />
+                  <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground">
                     Mobile Escort Services
                   </h2>
                 </div>
-                <p className="text-muted-foreground leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base md:text-xl font-black">
+                <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base lg:text-lg font-black">
                   Mobile escort services are provided by ESG to protect
                   personnel during movement. Our escort teams are fully trained
                   in defensive measures to meet any eventuality.
                 </p>
-                <ul className="space-y-5">
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                <ul className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Protection during personnel movement and transit
                     </span>
                   </li>
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Fully trained teams in defensive measures
                     </span>
                   </li>
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Emergency response protocols for any situation
                     </span>
                   </li>
-                  <li className="flex gap-4 p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
-                    <CheckCircle2 className="w-7 h-7 text-accent flex-shrink-0 mt-0" />
-                    <span className="text-foreground font-black text-base md:text-lg leading-snug">
+                  <li className="flex gap-2 sm:gap-3 md:gap-4 p-2 sm:p-3 md:p-4 rounded-lg bg-accent/5 border-l-4 border-accent hover:bg-accent/10 transition-colors duration-300">
+                    <CheckCircle2 className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 text-accent flex-shrink-0 mt-0" />
+                    <span className="text-foreground font-black text-xs md:text-sm lg:text-base leading-snug">
                       Discrete and professional protection services
                     </span>
                   </li>
                 </ul>
               </div>
-              <div className="overflow-hidden shadow-lg h-48 sm:h-56 md:h-96 group relative">
+              <div className="overflow-hidden shadow-lg h-40 sm:h-48 md:h-64 lg:h-96 group relative order-1 md:order-2">
                 <img
                   src="https://i.ibb.co/zhQrVk6Q/Screenshot-2025-12-27-at-10-24-55-PM.png"
                   alt="Mobile security escort team"
-                  className="w-full h-full object-cover transition-transform duration-500"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-4 sm:gap-6">
+                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-2 sm:gap-4 md:gap-6">
                   <img
                     src="https://i.ibb.co/8gTBwZC9/eaglesecurityoriginallogomonochrome.png"
                     alt="Eagle Security Logo"
-                    className="w-20 sm:w-32 md:w-44 h-20 sm:h-32 md:h-44 object-contain opacity-100"
+                    className="w-16 sm:w-24 md:w-32 lg:w-44 h-16 sm:h-24 md:h-32 lg:h-44 object-contain opacity-100"
                   />
-                  <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-6 sm:px-8 py-2 sm:py-3 font-black text-sm sm:text-base md:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
+                  <span className="bg-gradient-to-r from-accent to-blue-800 text-accent-foreground px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer rounded-lg">
                     Get a Quote Now
                   </span>
                 </div>
