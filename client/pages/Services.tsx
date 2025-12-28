@@ -103,6 +103,20 @@ export default function Services() {
           <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-background/10 to-transparent"></div>
         </div>
 
+        {/* Company Logo - Hero Section */}
+        <div className="hidden lg:flex absolute right-12 bottom-16 flex-col items-center justify-center z-20">
+          <img
+            src="https://i.ibb.co/s954vR34/eaglesecurityoriginallogo-1-copy.png"
+            alt="Eagle Security Guards Logo"
+            className="w-40 h-40 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"
+          />
+          <div className="mt-4 text-center">
+            <p className="text-sm font-black text-accent tracking-widest">
+              TRUSTED SINCE 1992
+            </p>
+          </div>
+        </div>
+
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 lg:gap-12 items-center">
             {/* Left Content */}
