@@ -128,9 +128,9 @@ export default function Services() {
               </AnimatedFadeInDown>
               <AnimatedFadeInDown delay={200} duration="normal">
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground font-bold mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-2xl">
-                  From static guards to mobile escorts, our comprehensive security
-                  portfolio delivers world-class protection with military
-                  precision and professional excellence.
+                  From static guards to mobile escorts, our comprehensive
+                  security portfolio delivers world-class protection with
+                  military precision and professional excellence.
                 </p>
               </AnimatedFadeInDown>
               <AnimatedFadeInUp delay={300} duration="normal">
@@ -294,8 +294,9 @@ export default function Services() {
                     <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
                       Our vetted security professionals drawn from armed forces
                       provide round-the-clock on-site protection with military
-                      discipline and precision. Each guard undergoes comprehensive
-                      background screening and professional training.
+                      discipline and precision. Each guard undergoes
+                      comprehensive background screening and professional
+                      training.
                     </p>
                     <Link
                       to="/contact"
@@ -424,8 +425,8 @@ export default function Services() {
                       Security Equipment
                     </h3>
                     <p className="text-xs sm:text-sm lg:text-base font-bold leading-relaxed text-muted-foreground mb-4 sm:mb-6 flex-grow">
-                      We deploy state-of-the-art surveillance, access control, and
-                      security monitoring systems. From CCTV networks to
+                      We deploy state-of-the-art surveillance, access control,
+                      and security monitoring systems. From CCTV networks to
                       integrated platforms, every solution is tailored to your
                       facility's unique requirements.
                     </p>
@@ -544,8 +545,8 @@ export default function Services() {
                 </h3>
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed mb-6 sm:mb-8">
                   From comprehensive threat assessment to rapid response
-                  protocols, our personnel deliver world-class security backed by
-                  military expertise, rigorous training standards, and proven
+                  protocols, our personnel deliver world-class security backed
+                  by military expertise, rigorous training standards, and proven
                   track record spanning over 30 years of trusted service to
                   Pakistan's leading organizations.
                 </p>
@@ -568,7 +569,10 @@ export default function Services() {
       </section>
 
       {/* Final CTA Section */}
-      <section id="services-cta" className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden">
+      <section
+        id="services-cta"
+        className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden"
+      >
         {/* Decorative Background Elements */}
         <svg
           className="absolute top-1/4 left-1/2 w-2/3 h-3/4 -translate-x-1/2 opacity-40"
