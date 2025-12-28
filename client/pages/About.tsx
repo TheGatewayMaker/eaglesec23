@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div className="bg-background transition-colors duration-300">
       {/* Hero Banner Section */}
-      <section className="relative w-full h-56 sm:h-64 md:h-96 flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-48 sm:h-56 md:h-72 lg:h-96 flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -25,55 +25,55 @@ export default function About() {
         <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center text-white">
-          <div className="mb-3 sm:mb-6 md:mb-8 animate-bounce-gentle">
+          <div className="mb-2 sm:mb-4 md:mb-6 lg:mb-8 animate-bounce-gentle">
             <img
               src="https://i.ibb.co/8gTBwZC9/eaglesecurityoriginallogomonochrome.png"
               alt="Eagle Security Guards Logo"
-              className="w-16 sm:w-24 md:w-40 h-16 sm:h-24 md:h-40 object-contain mx-auto opacity-95 filter drop-shadow-xl"
+              className="w-12 sm:w-16 md:w-24 lg:w-40 h-12 sm:h-16 md:h-24 lg:h-40 object-contain mx-auto opacity-95 filter drop-shadow-xl"
             />
           </div>
-          <h1 className="text-2xl sm:text-4xl md:text-7xl font-black mb-3 sm:mb-6 text-white drop-shadow-2xl leading-tight">
+          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl font-black mb-2 sm:mb-3 md:mb-6 text-white drop-shadow-2xl leading-tight">
             About Eagle Security Guards
           </h1>
-          <p className="text-xs sm:text-base md:text-2xl font-bold opacity-95 max-w-3xl mx-auto drop-shadow-lg">
+          <p className="text-xs sm:text-sm md:text-lg lg:text-2xl font-bold opacity-95 max-w-3xl mx-auto drop-shadow-lg leading-tight">
             Guardians of Trust • Defenders of Peace • Protectors Since 1992
           </p>
         </div>
       </section>
 
       {/* Key Stats Section */}
-      <section className="py-10 sm:py-16 md:py-24 bg-gradient-to-r from-accent to-accent/80 transition-colors duration-300">
+      <section className="py-8 sm:py-12 md:py-16 lg:py-24 bg-gradient-to-r from-accent to-accent/80 transition-colors duration-300">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-white">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 text-white">
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black mb-2 sm:mb-3">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-1 sm:mb-2 md:mb-3">
                 30+
               </div>
-              <p className="text-xs sm:text-sm md:text-lg font-bold opacity-90">
+              <p className="text-xs md:text-sm lg:text-lg font-bold opacity-90 leading-tight">
                 Years of Excellence
               </p>
             </div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black mb-2 sm:mb-3">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-1 sm:mb-2 md:mb-3">
                 4000+
               </div>
-              <p className="text-xs sm:text-sm md:text-lg font-bold opacity-90">
+              <p className="text-xs md:text-sm lg:text-lg font-bold opacity-90 leading-tight">
                 Dedicated Personnel
               </p>
             </div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black mb-2 sm:mb-3">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-1 sm:mb-2 md:mb-3">
                 50+
               </div>
-              <p className="text-xs sm:text-sm md:text-lg font-bold opacity-90">
+              <p className="text-xs md:text-sm lg:text-lg font-bold opacity-90 leading-tight">
                 Offices Nationwide
               </p>
             </div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black mb-2 sm:mb-3">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-1 sm:mb-2 md:mb-3">
                 100%
               </div>
-              <p className="text-xs sm:text-sm md:text-lg font-bold opacity-90">
+              <p className="text-xs md:text-sm lg:text-lg font-bold opacity-90 leading-tight">
                 Client Satisfaction
               </p>
             </div>
