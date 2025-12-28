@@ -17,10 +17,78 @@ export default function Home() {
     >
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-background via-background to-background/95 text-foreground relative overflow-hidden py-10 sm:py-14 md:py-20 lg:py-32 transition-colors duration-300">
-        {/* Decorative Background Elements */}
-        <div className="absolute -top-20 -left-40 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl opacity-70"></div>
-        <div className="absolute top-1/4 -right-20 w-[400px] h-[400px] bg-accent/12 rounded-full blur-2xl opacity-60"></div>
-        <div className="absolute -bottom-32 left-1/3 w-[450px] h-[450px] bg-accent/10 rounded-full blur-3xl opacity-50"></div>
+        {/* Decorative Background Elements - Hero Section */}
+        <svg
+          className="absolute top-0 left-0 w-full h-full opacity-40"
+          viewBox="0 0 1200 800"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="heroWaveGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.1 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,200 Q300,100 600,200 T1200,200 L1200,0 L0,0 Z"
+            fill="url(#heroWaveGradient)"
+            opacity="0.6"
+          />
+          <path
+            d="M0,400 Q200,350 400,400 T800,400 Q1000,450 1200,400 L1200,600 L0,600 Z"
+            fill="var(--accent)"
+            opacity="0.08"
+          />
+          <circle
+            cx="100"
+            cy="150"
+            r="80"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.3"
+          />
+          <circle
+            cx="1100"
+            cy="500"
+            r="120"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+          />
+          <line
+            x1="200"
+            y1="300"
+            x2="400"
+            y2="350"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.25"
+          />
+          <line
+            x1="900"
+            y1="200"
+            x2="1050"
+            y2="300"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+          />
+        </svg>
 
         {/* Hero Background Image - Right Half Only */}
         <div
@@ -79,9 +147,90 @@ export default function Home() {
 
       {/* Services Overview */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -right-48 w-[550px] h-[550px] bg-accent/12 rounded-full blur-3xl opacity-60"></div>
-        <div className="absolute bottom-0 -left-32 w-[480px] h-[480px] bg-accent/14 rounded-full blur-2xl opacity-55"></div>
+        {/* Decorative Background Elements - Services Section */}
+        <svg
+          className="absolute top-0 right-0 w-1/2 h-full opacity-35"
+          viewBox="0 0 600 800"
+          preserveAspectRatio="xMaxYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="servicesGradient"
+              x1="100%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.5 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.1 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M600,100 Q500,150 400,100 Q300,50 200,100 Q100,150 0,100 L0,300 Q150,250 300,300 Q450,350 600,300 Z"
+            fill="url(#servicesGradient)"
+          />
+          <circle
+            cx="500"
+            cy="200"
+            r="60"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.25"
+          />
+          <circle
+            cx="100"
+            cy="400"
+            r="40"
+            fill="var(--accent)"
+            opacity="0.08"
+          />
+          <circle
+            cx="400"
+            cy="600"
+            r="50"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+          />
+          <path
+            d="M50,500 L200,450 M150,550 L350,500 M200,650 L450,600"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.25"
+            fill="none"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 -left-32 w-1/3 h-1/2 opacity-30"
+          viewBox="0 0 400 400"
+          preserveAspectRatio="xMinYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,200 Q100,100 200,150 Q300,200 400,100 L400,400 L0,400 Z"
+            fill="var(--accent)"
+            opacity="0.06"
+          />
+          <circle
+            cx="50"
+            cy="300"
+            r="70"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.2"
+            strokeDasharray="5,5"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
@@ -269,9 +418,78 @@ export default function Home() {
 
       {/* Value Proposition Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-1/3 left-1/2 w-[500px] h-[500px] bg-accent/16 rounded-full blur-3xl -translate-x-1/2 opacity-65"></div>
-        <div className="absolute bottom-1/4 -right-40 w-[420px] h-[420px] bg-accent/13 rounded-full blur-2xl opacity-60"></div>
+        {/* Decorative Background Elements - Value Section */}
+        <svg
+          className="absolute top-1/4 left-1/2 w-2/3 h-3/4 -translate-x-1/2 opacity-40"
+          viewBox="0 0 800 600"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="valueGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.05 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,150 Q200,50 400,150 Q600,250 800,150 L800,0 L0,0 Z"
+            fill="url(#valueGradient)"
+          />
+          <path
+            d="M0,350 Q150,300 300,350 Q450,400 600,350 Q700,330 800,350 L800,600 L0,600 Z"
+            fill="var(--accent)"
+            opacity="0.05"
+          />
+          <circle
+            cx="400"
+            cy="300"
+            r="100"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.3"
+          />
+          <circle
+            cx="400"
+            cy="300"
+            r="150"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1"
+            opacity="0.15"
+            strokeDasharray="10,5"
+          />
+          <line
+            x1="200"
+            y1="200"
+            x2="200"
+            y2="400"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+          />
+          <line
+            x1="600"
+            y1="200"
+            x2="600"
+            y2="400"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Header */}
@@ -436,9 +654,81 @@ export default function Home() {
 
       {/* Statistics Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-36 w-[480px] h-[480px] bg-accent/12 rounded-full blur-3xl opacity-55"></div>
-        <div className="absolute bottom-1/4 right-0 w-[520px] h-[520px] bg-accent/14 rounded-full blur-2xl opacity-60"></div>
+        {/* Decorative Background Elements - Stats Section */}
+        <svg
+          className="absolute top-0 left-0 w-1/3 h-1/2 opacity-35"
+          viewBox="0 0 300 300"
+          preserveAspectRatio="xMinYMin slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="statsGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.08 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,50 Q75,0 150,50 Q225,100 300,50 L300,0 L0,0 Z"
+            fill="url(#statsGradient)"
+          />
+          <circle
+            cx="150"
+            cy="150"
+            r="80"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+            strokeDasharray="5,3"
+          />
+          <line
+            x1="30"
+            y1="100"
+            x2="270"
+            y2="100"
+            stroke="var(--accent)"
+            strokeWidth="1"
+            opacity="0.15"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 right-0 w-2/5 h-3/5 opacity-30"
+          viewBox="0 0 500 400"
+          preserveAspectRatio="xMaxYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M500,100 Q400,50 300,100 Q200,150 100,100 Q0,50 0,200 L500,200 Z"
+            fill="var(--accent)"
+            opacity="0.06"
+          />
+          <path
+            d="M0,250 Q125,200 250,250 Q375,300 500,250 L500,400 L0,400 Z"
+            fill="var(--accent)"
+            opacity="0.04"
+          />
+          <circle
+            cx="400"
+            cy="300"
+            r="60"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.2"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
@@ -531,9 +821,72 @@ export default function Home() {
 
       {/* Why Choose Us - Feature Grid */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/95 via-background to-background transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl opacity-65"></div>
-        <div className="absolute bottom-0 -left-40 w-[450px] h-[450px] bg-accent/12 rounded-full blur-2xl opacity-55"></div>
+        {/* Decorative Background Elements - Why Choose Section */}
+        <svg
+          className="absolute top-1/3 -right-40 w-1/2 h-2/3 opacity-35"
+          viewBox="0 0 500 600"
+          preserveAspectRatio="xMaxYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="whyGradient"
+              x1="100%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.5 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.08 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M500,100 Q400,150 300,100 Q200,50 100,100 Q0,150 0,250 L500,250 Z"
+            fill="url(#whyGradient)"
+          />
+          <path
+            d="M0,400 Q125,350 250,400 Q375,450 500,400 L500,600 L0,600 Z"
+            fill="var(--accent)"
+            opacity="0.05"
+          />
+          <circle
+            cx="400"
+            cy="200"
+            r="70"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.25"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 -left-32 w-2/5 h-1/2 opacity-25"
+          viewBox="0 0 400 300"
+          preserveAspectRatio="xMinYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,100 Q100,50 200,100 Q300,150 400,100 L400,300 L0,300 Z"
+            fill="var(--accent)"
+            opacity="0.07"
+          />
+          <circle
+            cx="100"
+            cy="200"
+            r="50"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+            strokeDasharray="4,4"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
@@ -603,9 +956,81 @@ export default function Home() {
 
       {/* Presence Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-1/4 left-0 w-[480px] h-[480px] bg-accent/13 rounded-full blur-3xl -translate-x-1/2 opacity-60"></div>
-        <div className="absolute bottom-0 -right-32 w-[520px] h-[520px] bg-accent/14 rounded-full blur-2xl opacity-65"></div>
+        {/* Decorative Background Elements - Presence Section */}
+        <svg
+          className="absolute top-1/4 left-0 w-1/3 h-3/4 -translate-x-1/4 opacity-35"
+          viewBox="0 0 400 600"
+          preserveAspectRatio="xMinYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="presenceGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.05 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,200 Q100,150 200,200 Q300,250 400,200 L400,0 L0,0 Z"
+            fill="url(#presenceGradient)"
+          />
+          <path
+            d="M0,400 Q200,350 400,400 L400,600 L0,600 Z"
+            fill="var(--accent)"
+            opacity="0.05"
+          />
+          <circle
+            cx="200"
+            cy="300"
+            r="90"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+            strokeDasharray="8,6"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 -right-20 w-2/5 h-1/2 opacity-30"
+          viewBox="0 0 500 400"
+          preserveAspectRatio="xMaxYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M500,100 Q375,50 250,100 Q125,150 0,100 L0,400 L500,400 Z"
+            fill="var(--accent)"
+            opacity="0.06"
+          />
+          <circle
+            cx="350"
+            cy="250"
+            r="80"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.2"
+          />
+          <line
+            x1="100"
+            y1="150"
+            x2="400"
+            y2="250"
+            stroke="var(--accent)"
+            strokeWidth="1"
+            opacity="0.15"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
@@ -706,9 +1131,76 @@ export default function Home() {
 
       {/* Trusted By Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-pk-green-main/20 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-40 w-[500px] h-[500px] bg-accent/12 rounded-full blur-3xl opacity-55"></div>
-        <div className="absolute bottom-0 -right-36 w-[480px] h-[480px] bg-accent/14 rounded-full blur-2xl opacity-65"></div>
+        {/* Decorative Background Elements - Trusted By Section */}
+        <svg
+          className="absolute top-0 left-0 w-2/5 h-1/2 opacity-35"
+          viewBox="0 0 500 300"
+          preserveAspectRatio="xMinYMin slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="trustedGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.08 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,100 Q125,50 250,100 Q375,150 500,100 L500,0 L0,0 Z"
+            fill="url(#trustedGradient)"
+          />
+          <circle
+            cx="250"
+            cy="150"
+            r="60"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.25"
+          />
+          <line
+            x1="50"
+            y1="200"
+            x2="450"
+            y2="200"
+            stroke="var(--accent)"
+            strokeWidth="1"
+            opacity="0.15"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 right-0 w-1/3 h-2/3 opacity-30"
+          viewBox="0 0 400 500"
+          preserveAspectRatio="xMaxYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M400,200 Q300,150 200,200 Q100,250 0,200 L0,500 L400,500 Z"
+            fill="var(--accent)"
+            opacity="0.05"
+          />
+          <circle
+            cx="300"
+            cy="350"
+            r="70"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+            strokeDasharray="5,5"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="mb-8 sm:mb-12 md:mb-16 text-center">
@@ -790,9 +1282,69 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-1/4 left-1/2 w-[500px] h-[500px] bg-accent/16 rounded-full blur-3xl -translate-x-1/2 opacity-70"></div>
-        <div className="absolute bottom-1/3 -right-40 w-[450px] h-[450px] bg-accent/13 rounded-full blur-2xl opacity-60"></div>
+        {/* Decorative Background Elements - CTA Section */}
+        <svg
+          className="absolute top-1/4 left-1/2 w-2/3 h-3/4 -translate-x-1/2 opacity-40"
+          viewBox="0 0 800 600"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="ctaGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.05 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,200 Q200,100 400,200 Q600,300 800,200 L800,0 L0,0 Z"
+            fill="url(#ctaGradient)"
+          />
+          <path
+            d="M0,400 Q150,350 300,400 Q450,450 600,400 Q700,380 800,400 L800,600 L0,600 Z"
+            fill="var(--accent)"
+            opacity="0.04"
+          />
+          <circle
+            cx="400"
+            cy="300"
+            r="100"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+            strokeDasharray="10,8"
+          />
+          <line
+            x1="150"
+            y1="250"
+            x2="150"
+            y2="450"
+            stroke="var(--accent)"
+            strokeWidth="1"
+            opacity="0.15"
+          />
+          <line
+            x1="650"
+            y1="250"
+            x2="650"
+            y2="450"
+            stroke="var(--accent)"
+            strokeWidth="1"
+            opacity="0.15"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl relative z-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
@@ -825,9 +1377,67 @@ export default function Home() {
         id="head-office-location"
         className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/98 to-background transition-colors duration-300 relative overflow-hidden"
       >
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 -left-32 w-[480px] h-[480px] bg-accent/14 rounded-full blur-3xl opacity-60"></div>
-        <div className="absolute bottom-0 -right-40 w-[520px] h-[520px] bg-accent/12 rounded-full blur-2xl opacity-55"></div>
+        {/* Decorative Background Elements - Location Section */}
+        <svg
+          className="absolute top-0 left-0 w-2/5 h-1/2 opacity-35"
+          viewBox="0 0 400 300"
+          preserveAspectRatio="xMinYMin slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="locationGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.4 }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "var(--accent)", stopOpacity: 0.08 }}
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,80 Q100,40 200,80 Q300,120 400,80 L400,0 L0,0 Z"
+            fill="url(#locationGradient)"
+          />
+          <circle
+            cx="200"
+            cy="150"
+            r="50"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            opacity="0.25"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 right-0 w-1/3 h-2/5 opacity-30"
+          viewBox="0 0 400 300"
+          preserveAspectRatio="xMaxYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M400,100 Q300,50 200,100 Q100,150 0,100 L0,300 L400,300 Z"
+            fill="var(--accent)"
+            opacity="0.05"
+          />
+          <circle
+            cx="300"
+            cy="200"
+            r="60"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="1.5"
+            opacity="0.2"
+            strokeDasharray="6,4"
+          />
+        </svg>
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="mb-8 sm:mb-12 md:mb-16">
