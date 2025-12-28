@@ -404,89 +404,89 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-b from-background to-background/95 transition-colors duration-300">
-        <div className="container mx-auto px-0 sm:px-6 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 md:gap-6">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background to-background/95 transition-colors duration-300">
+        <div className="container mx-auto px-4 sm:px-6 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
             {/* Experience Card */}
-            <div className="aspect-square bg-card border border-border text-foreground p-6 md:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
-              <div className="mb-4 md:mb-6 flex items-center justify-center h-16 md:h-20">
+            <div className="aspect-square bg-card border border-border text-foreground p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
+              <div className="mb-2 sm:mb-3 md:mb-4 lg:mb-6 flex items-center justify-center h-10 sm:h-14 md:h-16 lg:h-20">
                 <AnimatedCounter
                   targetNumber={30}
                   suffix="+"
                   duration={2000}
-                  className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
                     color: "var(--accent)",
                   }}
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-black mb-2 group-hover:text-white transition-colors duration-300">
+              <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-black mb-1 group-hover:text-white transition-colors duration-300">
                 Years of Experience
               </h3>
-              <p className="text-xs md:text-sm font-black group-hover:text-white transition-colors duration-300">
+              <p className="text-xs font-black group-hover:text-white transition-colors duration-300">
                 Protecting businesses since 1992
               </p>
             </div>
 
             {/* Personnel Card */}
-            <div className="aspect-square bg-card border border-border text-foreground p-6 md:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
-              <div className="mb-4 md:mb-6 flex items-center justify-center h-16 md:h-20">
+            <div className="aspect-square bg-card border border-border text-foreground p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
+              <div className="mb-2 sm:mb-3 md:mb-4 lg:mb-6 flex items-center justify-center h-10 sm:h-14 md:h-16 lg:h-20">
                 <AnimatedCounter
                   targetNumber={500}
                   suffix="+"
                   duration={2000}
-                  className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
                     color: "var(--accent)",
                   }}
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-black mb-2 group-hover:text-white transition-colors duration-300">
+              <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-black mb-1 group-hover:text-white transition-colors duration-300">
                 Trained Personnel
               </h3>
-              <p className="text-xs md:text-sm font-black group-hover:text-white transition-colors duration-300">
+              <p className="text-xs font-black group-hover:text-white transition-colors duration-300">
                 Elite security professionals
               </p>
             </div>
 
             {/* Clients Card */}
-            <div className="aspect-square bg-card border border-border text-foreground p-6 md:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
-              <div className="mb-4 md:mb-6 flex items-center justify-center h-16 md:h-20">
+            <div className="aspect-square bg-card border border-border text-foreground p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
+              <div className="mb-2 sm:mb-3 md:mb-4 lg:mb-6 flex items-center justify-center h-10 sm:h-14 md:h-16 lg:h-20">
                 <AnimatedCounter
                   targetNumber={100}
                   suffix="+"
                   duration={2000}
-                  className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
                     color: "var(--accent)",
                   }}
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-black mb-2 group-hover:text-white transition-colors duration-300">
+              <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-black mb-1 group-hover:text-white transition-colors duration-300">
                 Corporate Clients
               </h3>
-              <p className="text-xs md:text-sm font-black group-hover:text-white transition-colors duration-300">
+              <p className="text-xs font-black group-hover:text-white transition-colors duration-300">
                 Trusted by leading organizations
               </p>
             </div>
 
             {/* Total Guards Deployed Card */}
-            <div className="aspect-square bg-card border border-border text-foreground p-6 md:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
-              <div className="mb-4 md:mb-6 flex items-center justify-center h-16 md:h-20">
+            <div className="aspect-square bg-card border border-border text-foreground p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
+              <div className="mb-2 sm:mb-3 md:mb-4 lg:mb-6 flex items-center justify-center h-10 sm:h-14 md:h-16 lg:h-20">
                 <AnimatedCounter
                   targetNumber={1541}
                   suffix="+"
                   duration={2000}
-                  className="text-5xl md:text-6xl font-black group-hover:text-white transition-colors duration-300"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black group-hover:text-white transition-colors duration-300"
                   style={{
                     color: "var(--accent)",
                   }}
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-black mb-2 group-hover:text-white transition-colors duration-300">
+              <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-black mb-1 group-hover:text-white transition-colors duration-300">
                 Total Guards Deployed
               </h3>
-              <p className="text-xs md:text-sm font-black group-hover:text-white transition-colors duration-300">
+              <p className="text-xs font-black group-hover:text-white transition-colors duration-300">
                 Active security personnel across Pakistan
               </p>
             </div>
