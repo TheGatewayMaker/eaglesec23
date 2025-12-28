@@ -89,32 +89,21 @@ export default function Services() {
           />
         </svg>
 
-        {/* Hero Background Image - Right Half Only */}
-        <div
-          className="hidden md:block absolute right-8 lg:right-12 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
-          style={{
-            backgroundImage:
-              "url('https://i.ibb.co/Dg43BJC0/Screenshot-2025-12-27-at-10-23-30-PM.png')",
-            backgroundSize: "contain",
-            backgroundPosition: "right center",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-background/10 to-transparent"></div>
-        </div>
-
-        {/* Company Logo - Hero Section */}
-        <div className="hidden lg:flex absolute right-12 bottom-16 flex-col items-center justify-center z-20">
-          <img
-            src="https://i.ibb.co/s954vR34/eaglesecurityoriginallogo-1-copy.png"
-            alt="Eagle Security Guards Logo"
-            className="w-40 h-40 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"
-          />
-          <div className="mt-4 text-center">
-            <p className="text-sm font-black text-accent tracking-widest">
-              TRUSTED SINCE 1992
-            </p>
+        {/* Hero Logo - Right Half */}
+        <div className="hidden md:flex absolute right-0 top-0 w-1/2 h-full items-center justify-center pr-8 lg:pr-12">
+          <div className="flex flex-col items-center justify-center gap-6">
+            <img
+              src="https://i.ibb.co/s954vR34/eaglesecurityoriginallogo-1-copy.png"
+              alt="Eagle Security Guards Logo"
+              className="w-48 sm:w-56 md:w-64 lg:w-80 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300 drop-shadow-xl"
+            />
+            <div className="text-center">
+              <p className="text-sm sm:text-base font-black text-accent tracking-widest">
+                TRUSTED SINCE 1992
+              </p>
+            </div>
           </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-background/5 to-transparent pointer-events-none"></div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
