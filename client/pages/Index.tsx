@@ -381,18 +381,18 @@ export default function Home() {
           </div>
 
           {/* Summary Banner */}
-          <div className="px-4 sm:px-0">
-            <div className="relative overflow-hidden bg-gradient-to-r from-pk-green-main/10 to-accent/10 border border-pk-green-main/30 rounded-xl p-10 md:p-14">
+          <div>
+            <div className="relative overflow-hidden bg-gradient-to-r from-pk-green-main/10 to-accent/10 border border-pk-green-main/30 rounded-xl p-6 sm:p-8 md:p-10 lg:p-14">
               <div className="absolute -right-20 -top-20 w-52 h-52 bg-accent/5 rounded-full"></div>
               <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-pk-green-main/5 rounded-full"></div>
               <div className="relative z-10">
-                <p className="text-xs font-black text-accent uppercase tracking-widest mb-4">
+                <p className="text-xs font-black text-accent uppercase tracking-widest mb-3 sm:mb-4">
                   Our Commitment
                 </p>
-                <h3 className="text-3xl md:text-5xl font-black leading-tight mb-6 text-foreground max-w-3xl">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4 sm:mb-6 text-foreground max-w-3xl">
                   Professional Security Is An Investment In Your Future
                 </h3>
-                <p className="text-base md:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed">
                   From comprehensive threat assessment to rapid response
                   protocols, we provide complete protection backed by military
                   expertise and decades of proven success.
