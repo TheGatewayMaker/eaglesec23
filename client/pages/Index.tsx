@@ -518,7 +518,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Header */}
-          <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
+          <AnimatedFadeInUp className="mb-8 sm:mb-12 md:mb-16 lg:mb-24" threshold={0.2}>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
               <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
@@ -529,7 +529,7 @@ export default function Home() {
               In a world where threats evolve constantly, professional security
               isn't just an option—it's essential
             </p>
-          </div>
+          </AnimatedFadeInUp>
 
           {/* Key Reasons Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
