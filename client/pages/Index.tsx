@@ -17,10 +17,21 @@ export default function Home() {
     >
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-background via-background to-background/95 text-foreground relative overflow-hidden py-10 sm:py-14 md:py-20 lg:py-32 transition-colors duration-300">
-        {/* Decorative Background Elements */}
-        <div className="absolute -top-20 -left-40 w-[500px] h-[500px] bg-accent/25 rounded-full blur-3xl opacity-100"></div>
-        <div className="absolute top-1/4 -right-20 w-[400px] h-[400px] bg-accent/20 rounded-full blur-2xl opacity-90"></div>
-        <div className="absolute -bottom-32 left-1/3 w-[450px] h-[450px] bg-accent/22 rounded-full blur-3xl opacity-85"></div>
+        {/* Decorative Background Elements - Hero Section */}
+        <svg className="absolute top-0 left-0 w-full h-full opacity-40" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroWaveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style={{stopColor: 'var(--accent)', stopOpacity: 0.4}} />
+              <stop offset="100%" style={{stopColor: 'var(--accent)', stopOpacity: 0.1}} />
+            </linearGradient>
+          </defs>
+          <path d="M0,200 Q300,100 600,200 T1200,200 L1200,0 L0,0 Z" fill="url(#heroWaveGradient)" opacity="0.6"/>
+          <path d="M0,400 Q200,350 400,400 T800,400 Q1000,450 1200,400 L1200,600 L0,600 Z" fill="var(--accent)" opacity="0.08"/>
+          <circle cx="100" cy="150" r="80" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.3"/>
+          <circle cx="1100" cy="500" r="120" fill="none" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2"/>
+          <line x1="200" y1="300" x2="400" y2="350" stroke="var(--accent)" strokeWidth="2" opacity="0.25"/>
+          <line x1="900" y1="200" x2="1050" y2="300" stroke="var(--accent)" strokeWidth="1.5" opacity="0.2"/>
+        </svg>
 
         {/* Hero Background Image - Right Half Only */}
         <div
