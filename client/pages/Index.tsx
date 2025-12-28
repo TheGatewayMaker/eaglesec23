@@ -4,6 +4,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import CompanyWiseDeployments from "@/components/CompanyWiseDeployments";
 import GuardsByRegion from "@/components/GuardsByRegion";
 import LogoCarousel from "@/components/LogoCarousel";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -16,6 +17,11 @@ export default function Home() {
     >
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-background via-background to-background/95 text-foreground relative overflow-hidden py-10 sm:py-14 md:py-20 lg:py-32 transition-colors duration-300">
+        {/* Decorative Background Elements */}
+        <div className="absolute -top-20 -left-40 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl opacity-70"></div>
+        <div className="absolute top-1/4 -right-20 w-[400px] h-[400px] bg-accent/12 rounded-full blur-2xl opacity-60"></div>
+        <div className="absolute -bottom-32 left-1/3 w-[450px] h-[450px] bg-accent/10 rounded-full blur-3xl opacity-50"></div>
+
         {/* Hero Background Image - Right Half Only */}
         <div
           className="hidden md:block absolute right-8 lg:right-12 top-4 lg:top-8 w-[calc(50%+2rem)] h-full -mr-6"
@@ -48,7 +54,7 @@ export default function Home() {
                 world-class security with precision, discipline, and unwavering
                 commitment to your safety.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 lg:gap-7">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 flex-wrap">
                 <Link
                   to="/services"
                   className="bg-accent text-accent-foreground px-6 sm:px-8 lg:px-10 py-2.5 sm:py-3 lg:py-4 font-black text-xs sm:text-sm lg:text-base text-center hover:shadow-xl hover:scale-105 transition-all duration-300 inline-block rounded-lg"
@@ -61,6 +67,7 @@ export default function Home() {
                 >
                   Get a Quote Now
                 </Link>
+                <WhatsAppButton size="md" />
               </div>
             </div>
 
@@ -71,8 +78,12 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6 w-full">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 -right-48 w-[550px] h-[550px] bg-accent/12 rounded-full blur-3xl opacity-60"></div>
+        <div className="absolute bottom-0 -left-32 w-[480px] h-[480px] bg-accent/14 rounded-full blur-2xl opacity-55"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
@@ -257,8 +268,12 @@ export default function Home() {
       </section>
 
       {/* Value Proposition Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6 w-full">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background via-background to-background/95 transition-colors duration-300 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-1/3 left-1/2 w-[500px] h-[500px] bg-accent/16 rounded-full blur-3xl -translate-x-1/2 opacity-65"></div>
+        <div className="absolute bottom-1/4 -right-40 w-[420px] h-[420px] bg-accent/13 rounded-full blur-2xl opacity-60"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Header */}
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
@@ -404,11 +419,15 @@ export default function Home() {
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-4 sm:mb-6 text-foreground max-w-3xl">
                   Professional Security Is An Investment In Your Future
                 </h3>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-muted-foreground max-w-2xl leading-relaxed mb-6 sm:mb-8">
                   From comprehensive threat assessment to rapid response
                   protocols, we provide complete protection backed by military
                   expertise and decades of proven success.
                 </p>
+                <WhatsAppButton
+                  size="md"
+                  message="I'm interested in learning more about Eagle Security's professional security services."
+                />
               </div>
             </div>
           </div>
@@ -416,8 +435,12 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background to-background/95 transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6 w-full">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 -left-36 w-[480px] h-[480px] bg-accent/12 rounded-full blur-3xl opacity-55"></div>
+        <div className="absolute bottom-1/4 right-0 w-[520px] h-[520px] bg-accent/14 rounded-full blur-2xl opacity-60"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
             {/* Experience Card */}
             <div className="aspect-square bg-card border border-border text-foreground p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:bg-pk-green-main group cursor-pointer">
@@ -507,8 +530,12 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us - Feature Grid */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/95 via-background to-background transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6 w-full">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/95 via-background to-background transition-colors duration-300 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl opacity-65"></div>
+        <div className="absolute bottom-0 -left-40 w-[450px] h-[450px] bg-accent/12 rounded-full blur-2xl opacity-55"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
@@ -575,8 +602,12 @@ export default function Home() {
       </section>
 
       {/* Presence Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/95 transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6 w-full">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/95 transition-colors duration-300 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-1/4 left-0 w-[480px] h-[480px] bg-accent/13 rounded-full blur-3xl -translate-x-1/2 opacity-60"></div>
+        <div className="absolute bottom-0 -right-32 w-[520px] h-[520px] bg-accent/14 rounded-full blur-2xl opacity-65"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           {/* Section Title with Visual Styling */}
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24">
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
@@ -674,8 +705,12 @@ export default function Home() {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-pk-green-main/20">
-        <div className="container mx-auto px-4 sm:px-6 w-full">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-24 bg-gradient-to-b from-background via-background/95 to-background transition-colors duration-300 border-y border-pk-green-main/20 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 -left-40 w-[500px] h-[500px] bg-accent/12 rounded-full blur-3xl opacity-55"></div>
+        <div className="absolute bottom-0 -right-36 w-[480px] h-[480px] bg-accent/14 rounded-full blur-2xl opacity-65"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="mb-8 sm:mb-12 md:mb-16 text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-3 sm:mb-4 md:mb-6">
               Our Trusted Clients
@@ -754,8 +789,12 @@ export default function Home() {
       <CompanyWiseDeployments />
 
       {/* CTA Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300">
-        <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+      <section className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background to-background/98 transition-colors duration-300 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-1/4 left-1/2 w-[500px] h-[500px] bg-accent/16 rounded-full blur-3xl -translate-x-1/2 opacity-70"></div>
+        <div className="absolute bottom-1/3 -right-40 w-[450px] h-[450px] bg-accent/13 rounded-full blur-2xl opacity-60"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 text-center max-w-4xl relative z-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 md:mb-8 leading-tight">
             Ready to Protect What Matters?
           </h2>
@@ -763,7 +802,7 @@ export default function Home() {
             Contact our security experts today for a personalized consultation
             and secure your peace of mind
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
             <Link
               to="/contact"
               className="bg-accent text-accent-foreground px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 font-black text-xs sm:text-sm md:text-base lg:text-lg text-center hover:shadow-lg transition-shadow duration-300 inline-block rounded-lg"
@@ -776,6 +815,7 @@ export default function Home() {
             >
               View Services
             </Link>
+            <WhatsAppButton size="md" />
           </div>
         </div>
       </section>
@@ -783,9 +823,13 @@ export default function Home() {
       {/* Location Section with Google Maps */}
       <section
         id="head-office-location"
-        className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/98 to-background transition-colors duration-300"
+        className="py-10 sm:py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background/98 to-background transition-colors duration-300 relative overflow-hidden"
       >
-        <div className="container mx-auto px-4 sm:px-6 w-full">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 -left-32 w-[480px] h-[480px] bg-accent/14 rounded-full blur-3xl opacity-60"></div>
+        <div className="absolute bottom-0 -right-40 w-[520px] h-[520px] bg-accent/12 rounded-full blur-2xl opacity-55"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 w-full relative z-10">
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 md:mb-6">
               <div className="w-1 md:w-1.5 h-8 sm:h-10 lg:h-12 bg-pk-green-main rounded-full flex-shrink-0"></div>
