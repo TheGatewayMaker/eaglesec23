@@ -1269,6 +1269,10 @@ export default function Home() {
                 name: "Dawood Hercules",
                 src: "https://cdn.builder.io/api/v1/image/assets%2Fcdf43ef809a448fa96343145549ff6bb%2Fe87ba69b87724354bae67673530086d4?format=webp&width=800",
               },
+              {
+                name: "AES Lalpir Thermal Power Station",
+                src: "https://cdn.builder.io/api/v1/image/assets%2Fdc75c845be364abf952cacd09ecdb1c4%2Fbb5e27fe16b3481a943bf0f055191914?format=webp&width=800",
+              },
             ]}
           />
         </div>
